@@ -26,6 +26,20 @@ enum MainTabType: String, CaseIterable, CustomStringConvertible  {
         }
     }
     
+    var image: String {
+        switch self {
+        case .home:
+            return "house"
+        case .board:
+            return "list.bullet.rectangle.fill"
+        case .recruit:
+            return "person.badge.plus"
+        case .profile:
+            return "person.crop.circl"
+        }
+    }
+    
+    
     var index: Int {
         switch self {
         case .home:
