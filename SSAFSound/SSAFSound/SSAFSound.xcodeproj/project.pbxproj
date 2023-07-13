@@ -11,7 +11,19 @@
 		6C9BAD182A5E3C0800309C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD172A5E3C0800309C20 /* ContentView.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
+		7FB87BD22A6027910035AA68 /* SSAFSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BD12A6027910035AA68 /* SSAFSoundTests.swift */; };
+		7FB87BDC2A6027F00035AA68 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BDB2A6027F00035AA68 /* NukeUI */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FB87BD32A6027910035AA68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9BAD0A2A5E3C0800309C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C9BAD112A5E3C0800309C20;
+			remoteInfo = SSAFSound;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6C9BAD122A5E3C0800309C20 /* SSAFSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAFSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,20 @@
 		6C9BAD172A5E3C0800309C20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C9BAD192A5E3C0900309C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FB87BCF2A6027910035AA68 /* SSAFSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSAFSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB87BD12A6027910035AA68 /* SSAFSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6C9BAD0F2A5E3C0800309C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB87BDC2A6027F00035AA68 /* NukeUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB87BCC2A6027910035AA68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +57,9 @@
 		6C9BAD092A5E3C0800309C20 = {
 			isa = PBXGroup;
 			children = (
+				7FB87BDD2A60287F0035AA68 /* Support */,
 				6C9BAD142A5E3C0800309C20 /* SSAFSound */,
+				7FB87BD02A6027910035AA68 /* SSAFSoundTests */,
 				6C9BAD132A5E3C0800309C20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				6C9BAD122A5E3C0800309C20 /* SSAFSound.app */,
+				7FB87BCF2A6027910035AA68 /* SSAFSoundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +76,8 @@
 		6C9BAD142A5E3C0800309C20 /* SSAFSound */ = {
 			isa = PBXGroup;
 			children = (
-				6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */,
-				6C9BAD172A5E3C0800309C20 /* ContentView.swift */,
-				6C9BAD192A5E3C0900309C20 /* Assets.xcassets */,
-				6C9BAD1B2A5E3C0900309C20 /* Preview Content */,
+				7FB87BC92A6026B70035AA68 /* Sources */,
+				7FB87BC82A6026A90035AA68 /* Resources */,
 			);
 			path = SSAFSound;
 			sourceTree = "<group>";
@@ -65,6 +88,63 @@
 				6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FB87BC82A6026A90035AA68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C9BAD1B2A5E3C0900309C20 /* Preview Content */,
+				6C9BAD192A5E3C0900309C20 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7FB87BC92A6026B70035AA68 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FB87BD82A6027A40035AA68 /* UI */,
+				7FB87BCA2A6026C20035AA68 /* Application */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7FB87BCA2A6026C20035AA68 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7FB87BD02A6027910035AA68 /* SSAFSoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FB87BD12A6027910035AA68 /* SSAFSoundTests.swift */,
+			);
+			path = SSAFSoundTests;
+			sourceTree = "<group>";
+		};
+		7FB87BD82A6027A40035AA68 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7FB87BD92A6027AB0035AA68 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7FB87BD92A6027AB0035AA68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C9BAD172A5E3C0800309C20 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FB87BDD2A60287F0035AA68 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +163,30 @@
 			dependencies = (
 			);
 			name = SSAFSound;
+			packageProductDependencies = (
+				7FB87BDB2A6027F00035AA68 /* NukeUI */,
+			);
 			productName = SSAFSound;
 			productReference = 6C9BAD122A5E3C0800309C20 /* SSAFSound.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7FB87BCE2A6027910035AA68 /* SSAFSoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB87BD52A6027910035AA68 /* Build configuration list for PBXNativeTarget "SSAFSoundTests" */;
+			buildPhases = (
+				7FB87BCB2A6027910035AA68 /* Sources */,
+				7FB87BCC2A6027910035AA68 /* Frameworks */,
+				7FB87BCD2A6027910035AA68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FB87BD42A6027910035AA68 /* PBXTargetDependency */,
+			);
+			name = SSAFSoundTests;
+			productName = SSAFSoundTests;
+			productReference = 7FB87BCF2A6027910035AA68 /* SSAFSoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,11 +195,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					6C9BAD112A5E3C0800309C20 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					7FB87BCE2A6027910035AA68 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6C9BAD112A5E3C0800309C20;
 					};
 				};
 			};
@@ -111,11 +216,15 @@
 				Base,
 			);
 			mainGroup = 6C9BAD092A5E3C0800309C20;
+			packageReferences = (
+				7FB87BDA2A6027F00035AA68 /* XCRemoteSwiftPackageReference "NukeUI" */,
+			);
 			productRefGroup = 6C9BAD132A5E3C0800309C20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6C9BAD112A5E3C0800309C20 /* SSAFSound */,
+				7FB87BCE2A6027910035AA68 /* SSAFSoundTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +236,13 @@
 			files = (
 				6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */,
 				6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB87BCD2A6027910035AA68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +258,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FB87BCB2A6027910035AA68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB87BD22A6027910035AA68 /* SSAFSoundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FB87BD42A6027910035AA68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C9BAD112A5E3C0800309C20 /* SSAFSound */;
+			targetProxy = 7FB87BD32A6027910035AA68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6C9BAD1E2A5E3C0900309C20 /* Debug */ = {
@@ -266,7 +398,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,9 +414,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SSAFsori.SSAFSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -294,7 +430,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,9 +446,56 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SSAFsori.SSAFSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7FB87BD62A6027910035AA68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssaf.SSAFSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAFSound.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSAFSound";
+			};
+			name = Debug;
+		};
+		7FB87BD72A6027910035AA68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N94CS4N6VR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssaf.SSAFSoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAFSound.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSAFSound";
 			};
 			name = Release;
 		};
@@ -336,7 +520,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7FB87BD52A6027910035AA68 /* Build configuration list for PBXNativeTarget "SSAFSoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB87BD62A6027910035AA68 /* Debug */,
+				7FB87BD72A6027910035AA68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FB87BDA2A6027F00035AA68 /* XCRemoteSwiftPackageReference "NukeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/NukeUI.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FB87BDB2A6027F00035AA68 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FB87BDA2A6027F00035AA68 /* XCRemoteSwiftPackageReference "NukeUI" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C9BAD0A2A5E3C0800309C20 /* Project object */;
 }
