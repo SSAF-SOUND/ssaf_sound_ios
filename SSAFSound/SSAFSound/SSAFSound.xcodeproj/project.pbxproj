@@ -11,6 +11,13 @@
 		6C9BAD182A5E3C0800309C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD172A5E3C0800309C20 /* ContentView.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
+		7FB36BEE2A62444300A3DB20 /* Manrope-Bold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACF2A603B07007BF344 /* Manrope-Bold.ttf */; };
+		7FB36BEF2A62444300A3DB20 /* Manrope-ExtraBold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACC2A603B07007BF344 /* Manrope-ExtraBold.ttf */; };
+		7FB36BF02A62444300A3DB20 /* Manrope-ExtraLight.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACB2A603B07007BF344 /* Manrope-ExtraLight.ttf */; };
+		7FB36BF12A62444300A3DB20 /* Manrope-Light.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACE2A603B07007BF344 /* Manrope-Light.ttf */; };
+		7FB36BF22A62444300A3DB20 /* Manrope-Medium.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACD2A603B07007BF344 /* Manrope-Medium.ttf */; };
+		7FB36BF32A62444300A3DB20 /* Manrope-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAC92A603B07007BF344 /* Manrope-Regular.ttf */; };
+		7FB36BF42A62444300A3DB20 /* Manrope-SemiBold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FACA2A603B07007BF344 /* Manrope-SemiBold.ttf */; };
 		7FB87BD22A6027910035AA68 /* SSAFSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BD12A6027910035AA68 /* SSAFSoundTests.swift */; };
 		7FB87BDC2A6027F00035AA68 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BDB2A6027F00035AA68 /* NukeUI */; };
 		7FB87BE22A602EA80035AA68 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BE12A602EA80035AA68 /* PopupView */; };
@@ -448,6 +455,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB36BEE2A62444300A3DB20 /* Manrope-Bold.ttf in Sources */,
+				7FB36BEF2A62444300A3DB20 /* Manrope-ExtraBold.ttf in Sources */,
+				7FB36BF02A62444300A3DB20 /* Manrope-ExtraLight.ttf in Sources */,
+				7FB36BF12A62444300A3DB20 /* Manrope-Light.ttf in Sources */,
+				7FB36BF22A62444300A3DB20 /* Manrope-Medium.ttf in Sources */,
+				7FB36BF32A62444300A3DB20 /* Manrope-Regular.ttf in Sources */,
+				7FB36BF42A62444300A3DB20 /* Manrope-SemiBold.ttf in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
