@@ -8,8 +8,49 @@
 import SwiftUI
 
 struct BoardView: View {
+    let boardItems: [String] = ["자유", "취업", "테크", "맛집", "질문", "싸피 예비생"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.background
+                .edgesIgnoringSafeArea(.top)
+            
+            VStack {
+                HStack {
+                    Text("모아보기")
+                        .manropeFont(family: .Bold, size: 15)
+                        .foregroundColor(.white)
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Text("Hot")
+                            .manropeFont(family: .Bold, size: 15)
+                            .foregroundColor(.secondaryPoint)
+                    }
+                }
+                .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
+                
+                ScrollView {
+                    ForEach(boardItems, id: \.self) { boardName in
+                        NavigationLink(destination: DetailView(boardName: boardName)     .toolbarRole(.editor)
+                            .navigationTitle(boardName+"게시판")
+                        ) {
+                            BoardItemView(BoardName: boardName)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MARK: Navigation test용
+struct DetailView: View {
+    let boardName: String
+    
+    var body: some View {
+        Text("Detail View for \(boardName)")
     }
 }
 
