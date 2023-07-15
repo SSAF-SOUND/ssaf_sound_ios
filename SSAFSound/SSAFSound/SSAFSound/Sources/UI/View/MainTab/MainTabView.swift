@@ -31,7 +31,7 @@ struct MainTabView: View {
                         }
                         .tag(0)
                     
-                    ContentView()
+                    BoardView()
                         .tabItem {
                             TabItemViews(image: "list.bullet.rectangle.fill", tabName: MainTabType.board.description, isSelected: viewModel.selectTabItem == 1)
                         }
