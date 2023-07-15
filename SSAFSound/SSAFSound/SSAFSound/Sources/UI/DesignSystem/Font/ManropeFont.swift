@@ -45,20 +45,20 @@ public struct ManropeFont: ViewModifier {
 
 
 public extension View {
-     public func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> some View {
+    func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> some View {
          return self.modifier(ManropeFont(family: family, size: size))
     }
 }
 
 public extension UIFont {
-    public static func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> Font{
+    static func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> Font{
         let font = Font.custom("Manrope-\(family)", size: size)
         return font
     }
 }
 
 public extension Font {
-    public static func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> Font{
+    static func manropeFont(family: ManropeFontFontFamily, size: CGFloat) -> Font{
         let font = Font.custom("Manrope-\(family)", size: size)
         return font
     }

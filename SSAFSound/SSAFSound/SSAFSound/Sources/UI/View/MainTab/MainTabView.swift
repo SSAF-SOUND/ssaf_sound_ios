@@ -20,7 +20,7 @@ struct MainTabView: View {
 
     var body: some View {
         ZStack {
-            Color.black
+            Color.ssafSoundColor(.black)
                 .edgesIgnoringSafeArea(.all)
 
             NavigationStack {
@@ -49,7 +49,7 @@ struct MainTabView: View {
                         }
                         .tag(3)
                 }
-                .accentColor(.black)
+                .accentColor(.ssafSoundColor(.black))
                 
             }
         }
