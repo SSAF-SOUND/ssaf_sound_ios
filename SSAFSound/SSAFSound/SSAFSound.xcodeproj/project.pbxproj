@@ -37,6 +37,7 @@
 		7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAD92A603CC1007BF344 /* ManropeFont.swift */; };
 		7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FADE2A603E99007BF344 /* MainTabViewModel.swift */; };
 		7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAE02A603FDF007BF344 /* TabType.swift */; };
+		8683249B2A6268B6001C4586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8683249A2A6268B6001C4586 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		7FF4FAD92A603CC1007BF344 /* ManropeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManropeFont.swift; sourceTree = "<group>"; };
 		7FF4FADE2A603E99007BF344 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		7FF4FAE02A603FDF007BF344 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		8683249A2A6268B6001C4586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SSAFSound/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				6C9BAD142A5E3C0800309C20 /* SSAFSound */,
+				8683249A2A6268B6001C4586 /* Assets.xcassets */,
 				7FB87BD02A6027910035AA68 /* SSAFSoundTests */,
 				6C9BAD132A5E3C0800309C20 /* Products */,
 			);
@@ -168,7 +171,6 @@
 			children = (
 				7FB87BCA2A6026C20035AA68 /* Application */,
 				7FB87BD82A6027A40035AA68 /* UI */,
-				7FF4FADC2A603E77007BF344 /* ViewModel */,
 				7FB87BE82A602F0A0035AA68 /* Network */,
 			);
 			path = Sources;
@@ -323,13 +325,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7FF4FADC2A603E77007BF344 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +421,7 @@
 				6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */,
 				7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */,
 				6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */,
+				8683249B2A6268B6001C4586 /* Assets.xcassets in Resources */,
 				7FB36C022A6264DF00A3DB20 /* Manrope-Light.ttf in Resources */,
 				7FB36C002A6264DF00A3DB20 /* Manrope-SemiBold.ttf in Resources */,
 				7FB36C032A6264DF00A3DB20 /* Manrope-Medium.ttf in Resources */,
@@ -608,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = N94CS4N6VR;
+				DEVELOPMENT_TEAM = 44SVK28983;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SSAFSound/Support/Info.plist;
@@ -644,7 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SSAFSound/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = N94CS4N6VR;
+				DEVELOPMENT_TEAM = 44SVK28983;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SSAFSound/Support/Info.plist;
@@ -678,7 +674,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N94CS4N6VR;
+				DEVELOPMENT_TEAM = 44SVK28983;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -700,7 +696,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N94CS4N6VR;
+				DEVELOPMENT_TEAM = 44SVK28983;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
