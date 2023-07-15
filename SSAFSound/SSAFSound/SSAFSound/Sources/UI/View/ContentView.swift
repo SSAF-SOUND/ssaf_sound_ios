@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.black.opacity(0.4)
+            Color.background
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
