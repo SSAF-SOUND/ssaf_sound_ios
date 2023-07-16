@@ -15,27 +15,24 @@ struct BoardView: View {
             Color.background
                 .edgesIgnoringSafeArea(.top)
             
-            VStack {
-                HStack {
-                    Text("모아보기")
-                        .manropeFont(family: .Bold, size: 15)
-                        .foregroundColor(.white)
-                    Spacer()
+            NavigationStack{
+                VStack {
+                    HStack {
+                        Text("모아보기")
+                            .manropeFont(family: .Bold, size: 15)
+                            .foregroundColor(.white)
+                        Spacer()
                     
-                    NavigationStack{
                         NavigationLink (destination: DetailView(boardName: "Hot 게시판")
                             .navigationTitle("HOT 게시판")
                             .toolbarRole(.editor)
                         ){
-                            Text("Hot")
+                            Text("HOT")
                                 .manropeFont(family: .Bold, size: 15)
                                 .foregroundColor(.secondaryPoint)
                         }
                     }
-                }
-                .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
-                
-                NavigationStack{
+                    .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
                     ScrollView {
                         ForEach(boardItems, id: \.self) { boardName in
                             NavigationLink(destination: DetailView(boardName: boardName)
@@ -45,9 +42,10 @@ struct BoardView: View {
                                 BoardItemView(BoardName: boardName)
                             }
                         }
+                        Spacer()
                     }
+                    
                 }
-                
             }
         }
     }
