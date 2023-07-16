@@ -13,9 +13,7 @@ struct MainTabView: View {
 
     init() {
         // Customize the tab bar appearance
-        UITabBar.appearance().tintColor = UIColor(Color.gray)
-        UITabBar.appearance().barTintColor = UIColor(Color.white)
-        UITabBar.appearance().unselectedItemTintColor = UIColor(Color.gray)
+        
     }
 
     var body: some View {
@@ -50,6 +48,13 @@ struct MainTabView: View {
                         .tag(3)
                 }
                 .accentColor(.ssafSoundColor(.black))
+                .onAppear{
+                    UITabBar.appearance().tintColor = UIColor(Color.gray)
+                    UITabBar.appearance().barTintColor = UIColor(Color.white)
+                    UITabBar.appearance().unselectedItemTintColor = UIColor(Color.gray)
+                    UITabBar.appearance().backgroundColor = UIColor(Color.white)
+                }
+                
                 
             }
         }
