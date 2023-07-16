@@ -21,25 +21,33 @@ struct BoardView: View {
                         .manropeFont(family: .Bold, size: 15)
                         .foregroundColor(.white)
                     Spacer()
-                    Button {
-                        
-                    } label: {
-                        Text("Hot")
-                            .manropeFont(family: .Bold, size: 15)
-                            .foregroundColor(.secondaryPoint)
+                    
+                    NavigationStack{
+                        NavigationLink (destination: DetailView(boardName: "Hot 게시판")
+                            .navigationTitle("HOT 게시판")
+                            .toolbarRole(.editor)
+                        ){
+                            Text("Hot")
+                                .manropeFont(family: .Bold, size: 15)
+                                .foregroundColor(.secondaryPoint)
+                        }
                     }
                 }
                 .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
                 
-                ScrollView {
-                    ForEach(boardItems, id: \.self) { boardName in
-                        NavigationLink(destination: DetailView(boardName: boardName)     .toolbarRole(.editor)
-                            .navigationTitle(boardName+"게시판")
-                        ) {
-                            BoardItemView(BoardName: boardName)
+                NavigationStack{
+                    ScrollView {
+                        ForEach(boardItems, id: \.self) { boardName in
+                            NavigationLink(destination: DetailView(boardName: boardName)
+                                .navigationTitle(boardName+"게시판")
+                                .toolbarRole(.editor)
+                            ) {
+                                BoardItemView(BoardName: boardName)
+                            }
                         }
                     }
                 }
+                
             }
         }
     }
