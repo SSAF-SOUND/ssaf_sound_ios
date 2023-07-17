@@ -34,7 +34,7 @@ struct BoardView: View {
                         
                     }
                     .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         ForEach(boardItems, id: \.self) { boardName in
                             NavigationLink(destination: SelectedBoardView(boardName: boardName)
                                 .navigationTitle(boardName+"게시판")
