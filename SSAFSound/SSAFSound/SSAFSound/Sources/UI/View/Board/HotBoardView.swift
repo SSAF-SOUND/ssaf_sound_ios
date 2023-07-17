@@ -20,6 +20,7 @@ struct HotBoardView: View {
                     HotBoardItemView()
                 }
             }
+            FloatingButton()
         }
     }
 }

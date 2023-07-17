@@ -12,14 +12,23 @@ struct SelectedBoardView: View {
     var body: some View {
         ZStack {
             Color.background
-            .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)
             VStack{
                 ScrollView{
                     SelectedBoardItem()
                     SelectedBoardItem()
                     SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    SelectedBoardItem()
+                    
                 }
             }
+            FloatingButton()
         }
         
     }

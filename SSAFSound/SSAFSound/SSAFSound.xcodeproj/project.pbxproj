@@ -45,6 +45,7 @@
 		86B5F2942A6414E0009A113C /* ButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2932A6414E0009A113C /* ButtonGroup.swift */; };
 		86B5F2962A64154D009A113C /* HotBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2952A64154D009A113C /* HotBoardView.swift */; };
 		86B5F2982A6415A2009A113C /* SelectedBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */; };
+		86F1C3952A65294F00D10FE6 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1C3942A65294F00D10FE6 /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		86B5F2932A6414E0009A113C /* ButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGroup.swift; sourceTree = "<group>"; };
 		86B5F2952A64154D009A113C /* HotBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardView.swift; sourceTree = "<group>"; };
 		86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBoardItem.swift; sourceTree = "<group>"; };
+		86F1C3942A65294F00D10FE6 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +360,7 @@
 				86B5F2912A64022B009A113C /* HotBoardItemView.swift */,
 				86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */,
 				86B5F2932A6414E0009A113C /* ButtonGroup.swift */,
+				86F1C3942A65294F00D10FE6 /* FloatingButton.swift */,
 			);
 			path = BoardItem;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				7FB87BF62A6035130035AA68 /* SSAFSoundAPI.swift in Sources */,
 				86B5F2902A63F9BF009A113C /* SelectedBoardView.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,
+				86F1C3952A65294F00D10FE6 /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
