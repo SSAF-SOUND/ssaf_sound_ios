@@ -42,7 +42,7 @@
 		869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ACF432A62AD2200356DFE /* BoardItemView.swift */; };
 		86B5F2902A63F9BF009A113C /* SelectedBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F28F2A63F9BF009A113C /* SelectedBoardView.swift */; };
 		86B5F2922A64022B009A113C /* HotBoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2912A64022B009A113C /* HotBoardItemView.swift */; };
-		86B5F2942A6414E0009A113C /* ButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2932A6414E0009A113C /* ButtonGroup.swift */; };
+		86B5F2942A6414E0009A113C /* InfoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2932A6414E0009A113C /* InfoGroup.swift */; };
 		86B5F2962A64154D009A113C /* HotBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2952A64154D009A113C /* HotBoardView.swift */; };
 		86B5F2982A6415A2009A113C /* SelectedBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */; };
 		86F1C3952A65294F00D10FE6 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1C3942A65294F00D10FE6 /* FloatingButton.swift */; };
@@ -93,7 +93,7 @@
 		869ACF432A62AD2200356DFE /* BoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemView.swift; sourceTree = "<group>"; };
 		86B5F28F2A63F9BF009A113C /* SelectedBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBoardView.swift; sourceTree = "<group>"; };
 		86B5F2912A64022B009A113C /* HotBoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardItemView.swift; sourceTree = "<group>"; };
-		86B5F2932A6414E0009A113C /* ButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGroup.swift; sourceTree = "<group>"; };
+		86B5F2932A6414E0009A113C /* InfoGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoGroup.swift; sourceTree = "<group>"; };
 		86B5F2952A64154D009A113C /* HotBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardView.swift; sourceTree = "<group>"; };
 		86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBoardItem.swift; sourceTree = "<group>"; };
 		86F1C3942A65294F00D10FE6 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 				869ACF432A62AD2200356DFE /* BoardItemView.swift */,
 				86B5F2912A64022B009A113C /* HotBoardItemView.swift */,
 				86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */,
-				86B5F2932A6414E0009A113C /* ButtonGroup.swift */,
+				86B5F2932A6414E0009A113C /* InfoGroup.swift */,
 				86F1C3942A65294F00D10FE6 /* FloatingButton.swift */,
 			);
 			path = BoardItem;
@@ -502,7 +502,7 @@
 				6C9BAD182A5E3C0800309C20 /* ContentView.swift in Sources */,
 				7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */,
 				8683249E2A628483001C4586 /* BoardView.swift in Sources */,
-				86B5F2942A6414E0009A113C /* ButtonGroup.swift in Sources */,
+				86B5F2942A6414E0009A113C /* InfoGroup.swift in Sources */,
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
 				7FB87BF62A6035130035AA68 /* SSAFSoundAPI.swift in Sources */,
 				86B5F2902A63F9BF009A113C /* SelectedBoardView.swift in Sources */,
