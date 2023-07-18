@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SelectedBoardItem: View {
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing: 0){
             Text("제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치")
                 .manropeFont(family: .Bold, size: 18)
                 .lineLimit(1)
@@ -28,8 +28,8 @@ struct SelectedBoardItem: View {
                 Spacer()
                 InfoGroup()
             }
-        }.padding(EdgeInsets(top: 13, leading: 22, bottom: 13, trailing: 22))
-            .frame(width: 340, height: 123)
+        }.padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
+            .frame(height: 123)
             .background(Color.ssafSoundColor(.black))
             .cornerRadius(8)
             .overlay(RoundedRectangle(cornerRadius: 8)

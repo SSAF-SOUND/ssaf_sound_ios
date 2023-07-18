@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HotBoardItemView: View {
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing: 0){
             HStack(alignment: .bottom) {
                 Text("00게시판")
                     .manropeFont(family: .Bold, size: 12)
@@ -27,10 +27,10 @@ struct HotBoardItemView: View {
                 .foregroundColor(.white)
                 .lineLimit(1)
             Text("n분전 | 게시자")
-                .manropeFont(family: .Bold, size: 12)
-                .foregroundColor(.bluegrey)
-        }.padding(EdgeInsets(top: 13, leading: 22, bottom: 13, trailing: 22))
-            .frame(width: 340, height: 123)
+                .manropeFont(family: .Bold, size: 14)
+                .foregroundColor(.white)
+        }.padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
+            .frame(height: 123)
             .background(Color.ssafSoundColor(.black))
             .cornerRadius(8)
             .overlay(RoundedRectangle(cornerRadius: 8)

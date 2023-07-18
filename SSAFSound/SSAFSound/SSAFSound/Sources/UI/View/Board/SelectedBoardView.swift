@@ -26,7 +26,7 @@ struct SelectedBoardView: View {
                     SelectedBoardItem()
                     SelectedBoardItem()
                     
-                }
+                }.padding(.horizontal,25)
             }
             FloatingButton()
         }

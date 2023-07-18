@@ -18,7 +18,7 @@ struct HotBoardView: View {
                     HotBoardItemView()
                     HotBoardItemView()
                     HotBoardItemView()
-                }
+                }.padding(.horizontal,25)
             }
             FloatingButton()
         }

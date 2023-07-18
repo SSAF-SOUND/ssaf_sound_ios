@@ -9,22 +9,22 @@ import SwiftUI
 
 struct InfoGroup: View{
     var body: some View{
-        HStack{
-            HStack(alignment: .center){
+        HStack(alignment: .center, spacing: 4){
+            HStack(alignment: .center, spacing: 4){
                 Image("thumbup")
                     .resizable()
-                    .frame(width: 20,height: 20)
+                    .frame(width: 20,height: 17)
                     .aspectRatio(contentMode: .fit)
-                Text("n")
+                Text("10")
                     .manropeFont(family: .Bold, size: 13)
                     .foregroundColor(.primaryDefault)
             }
-            HStack(alignment: .center){
+            HStack(alignment: .center,spacing: 4){
                 Image("review")
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
-                Text("n")
+                Text("10")
                     .manropeFont(family: .Bold, size: 13)
                     .foregroundColor(.secondaryDefault)
             }
