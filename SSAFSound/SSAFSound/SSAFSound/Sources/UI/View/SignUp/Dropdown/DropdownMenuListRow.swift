@@ -31,7 +31,7 @@ struct DropdownMenuListRow: View {
             .foregroundColor(Color.ssafSoundColor(.black))
             .padding(.vertical, 10)
             .padding(.horizontal, 40)
-            .background(Color.ssafSoundColor(.whilte))
+//            .background(Color.ssafSoundColor(.whilte))
             
             
         }

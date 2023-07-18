@@ -15,45 +15,64 @@ struct DropdownMenu: View {
     let placeholder: String
     let options: [CampusMenuOption]
     var body: some View {
-        Button(action: {
-            withAnimation {
-                self.isOptionsPresented.toggle()
-            }
-        }) {
-            HStack {
-                Text(selectedOption == nil ? placeholder : selectedOption!.option)
-//                    .fontWeight(.medium)
-                    .foregroundColor(selectedOption == nil ? Color.ssafSoundColor(.grey) : Color.ssafSoundColor(.black))
-                
-                Spacer()
-                
-                Image(systemName: self.isOptionsPresented ? "chevron.up" : "chevron.down")
-                // This modifier available for Image since iOS 16.0
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.ssafSoundColor(.black))
-                
-            }
-        }
-        .padding()
-        .overlay {
+        
+        
+        HStack {
             RoundedRectangle(cornerRadius: 8)
-                .stroke(.gray, lineWidth: 2)
+            .stroke(.gray, lineWidth: 2)
+            .background(.white)
+            .cornerRadius(8)
+            .frame(height: 44)
+            .overlay {
+                HStack {
+                    Text(selectedOption == nil ? placeholder : selectedOption!.option)
+        //                    .fontWeight(.medium)
+                        .foregroundColor(selectedOption == nil ? Color.ssafSoundColor(.grey) : Color.ssafSoundColor(.black))
+                    
+                    Spacer()
+                    
+                    Image(systemName: self.isOptionsPresented ? "chevron.up" : "chevron.down")
+                    // This modifier available for Image since iOS 16.0
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.ssafSoundColor(.black))
+                }
+                .padding(.horizontal, 20)
+            }
+            
+            
+            
         }
+        .frame(width: UIScreen.main.bounds.width - 40, height: 44)
+//        .background(.white)
+        .onTapGesture {
+            withAnimation {
+                  self.isOptionsPresented.toggle()
+             }
+        }
+        
+        .padding(.horizontal, 10)
+        
+        
+        
+//        .background(.white)
         .overlay(alignment: .top) {
             VStack {
                 if self.isOptionsPresented {
                     // 결과창과 선택창과의 간격
-                    Spacer(minLength: 60)
+                    Spacer()
+                        .frame(height: 60)
                     
                     // 버튼 눌렀을 때 생기는 리스트
                     DropdownMenuList(options: self.options) { option in
                         self.isOptionsPresented = false
                         self.selectedOption = option
                     }
+                    .padding(.horizontal, 10)
+                    
+                    
                 }
             }
         }
-        .padding(.horizontal)
     }
 }
 
