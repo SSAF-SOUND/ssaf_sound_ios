@@ -7,17 +7,9 @@
 
 import SwiftUI
 
-struct eidtValue :View{
-    var body: some View{
-        Text("(수정됨)")
-            .manropeFont(family: .Bold, size: 16)
-            .foregroundColor(.primaryPoint)
-    }
-    
-}
-
 struct PostContentItem: View {
-    @State var isEdit: Bool = true
+    @State private var isEdit: Bool = true
+    
     let tempTitle:String = "제목이 들어갈위치입니다. 제목이 들어갈위치입니다. 제목이 들어갈위치입니다. 제목이 들어갈위치입니다.제목이 들어갈위치입니다.  "
     
     var body: some View {

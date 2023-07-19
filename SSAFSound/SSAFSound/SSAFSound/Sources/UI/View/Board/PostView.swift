@@ -17,8 +17,9 @@ struct PostView: View {
                 {
                     PostContentItem()
                     Spacer().frame(height: 70)
-                    Text("댓글 위치").background(.white)
-                }
+                    PostCommentItem()
+                    RePostCommentItem()
+                }.padding(.horizontal,25)
                 Spacer()
                 Text("입력창 위치").background(.white)
             }

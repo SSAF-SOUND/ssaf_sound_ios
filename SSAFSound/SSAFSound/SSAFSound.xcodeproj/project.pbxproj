@@ -349,13 +349,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		862AD3A02A67998F0002885C /* _PostView */ = {
+		862AD3A02A67998F0002885C /* _PostItem */ = {
 			isa = PBXGroup;
 			children = (
 				862AD3A12A6799BC0002885C /* PostContentItem.swift */,
 				862AD3A32A679C450002885C /* PostCommentItem.swift */,
 			);
-			path = _PostView;
+			path = _PostItem;
 			sourceTree = "<group>";
 		};
 		8683249C2A628474001C4586 /* Board */ = {
@@ -372,7 +372,7 @@
 		869ACF422A62AD0A00356DFE /* BoardItem */ = {
 			isa = PBXGroup;
 			children = (
-				862AD3A02A67998F0002885C /* _PostView */,
+				862AD3A02A67998F0002885C /* _PostItem */,
 				869ACF432A62AD2200356DFE /* BoardItemView.swift */,
 				86B5F2912A64022B009A113C /* HotBoardItemView.swift */,
 				86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */,
