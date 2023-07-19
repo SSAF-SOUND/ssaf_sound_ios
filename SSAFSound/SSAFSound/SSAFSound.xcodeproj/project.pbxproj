@@ -37,6 +37,7 @@
 		7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAD92A603CC1007BF344 /* ManropeFont.swift */; };
 		7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FADE2A603E99007BF344 /* MainTabViewModel.swift */; };
 		7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAE02A603FDF007BF344 /* TabType.swift */; };
+		86077D412A6773F1001DC86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86077D402A6773F1001DC86E /* Assets.xcassets */; };
 		8683249E2A628483001C4586 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8683249D2A628483001C4586 /* BoardView.swift */; };
 		869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ACF432A62AD2200356DFE /* BoardItemView.swift */; };
 		86B5F2902A63F9BF009A113C /* SelectedBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F28F2A63F9BF009A113C /* SelectedBoardView.swift */; };
@@ -45,7 +46,6 @@
 		86B5F2962A64154D009A113C /* HotBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2952A64154D009A113C /* HotBoardView.swift */; };
 		86B5F2982A6415A2009A113C /* SelectedBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */; };
 		86F1C3952A65294F00D10FE6 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1C3942A65294F00D10FE6 /* FloatingButton.swift */; };
-		86F91C4D2A67711400F49CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F91C4C2A67711400F49CC8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +88,7 @@
 		7FF4FAD92A603CC1007BF344 /* ManropeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManropeFont.swift; sourceTree = "<group>"; };
 		7FF4FADE2A603E99007BF344 /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		7FF4FAE02A603FDF007BF344 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		86077D402A6773F1001DC86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8683249D2A628483001C4586 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		869ACF432A62AD2200356DFE /* BoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemView.swift; sourceTree = "<group>"; };
 		86B5F28F2A63F9BF009A113C /* SelectedBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBoardView.swift; sourceTree = "<group>"; };
@@ -96,8 +97,6 @@
 		86B5F2952A64154D009A113C /* HotBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotBoardView.swift; sourceTree = "<group>"; };
 		86B5F2972A6415A2009A113C /* SelectedBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBoardItem.swift; sourceTree = "<group>"; };
 		86F1C3942A65294F00D10FE6 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
-		86F91C4C2A67711400F49CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Assets.xcassets; sourceTree = "<group>"; };
-		86F91C4E2A67713800F49CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				6C9BAD142A5E3C0800309C20 /* SSAFSound */,
-				86F91C4E2A67713800F49CC8 /* Assets.xcassets */,
 				7FB87BD02A6027910035AA68 /* SSAFSoundTests */,
 				6C9BAD132A5E3C0800309C20 /* Products */,
 			);
@@ -146,7 +144,8 @@
 			children = (
 				7FF4FAD12A603B77007BF344 /* Support */,
 				7FB87BC92A6026B70035AA68 /* Sources */,
-				7FB87BC82A6026A90035AA68 /* Resources */,
+				7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */,
+				86077D402A6773F1001DC86E /* Assets.xcassets */,
 			);
 			path = SSAFSound;
 			sourceTree = "<group>";
@@ -176,10 +175,9 @@
 		7FB87BC82A6026A90035AA68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				86F91C4C2A67711400F49CC8 /* Assets.xcassets */,
+				6C9BAD192A5E3C0900309C20 /* Assets.xcassets */,
 				7FB36BF52A6264CA00A3DB20 /* Font */,
 				6C9BAD1B2A5E3C0900309C20 /* Preview Content */,
-				6C9BAD192A5E3C0900309C20 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -233,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				7FB87BEA2A602F660035AA68 /* APIManger */,
-				7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -241,6 +238,7 @@
 		7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */ = {
 			isa = PBXGroup;
 			children = (
+				7FB87BC82A6026A90035AA68 /* Resources */,
 				7FB87BF52A6035130035AA68 /* SSAFSoundAPI.swift */,
 			);
 			path = SSAFSoundAPI;
@@ -463,7 +461,7 @@
 				6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */,
 				7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */,
 				6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */,
-				86F91C4D2A67711400F49CC8 /* Assets.xcassets in Resources */,
+				86077D412A6773F1001DC86E /* Assets.xcassets in Resources */,
 				7FB36C022A6264DF00A3DB20 /* Manrope-Light.ttf in Resources */,
 				7FB36C002A6264DF00A3DB20 /* Manrope-SemiBold.ttf in Resources */,
 				7FB36C032A6264DF00A3DB20 /* Manrope-Medium.ttf in Resources */,
