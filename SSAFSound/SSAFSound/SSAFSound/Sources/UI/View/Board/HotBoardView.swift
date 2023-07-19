@@ -12,13 +12,16 @@ struct HotBoardView: View {
     var body: some View {
         ZStack {
             Color.background
-            .edgesIgnoringSafeArea(.all)
-            VStack{
-                ScrollView{
-                    HotBoardItemView()
-                    HotBoardItemView()
-                    HotBoardItemView()
-                }.padding(.horizontal,25)
+                .edgesIgnoringSafeArea(.all)
+            NavigationStack{
+                VStack{
+                    ScrollView{
+                        
+                        ForEach(0..<10) { i in
+                            NavigationLink(destination:PostView()){HotBoardItemView().toolbarRole(.editor)}
+                        }
+                    }.padding(.horizontal,25)
+                }
             }
         }
     }

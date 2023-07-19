@@ -10,24 +10,19 @@ import SwiftUI
 struct SelectedBoardView: View {
     let boardName: String
     var body: some View {
+        
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
-            VStack{
+            NavigationStack{VStack{
                 ScrollView{
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    SelectedBoardItem()
-                    
+                    ForEach(0..<10) { i in
+                        NavigationLink(destination: PostView() ){
+                            SelectedBoardItem().toolbarRole(.editor)
+                        }
+                    }
                 }.padding(.horizontal,25)
-            }
+            }}
             FloatingButton()
         }
         
