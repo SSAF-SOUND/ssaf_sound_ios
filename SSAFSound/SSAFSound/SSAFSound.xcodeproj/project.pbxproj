@@ -144,6 +144,7 @@
 			children = (
 				7FF4FAD12A603B77007BF344 /* Support */,
 				7FB87BC92A6026B70035AA68 /* Sources */,
+				7FB87BC82A6026A90035AA68 /* Resources */,
 				7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */,
 				86077D402A6773F1001DC86E /* Assets.xcassets */,
 			);
@@ -238,7 +239,6 @@
 		7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */ = {
 			isa = PBXGroup;
 			children = (
-				7FB87BC82A6026A90035AA68 /* Resources */,
 				7FB87BF52A6035130035AA68 /* SSAFSoundAPI.swift */,
 			);
 			path = SSAFSoundAPI;
