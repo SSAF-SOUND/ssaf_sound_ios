@@ -23,7 +23,7 @@ struct MainTabView: View {
 
             NavigationStack {
                 TabView(selection: $viewModel.selectTabItem) {
-                    ContentView()
+                    HomeView()
                         .tabItem {
                             TabItemViews(image: "house", tabName: MainTabType.home.description, isSelected: viewModel.selectTabItem == 0)
                         }
@@ -41,7 +41,7 @@ struct MainTabView: View {
                         }
                         .tag(2)
 
-                    ContentView()
+                    ProfleView()
                         .tabItem {
                             TabItemViews(image: "person.crop.circle", tabName: MainTabType.profile.description, isSelected: viewModel.selectTabItem == 3)
                         }
