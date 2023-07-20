@@ -21,7 +21,8 @@ struct PostView: View {
                     RePostCommentItem()
                 }.padding(.horizontal,25)
                 Spacer()
-                Text("입력창 위치").background(.white)
+                PostTextInputItem()
+                Spacer()
             }
             
         }
