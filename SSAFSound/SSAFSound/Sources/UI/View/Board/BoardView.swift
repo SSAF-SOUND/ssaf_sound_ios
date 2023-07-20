@@ -23,7 +23,7 @@ struct BoardView: View {
                             .foregroundColor(.white)
                         Spacer()
                     
-                        NavigationLink (destination: HotBoardView(boardName: "HOT 게시판")
+                        NavigationLink (destination: DetailView(boardName: "Hot 게시판")
                             .navigationTitle("HOT 게시판")
                             .toolbarRole(.editor)
                         ){
@@ -31,12 +31,11 @@ struct BoardView: View {
                                 .manropeFont(family: .Bold, size: 15)
                                 .foregroundColor(.secondaryPoint)
                         }
-                        
                     }
                     .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
-                    ScrollView(showsIndicators: false) {
+                    ScrollView {
                         ForEach(boardItems, id: \.self) { boardName in
-                            NavigationLink(destination: SelectedBoardView(boardName: boardName)
+                            NavigationLink(destination: DetailView(boardName: boardName)
                                 .navigationTitle(boardName+"게시판")
                                 .toolbarRole(.editor)
                             ) {
@@ -49,6 +48,15 @@ struct BoardView: View {
                 }
             }
         }
+    }
+}
+
+// MARK: Navigation test용
+struct DetailView: View {
+    let boardName: String
+    
+    var body: some View {
+        Text("Detail View for \(boardName)")
     }
 }
 

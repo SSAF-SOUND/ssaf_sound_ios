@@ -18,7 +18,7 @@ struct BoardItemView: View {
 
                 .font(
                     .manropeFont(family: .SemiBold, size: 15)
-//                    .weight(.semibold)
+                    .weight(.semibold)
                 )
                 .padding(.leading,25)
                 .foregroundColor(.ssafSoundColor(.black))
