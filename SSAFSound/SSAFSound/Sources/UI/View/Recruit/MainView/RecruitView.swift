@@ -22,6 +22,7 @@ struct RecruitView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                
                 recuritTopHeaderView()
                 
                 searchRecuirTextFieldView()

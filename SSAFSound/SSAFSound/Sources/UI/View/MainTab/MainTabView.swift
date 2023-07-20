@@ -18,7 +18,7 @@ struct MainTabView: View {
 
     var body: some View {
         ZStack {
-            Color.ssafSoundColor(.black)
+            Color.ssafySoundblack
                 .edgesIgnoringSafeArea(.all)
 
             NavigationStack {
@@ -47,7 +47,7 @@ struct MainTabView: View {
                         }
                         .tag(3)
                 }
-                .accentColor(.ssafSoundColor(.black))
+                .accentColor(.ssafySoundblack)
                 .onAppear{
                     UITabBar.appearance().tintColor = UIColor(Color.gray)
                     UITabBar.appearance().barTintColor = UIColor(Color.white)

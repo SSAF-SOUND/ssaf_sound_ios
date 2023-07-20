@@ -32,7 +32,7 @@ public enum Colors: String {
     case recruitLight
     case recruitPoint
     case background
-    case black
+    case ssafySoundblack
     case bluegrey
     case grey0
     case grey1

@@ -30,7 +30,7 @@ public extension Color {
     static let recruitLight = ssafSoundColor(.recruitLight)
     static let recruitPoint = ssafSoundColor(.recruitPoint)
     static let background = ssafSoundColor(.background)
-    static let black = ssafSoundColor(.black)
+    static let ssafySoundblack = ssafSoundColor(.ssafySoundblack)
     static let bluegrey = ssafSoundColor(.bluegrey)
     static let grey0 = ssafSoundColor(.grey0)
     static let grey1 = ssafSoundColor(.grey1)

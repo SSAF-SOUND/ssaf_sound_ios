@@ -36,7 +36,7 @@ public struct TabItemViews: View {
             
             Spacer()
         }
-        .foregroundColor(isSelected ? Color.ssafSoundColor(.black) : .gray)
+        .foregroundColor(isSelected ? .ssafySoundblack : .gray)
         .frame(width: 90, height: 90)
     }
 }
