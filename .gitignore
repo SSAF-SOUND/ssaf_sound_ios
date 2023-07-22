@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpackagemanager,cocoapods,fastlane,swiftpm
-# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,swiftpackagemanager,cocoapods,fastlane,swiftpm
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods,fastlane
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,cocoapods,fastlane
 
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
@@ -38,19 +38,6 @@ Pods/
 
 ## User settings
 xcuserdata/
-.DS_Store/
-
-*.env
-*.cer
-*.swp
-*.json
-*.p12
-*.certSigningRequest
-*.DS_Store
-*.pbxproj
-*.resolved
-*.DS_Store/
-*.xcusserstate
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -128,15 +115,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
-
-
-### SwiftPM ###
-
-
 ### Xcode ###
 
 ## Xcode 8 and earlier
@@ -150,7 +128,7 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpackagemanager,cocoapods,fastlane,swiftpm
+# End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods,fastlane
 
 # solve UserInterfaceState.xcuserstate
 *.xcuserstate
