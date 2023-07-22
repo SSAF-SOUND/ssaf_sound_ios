@@ -37,5 +37,11 @@ public enum ImageAsset: String {
     case xd
     case pencil
     case empty
+    case bookMark
+    case dots
+    case fillBookMark
+    case message
+    case reply
+    case thumb
 
 }

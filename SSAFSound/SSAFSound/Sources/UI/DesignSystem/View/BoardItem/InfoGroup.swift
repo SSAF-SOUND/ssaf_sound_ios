@@ -11,9 +11,9 @@ struct InfoGroup: View{
     var body: some View{
         HStack(alignment: .center, spacing: 4){
             HStack(alignment: .center, spacing: 4){
-                Image("great")
+                Image(asset: .bookMark)
                     .resizable()
-                    .frame(width: 20,height: 17)
+                    .frame(width: 16,height: 20)
                     .aspectRatio(contentMode: .fit)
                     .colorMultiply(.primaryDefault)
                 Text("10")
@@ -21,7 +21,7 @@ struct InfoGroup: View{
                     .foregroundColor(.primaryDefault)
             }
             HStack(alignment: .center,spacing: 4){
-                Image("messageOutline")
+                Image(asset: .message)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
@@ -39,7 +39,7 @@ struct InfoGroup2: View{
     var body: some View{
         HStack(alignment: .center, spacing: 7){
             HStack(alignment: .center, spacing: 7){
-                Image("great")
+                Image(asset: .thumb)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
@@ -49,7 +49,7 @@ struct InfoGroup2: View{
                     .foregroundColor(.primaryDefault)
             }
             HStack(alignment: .center,spacing: 7){
-                Image("BookMark")
+                Image(asset: .bookMark)
                     .resizable()
                     .frame(width: 16,height: 20)
                     .aspectRatio(contentMode: .fit)
@@ -60,7 +60,7 @@ struct InfoGroup2: View{
             }
             Spacer()
             HStack(alignment: .center,spacing: 7){
-                Image("messageOutline")
+                Image(asset: .message)
                     .resizable()
                     .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
@@ -77,6 +77,6 @@ struct InfoGroup2: View{
 
 struct InfoGroup_Previews: PreviewProvider {
     static var previews: some View {
-        InfoGroup2()
+        InfoGroup()
     }
 }
