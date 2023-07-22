@@ -78,7 +78,7 @@ struct RePostCommentItem: View {
     @State private var isEdit: Bool = false
     var body: some View {
         HStack(alignment: .top,spacing: 6){
-            Image("Reply")
+            Image(asset: .reply)
                 .resizable()
                 .frame(width: 17,height: 17)
                 .aspectRatio(contentMode: .fit)
