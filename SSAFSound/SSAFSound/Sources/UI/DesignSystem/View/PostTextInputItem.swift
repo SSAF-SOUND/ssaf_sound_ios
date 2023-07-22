@@ -19,7 +19,7 @@ struct PostTextInputItem: View {
             } label: {
                 Image(systemName: "checkmark.square")
             }
-            Text("익명")
+            Text("익명 체크")
             Button {
                 print("send")
             } label: {
