@@ -44,7 +44,7 @@
 		7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE572A6965BD00713BE4 /* PostView.swift */; };
 		7FDAAE602A69660E00713BE4 /* HotBoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE5C2A69660E00713BE4 /* HotBoardItemView.swift */; };
 		7FDAAE612A69660E00713BE4 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE5D2A69660E00713BE4 /* FloatingButton.swift */; };
-		7FDAAE622A69660E00713BE4 /* InfoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE5E2A69660E00713BE4 /* InfoGroup.swift */; };
+		7FDAAE622A69660E00713BE4 /* BoardInteractionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE5E2A69660E00713BE4 /* BoardInteractionStats.swift */; };
 		7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE5F2A69660E00713BE4 /* SelectedBoardItem.swift */; };
 		7FDAAE682A69663100713BE4 /* PostContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE652A69663100713BE4 /* PostContentItem.swift */; };
 		7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDAAE662A69663100713BE4 /* PostCommentItem.swift */; };
@@ -58,6 +58,7 @@
 		7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4FAE02A603FDF007BF344 /* TabType.swift */; };
 		7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBC8932A6B80D5009B7587 /*  RecruitProjecView.swift */; };
 		7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBC8952A6B80E5009B7587 /* RecruitStudyView.swift */; };
+		867557012A6D53FB00C0173E /* PostInteractionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867557002A6D53FB00C0173E /* PostInteractionStats.swift */; };
 		8683249B2A6268B6001C4586 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8683249A2A6268B6001C4586 /* ColorAssets.xcassets */; };
 		869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ACF432A62AD2200356DFE /* BoardItemView.swift */; };
 /* End PBXBuildFile section */
@@ -108,7 +109,7 @@
 		7FDAAE572A6965BD00713BE4 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		7FDAAE5C2A69660E00713BE4 /* HotBoardItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotBoardItemView.swift; sourceTree = "<group>"; };
 		7FDAAE5D2A69660E00713BE4 /* FloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
-		7FDAAE5E2A69660E00713BE4 /* InfoGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoGroup.swift; sourceTree = "<group>"; };
+		7FDAAE5E2A69660E00713BE4 /* BoardInteractionStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardInteractionStats.swift; sourceTree = "<group>"; };
 		7FDAAE5F2A69660E00713BE4 /* SelectedBoardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedBoardItem.swift; sourceTree = "<group>"; };
 		7FDAAE652A69663100713BE4 /* PostContentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostContentItem.swift; sourceTree = "<group>"; };
 		7FDAAE662A69663100713BE4 /* PostCommentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCommentItem.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		7FF4FAE02A603FDF007BF344 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
 		7FFBC8932A6B80D5009B7587 /*  RecruitProjecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecruitProjecView.swift"; sourceTree = "<group>"; };
 		7FFBC8952A6B80E5009B7587 /* RecruitStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitStudyView.swift; sourceTree = "<group>"; };
+		867557002A6D53FB00C0173E /* PostInteractionStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractionStats.swift; sourceTree = "<group>"; };
 		8683249A2A6268B6001C4586 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 		869ACF432A62AD2200356DFE /* BoardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -423,6 +425,7 @@
 				7FDAAE662A69663100713BE4 /* PostCommentItem.swift */,
 				7FDAAE652A69663100713BE4 /* PostContentItem.swift */,
 				7FDAAE672A69663100713BE4 /* PostTextInputItem.swift */,
+				867557002A6D53FB00C0173E /* PostInteractionStats.swift */,
 			);
 			name = PostItem;
 			sourceTree = "<group>";
@@ -496,7 +499,7 @@
 			children = (
 				7FDAAE5D2A69660E00713BE4 /* FloatingButton.swift */,
 				7FDAAE5C2A69660E00713BE4 /* HotBoardItemView.swift */,
-				7FDAAE5E2A69660E00713BE4 /* InfoGroup.swift */,
+				7FDAAE5E2A69660E00713BE4 /* BoardInteractionStats.swift */,
 				7FDAAE5F2A69660E00713BE4 /* SelectedBoardItem.swift */,
 				869ACF432A62AD2200356DFE /* BoardItemView.swift */,
 			);
@@ -651,8 +654,9 @@
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
 				7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */,
 				7F6DE3512A6408D500ADE1E3 /* RecruitView.swift in Sources */,
-				7FDAAE622A69660E00713BE4 /* InfoGroup.swift in Sources */,
+				7FDAAE622A69660E00713BE4 /* BoardInteractionStats.swift in Sources */,
 				7FB87BF62A6035130035AA68 /* SSAFSoundAPI.swift in Sources */,
+				867557012A6D53FB00C0173E /* PostInteractionStats.swift in Sources */,
 				7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */,
 				7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,

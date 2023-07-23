@@ -15,18 +15,13 @@ struct BoardItemView: View {
         HStack{
             Text("\(BoardName)\n게시판")
                 .multilineTextAlignment(.leading)
-
                 .font(
-                    .manropeFont(family: .SemiBold, size: 15)
-//                    .weight(.semibold)
+                    .manropeFont(family: .SemiBold, size: 20)
                 )
                 .padding(.leading,25)
                 .foregroundColor(.ssafySoundblack)
-                .frame(height: 44.10422)
-                
-                
             Spacer()
-        }.frame(width: 340, height: 105)
+        }.frame(height: 105)
             .padding(.bottom, 13)
             .background(.white)
             .cornerRadius(20)
@@ -36,6 +31,6 @@ struct BoardItemView: View {
 
 struct BoardItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BoardItemView(BoardName: "자유게시판")
+        BoardItemView(BoardName: "자유")
     }
 }

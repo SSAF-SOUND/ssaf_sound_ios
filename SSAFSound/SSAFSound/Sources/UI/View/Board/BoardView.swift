@@ -16,6 +16,7 @@ struct BoardView: View {
                 .edgesIgnoringSafeArea(.top)
             
             NavigationStack{
+                recuritTopHeaderView()
                 VStack {
                     HStack {
                         Text("모아보기")
@@ -33,7 +34,7 @@ struct BoardView: View {
                         }
                         
                     }
-                    .padding(EdgeInsets(top: 0, leading: 25, bottom: 26, trailing: 25))
+                    .padding(EdgeInsets(top: 15, leading: 25, bottom: 25, trailing: 25))
                     ScrollView(showsIndicators: false) {
                         ForEach(boardItems, id: \.self) { boardName in
                             NavigationLink(destination: SelectedBoardView(boardName: boardName)
@@ -42,7 +43,7 @@ struct BoardView: View {
                             ) {
                                 BoardItemView(BoardName: boardName)
                             }
-                        }
+                        }.padding(.horizontal,25)
                         Spacer()
                     }
                     
@@ -50,7 +51,44 @@ struct BoardView: View {
             }
         }
     }
+    @ViewBuilder
+    private func recuritTopHeaderView() -> some View {
+        Spacer()
+            .frame(height: 14)
+        
+        HStack {
+            Image(asset: .logo)
+                .resizable()
+                .scaledToFit()
+                .frame(width: UIScreen.screenWidth/4 , height: 22)
+            
+            Spacer()
+            
+            HStack {
+                Image(systemName: "bell.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.whilte)
+                
+                Spacer()
+                    .frame(width: 20)
+                
+                Image(systemName: "ellipsis.message.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.whilte)
+                
+                
+                
+            }
+            
+        }
+        .padding(.horizontal, 25)
+    }
 }
+
 
 struct BoardView_Previews: PreviewProvider {
     static var previews: some View {
