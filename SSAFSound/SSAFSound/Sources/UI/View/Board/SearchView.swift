@@ -16,7 +16,7 @@ enum resultType {
 struct SearchView: View {
     
     @State var serachBoardText: String = ""
-    @State private var currentResult: resultType = .start
+    @State private var currentResult: resultType = .fail
     
     var body: some View {
         ZStack {
@@ -147,7 +147,7 @@ struct SearchView: View {
     
     @ViewBuilder
     private func defaultView() -> some View {
-        Text("")
+        Spacer()
     }
 }
 
