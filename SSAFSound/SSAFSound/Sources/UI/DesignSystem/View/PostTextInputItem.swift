@@ -9,17 +9,26 @@ import SwiftUI
 
 struct PostTextInputItem: View {
     @State var sendMessage: String = ""
-    @State var isAnomymous: Bool = false
+    @State var isAnomymous: Bool = true
     var body: some View {
         HStack{
-            TextField("댓글을 입력해주세요", text: $sendMessage).lineLimit(5)
+            TextField("댓글을 입력해주세요", text: $sendMessage, axis: .vertical)
+                .lineLimit(3)
+            
             Spacer()
             Button {
                 print("anonymous toggle")
+                isAnomymous.toggle()
             } label: {
-                Image(systemName: "checkmark.square")
+                HStack(alignment: .center, spacing: 5){
+                    Image(systemName: isAnomymous ? "checkmark.square" : "square")
+                    Text("익명")
+                        .manropeFont(family: .Bold, size: 14)
+                        .foregroundColor(.ssafySoundblack)
+                }
             }
-            Text("익명 체크")
+            .padding(.trailing, 8)
+            
             Button {
                 print("send")
             } label: {
@@ -27,7 +36,7 @@ struct PostTextInputItem: View {
             }
             
         }
-        .padding()
+        .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
         .background(.white)
         .cornerRadius(20)
     }

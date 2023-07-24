@@ -19,11 +19,11 @@ struct PostView: View {
                     Spacer().frame(height: 70)
                     PostCommentItem()
                     RePostCommentItem()
-                }.padding(.horizontal,25)
+                }
                 Spacer()
                 PostTextInputItem()
                 Spacer()
-            }
+            }.padding(.horizontal,25)
             
         }
     }
