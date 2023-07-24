@@ -26,7 +26,7 @@ struct PostCommentItem: View {
                     Button {
                         print("message")
                     } label: {
-                        Image("messageOutline")
+                        Image(asset: .message)
                             .resizable()
                             .frame(width: 16,height: 16)
                             .aspectRatio(contentMode: .fit)
@@ -36,7 +36,7 @@ struct PostCommentItem: View {
                     Button {
                         print("recommand")
                     } label: {
-                        Image("great")
+                        Image(asset: .thumb)
                             .resizable()
                             .frame(width: 16,height: 16)
                             .aspectRatio(contentMode: .fit)
@@ -45,7 +45,7 @@ struct PostCommentItem: View {
                     Button {
                         print("more")
                     } label: {
-                        Image("dotsVertical")
+                        Image(asset: .dots)
                             .resizable()
                             .frame(width: 16,height: 16)
                             .aspectRatio(contentMode: .fit)
@@ -102,7 +102,7 @@ struct RePostCommentItem: View {
                             Button {
                                 print("recommand")
                             } label: {
-                                Image("great")
+                                Image(asset: .thumb)
                                     .resizable()
                                     .frame(width: 16,height: 16)
                                     .aspectRatio(contentMode: .fit)
@@ -111,7 +111,7 @@ struct RePostCommentItem: View {
                             Button {
                                 print("more")
                             } label: {
-                                Image("dotsVertical")
+                                Image(asset: .dots)
                                     .resizable()
                                     .frame(width: 16,height: 16)
                                     .aspectRatio(contentMode: .fit)
