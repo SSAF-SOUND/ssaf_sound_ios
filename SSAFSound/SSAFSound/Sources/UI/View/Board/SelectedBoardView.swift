@@ -29,8 +29,10 @@ struct SelectedBoardView: View {
                     .padding(.horizontal,25)
                 }
             }
+            
             FloatingButton()
         }
+        
         
     }
     @ViewBuilder

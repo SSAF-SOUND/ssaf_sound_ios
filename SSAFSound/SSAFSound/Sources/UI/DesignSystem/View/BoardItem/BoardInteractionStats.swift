@@ -11,11 +11,12 @@ struct BoardInteractionStats: View{
     var body: some View{
         HStack(alignment: .center, spacing: 4){
             HStack(alignment: .center, spacing: 4){
-                Image(asset: .bookMark)
+                Image(asset: .thumb)
                     .resizable()
-                    .frame(width: 16,height: 20)
+                    .frame(width: 20,height: 20)
                     .aspectRatio(contentMode: .fit)
                     .colorMultiply(.primaryDefault)
+                    .padding(.bottom,3)
                 Text("10")
                     .manropeFont(family: .Bold, size: 13)
                     .foregroundColor(.primaryDefault)
