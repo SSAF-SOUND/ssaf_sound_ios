@@ -11,7 +11,7 @@
 		6C9BAD182A5E3C0800309C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD172A5E3C0800309C20 /* ContentView.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
-		6CB2F8652A62AC24003B9DE5 /* SignUpSsafyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8642A62AC23003B9DE5 /* SignUpSsafyView.swift */; };
+		6CB2F8652A62AC24003B9DE5 /* SignUpCampusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8642A62AC23003B9DE5 /* SignUpCampusView.swift */; };
 		6CB2F8672A62B3B2003B9DE5 /* CustomDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8662A62B3B2003B9DE5 /* CustomDropDown.swift */; };
 		6CB2F86A2A62BC2A003B9DE5 /* CampusMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8692A62BC2A003B9DE5 /* CampusMenuOption.swift */; };
 		6CB2F86C2A62BD51003B9DE5 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F86B2A62BD51003B9DE5 /* DropdownMenu.swift */; };
