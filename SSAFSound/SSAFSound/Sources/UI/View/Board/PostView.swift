@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostView: View {
+    
+    
     var body: some View {
         ZStack {
             Color.background
@@ -18,7 +20,7 @@ struct PostView: View {
                     PostContentItem()
                     Spacer().frame(height: 70)
                     PostCommentItem()
-                    RePostCommentItem()
+                    PostCommentItem()
                 }
                 Spacer()
                 PostTextInputItem()
