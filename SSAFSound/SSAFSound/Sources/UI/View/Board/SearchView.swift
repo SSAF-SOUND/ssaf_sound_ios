@@ -41,9 +41,6 @@ struct SearchView: View {
     }
     @ViewBuilder
     private func searchBoardTextFieldView() -> some View {
-        Spacer()
-            .frame(height: 8)
-        
         VStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(.white)
@@ -51,7 +48,7 @@ struct SearchView: View {
                 .overlay {
                     HStack {
                         TextField("검색어를 입력해주세요", text: $serachBoardText)
-                            .manropeFont(family: .Medium, size: 18)
+                            .manropeFont(family: .Regular, size: 14)
                             .kerning(-0.3)
                         
                         Spacer()
@@ -65,15 +62,9 @@ struct SearchView: View {
                                 .frame(width: 18, height: 15)
                                 .foregroundColor(.ssafySoundblack)
                         }
-
-                        
-                            
-                        
-                        
                     }
                     .padding(.horizontal, 20)
                 }
-                
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 20)

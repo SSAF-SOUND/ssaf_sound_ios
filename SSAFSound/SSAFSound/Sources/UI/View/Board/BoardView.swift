@@ -11,11 +11,11 @@ struct BoardView: View {
     let boardItems: [String] = ["자유", "취업", "테크", "맛집", "질문", "싸피 예비생"]
     
     var body: some View {
-        ZStack {
-            Color.background
-                .edgesIgnoringSafeArea(.top)
-            
-            NavigationStack{
+        
+            ZStack {
+                Color.background
+                    .edgesIgnoringSafeArea(.top)
+                NavigationStack{
                 recuritTopHeaderView()
                 VStack {
                     HStack {
@@ -23,7 +23,7 @@ struct BoardView: View {
                             .manropeFont(family: .Bold, size: 15)
                             .foregroundColor(.white)
                         Spacer()
-                    
+                        
                         NavigationLink (destination: HotBoardView(boardName: "HOT 게시판")
                             .navigationTitle("HOT 게시판")
                             .toolbarRole(.editor)

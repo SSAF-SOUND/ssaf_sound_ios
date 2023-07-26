@@ -43,5 +43,7 @@ public enum ImageAsset: String {
     case message
     case reply
     case thumb
+    case defaultImg
+    case uploadImg
 
 }
