@@ -21,7 +21,7 @@ struct SelectedBoardView: View {
                         NavigationLink(destination: SearchView()){
                             searchBoardTextFieldView()
                         }
-                        ScrollView{
+                        ScrollView(showsIndicators: false){
                             ForEach(0..<10) { i in
                                 NavigationLink(destination: PostView() ){
                                     SelectedBoardItem().toolbarRole(.editor)

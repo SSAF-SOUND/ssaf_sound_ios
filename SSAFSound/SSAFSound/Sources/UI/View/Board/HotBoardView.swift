@@ -20,7 +20,7 @@ struct HotBoardView: View {
                     NavigationLink(destination: SearchView()){
                         searchBoardTextFieldView()
                     }
-                    ScrollView{
+                    ScrollView(showsIndicators: false){
                         ForEach(0..<10) { i in
                             NavigationLink(destination:PostView()){HotBoardItemView().toolbarRole(.editor)}
                         }
