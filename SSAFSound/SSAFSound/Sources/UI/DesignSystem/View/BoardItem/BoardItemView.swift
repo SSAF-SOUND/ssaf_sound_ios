@@ -9,11 +9,11 @@ import SwiftUI
 
 struct BoardItemView: View {
     
-    let BoardName: String
+    let boardName: String
     
     var body: some View {
         HStack{
-            Text("\(BoardName)\n게시판")
+            Text("\(boardName)\n게시판")
                 .multilineTextAlignment(.leading)
                 .font(
                     .manropeFont(family: .SemiBold, size: 20)
@@ -31,6 +31,6 @@ struct BoardItemView: View {
 
 struct BoardItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BoardItemView(BoardName: "자유")
+        BoardItemView(boardName: "자유")
     }
 }

@@ -16,14 +16,22 @@ struct PostWriteView: View {
     @StateObject private var viewModel = PhotoPickerViewModel()
     @State private var showingAlert = false
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
-            VStack{
-                postWriteTitleView()
-                postWriteContentView()
-                postWriteImageView()
+            
+            NavigationStack{
+                BackButtonView(title: "게시글 쓰기", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
+                    presentationMode.wrappedValue.dismiss()
+                }, showTitle: true)
+                VStack{
+                    postWriteTitleView()
+                    postWriteContentView()
+                    postWriteImageView()
+                }
             }
         }
     }

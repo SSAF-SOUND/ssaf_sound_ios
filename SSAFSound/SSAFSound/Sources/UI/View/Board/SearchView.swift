@@ -15,14 +15,21 @@ enum resultType {
 
 struct SearchView: View {
     
+    let pre2BoardName: String
+    
     @State var serachBoardText: String = ""
-    @State private var currentResult: resultType = .fail
+    @State private var currentResult: resultType = .success
+    
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
             NavigationStack{
+                BackButtonView(title: "\(pre2BoardName) 게시판", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
+                    presentationMode.wrappedValue.dismiss()
+                }, showTitle: true)
                 VStack{
                     searchBoardTextFieldView()
                     if serachBoardText != "" {
@@ -144,7 +151,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-            SearchView()
+        SearchView(pre2BoardName: "")
 
     }
 }
