@@ -38,6 +38,17 @@ struct SignUpNicknameView: View {
                     .foregroundColor(.white)
                     .frame(width: 344, height: 84, alignment: .topLeading)
                 
+                HStack(spacing: 7) {
+                    Spacer()
+                    Text("랜덤 닉네임 생성")
+                        .font(Font.manropeFont(family: .Light, size: 12))
+                        .foregroundColor(.white)
+                    
+                    Image(systemName: "arrow.counterclockwise")
+                        .foregroundColor(.white)
+                }
+                .padding(.trailing, 34)
+                
                 TextField(
                     "Hello",
                     text: $test,
