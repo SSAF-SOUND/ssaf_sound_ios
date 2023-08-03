@@ -22,6 +22,17 @@
 		7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */; };
 		7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */; };
 		7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A542A7BD63F00F9DE59 /* BoardService.swift */; };
+		7FA97A592A7BDA2300F9DE59 /* NicknameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A582A7BDA2300F9DE59 /* NicknameAlertView.swift */; };
+		7FA97A5C2A7BDABA00F9DE59 /* CampusMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A5B2A7BDABA00F9DE59 /* CampusMenuOption.swift */; };
+		7FA97A5E2A7BDAD200F9DE59 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A5D2A7BDAD200F9DE59 /* DropdownMenu.swift */; };
+		7FA97A602A7BDAE200F9DE59 /* DropdownMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A5F2A7BDAE200F9DE59 /* DropdownMenuList.swift */; };
+		7FA97A622A7BDAFE00F9DE59 /* DropdownMenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A612A7BDAFE00F9DE59 /* DropdownMenuListRow.swift */; };
+		7FA97A642A7BDB1700F9DE59 /* SemesterMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A632A7BDB1700F9DE59 /* SemesterMenuOption.swift */; };
+		7FA97A672A7BDB3C00F9DE59 /* SignUpProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A662A7BDB3C00F9DE59 /* SignUpProgressBar.swift */; };
+		7FA97A692A7BDB5100F9DE59 /* SignUpCampusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A682A7BDB5100F9DE59 /* SignUpCampusView.swift */; };
+		7FA97A6B2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */; };
+		7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */; };
+		7FA97A6F2A7BDBB400F9DE59 /* LoginSsafyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6E2A7BDBB400F9DE59 /* LoginSsafyView.swift */; };
 		7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */; };
 		7FB36BFE2A6264DF00A3DB20 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */; };
 		7FB36BFF2A6264DF00A3DB20 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */; };
@@ -95,6 +106,17 @@
 		7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		7FA97A542A7BD63F00F9DE59 /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
+		7FA97A582A7BDA2300F9DE59 /* NicknameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameAlertView.swift; sourceTree = "<group>"; };
+		7FA97A5B2A7BDABA00F9DE59 /* CampusMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMenuOption.swift; sourceTree = "<group>"; };
+		7FA97A5D2A7BDAD200F9DE59 /* DropdownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
+		7FA97A5F2A7BDAE200F9DE59 /* DropdownMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuList.swift; sourceTree = "<group>"; };
+		7FA97A612A7BDAFE00F9DE59 /* DropdownMenuListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuListRow.swift; sourceTree = "<group>"; };
+		7FA97A632A7BDB1700F9DE59 /* SemesterMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterMenuOption.swift; sourceTree = "<group>"; };
+		7FA97A662A7BDB3C00F9DE59 /* SignUpProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProgressBar.swift; sourceTree = "<group>"; };
+		7FA97A682A7BDB5100F9DE59 /* SignUpCampusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCampusView.swift; sourceTree = "<group>"; };
+		7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIsSsafyView.swift; sourceTree = "<group>"; };
+		7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNicknameView.swift; sourceTree = "<group>"; };
+		7FA97A6E2A7BDBB400F9DE59 /* LoginSsafyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSsafyView.swift; sourceTree = "<group>"; };
 		7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -292,6 +314,48 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		7FA97A562A7BD9F300F9DE59 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A652A7BDB3000F9DE59 /* ProgressBar */,
+				7FA97A572A7BDA1200F9DE59 /* Alert */,
+				7FA97A5A2A7BDA9000F9DE59 /* Dropdown */,
+				7FA97A682A7BDB5100F9DE59 /* SignUpCampusView.swift */,
+				7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */,
+				7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */,
+				7FA97A6E2A7BDBB400F9DE59 /* LoginSsafyView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7FA97A572A7BDA1200F9DE59 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A582A7BDA2300F9DE59 /* NicknameAlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		7FA97A5A2A7BDA9000F9DE59 /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A5B2A7BDABA00F9DE59 /* CampusMenuOption.swift */,
+				7FA97A5D2A7BDAD200F9DE59 /* DropdownMenu.swift */,
+				7FA97A5F2A7BDAE200F9DE59 /* DropdownMenuList.swift */,
+				7FA97A612A7BDAFE00F9DE59 /* DropdownMenuListRow.swift */,
+				7FA97A632A7BDB1700F9DE59 /* SemesterMenuOption.swift */,
+			);
+			path = Dropdown;
+			sourceTree = "<group>";
+		};
+		7FA97A652A7BDB3000F9DE59 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A662A7BDB3C00F9DE59 /* SignUpProgressBar.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
 		7FB36BF52A6264CA00A3DB20 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +420,7 @@
 		7FB87BD92A6027AB0035AA68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7FA97A562A7BD9F300F9DE59 /* SignUp */,
 				7FDAAE512A69641200713BE4 /* Profile */,
 				7FDAAE4C2A6963E700713BE4 /* Home */,
 				7F6DE3462A6404A900ADE1E3 /* Recruit */,
@@ -684,12 +749,14 @@
 				7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
+				7FA97A592A7BDA2300F9DE59 /* NicknameAlertView.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
 				7FDAAE592A6965BD00713BE4 /* HotBoardView.swift in Sources */,
 				7FB87BFC2A6036E50035AA68 /* TabItemViews.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
+				7FA97A672A7BDB3C00F9DE59 /* SignUpProgressBar.swift in Sources */,
 				7FDAAE6A2A69663100713BE4 /* PostTextInputItem.swift in Sources */,
 				7FB87BF42A6034F60035AA68 /* NetworkCode.swift in Sources */,
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
@@ -698,27 +765,36 @@
 				7FDAAE5A2A6965BD00713BE4 /* SelectedBoardView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
+				7FA97A6F2A7BDBB400F9DE59 /* LoginSsafyView.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
 				869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */,
 				7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */,
+				7FA97A5E2A7BDAD200F9DE59 /* DropdownMenu.swift in Sources */,
 				862EAC762A6FB21D00F09396 /* PostWriteView.swift in Sources */,
+				7FA97A692A7BDB5100F9DE59 /* SignUpCampusView.swift in Sources */,
 				7F6DE34F2A64063A00ADE1E3 /* XmarkButtonView.swift in Sources */,
 				7FA97A4B2A7BD57100F9DE59 /* Home.swift in Sources */,
+				7FA97A642A7BDB1700F9DE59 /* SemesterMenuOption.swift in Sources */,
 				7FDAAE502A69640B00713BE4 /* HomeView.swift in Sources */,
 				7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */,
 				7FDAAE602A69660E00713BE4 /* HotBoardItemView.swift in Sources */,
 				7F6DE34D2A6405D300ADE1E3 /* Extesnsion+Size.swift in Sources */,
+				7FA97A5C2A7BDABA00F9DE59 /* CampusMenuOption.swift in Sources */,
+				7FA97A6B2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift in Sources */,
 				7FDAAE682A69663100713BE4 /* PostContentItem.swift in Sources */,
 				7FDAAE532A69641B00713BE4 /* ProfleView.swift in Sources */,
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
 				7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */,
+				7FA97A602A7BDAE200F9DE59 /* DropdownMenuList.swift in Sources */,
 				7F6DE3512A6408D500ADE1E3 /* RecruitView.swift in Sources */,
 				7FDAAE622A69660E00713BE4 /* BoardInteractionStats.swift in Sources */,
 				7FB87BF62A6035130035AA68 /* SSAFSoundAPI.swift in Sources */,
 				867557012A6D53FB00C0173E /* PostInteractionStats.swift in Sources */,
 				7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */,
 				7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */,
+				7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,
+				7FA97A622A7BDAFE00F9DE59 /* DropdownMenuListRow.swift in Sources */,
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
 				7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */,
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
