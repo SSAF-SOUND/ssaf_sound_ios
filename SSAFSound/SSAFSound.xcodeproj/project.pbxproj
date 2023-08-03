@@ -33,6 +33,7 @@
 		7FA97A6B2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */; };
 		7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */; };
 		7FA97A6F2A7BDBB400F9DE59 /* LoginSsafyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A6E2A7BDBB400F9DE59 /* LoginSsafyView.swift */; };
+		7FA97A722A7BDE3A00F9DE59 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A712A7BDE3A00F9DE59 /* TestViewModel.swift */; };
 		7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */; };
 		7FB36BFE2A6264DF00A3DB20 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */; };
 		7FB36BFF2A6264DF00A3DB20 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */; };
@@ -117,6 +118,7 @@
 		7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIsSsafyView.swift; sourceTree = "<group>"; };
 		7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNicknameView.swift; sourceTree = "<group>"; };
 		7FA97A6E2A7BDBB400F9DE59 /* LoginSsafyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSsafyView.swift; sourceTree = "<group>"; };
+		7FA97A712A7BDE3A00F9DE59 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 		7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -356,6 +358,14 @@
 			path = ProgressBar;
 			sourceTree = "<group>";
 		};
+		7FA97A702A7BDE2200F9DE59 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A712A7BDE3A00F9DE59 /* TestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7FB36BF52A6264CA00A3DB20 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +395,7 @@
 		7FB87BC92A6026B70035AA68 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7FA97A702A7BDE2200F9DE59 /* ViewModel */,
 				7FB87BCA2A6026C20035AA68 /* Application */,
 				7FB87BD82A6027A40035AA68 /* UI */,
 				7FB87BE82A602F0A0035AA68 /* Domain */,
@@ -793,6 +804,7 @@
 				7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */,
 				7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */,
 				7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */,
+				7FA97A722A7BDE3A00F9DE59 /* TestViewModel.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,
 				7FA97A622A7BDAFE00F9DE59 /* DropdownMenuListRow.swift in Sources */,
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
