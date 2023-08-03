@@ -1,41 +1,14 @@
 //
-//  ButtonGroup.swift
+//  PostInteractionStats.swift
 //  SSAFSound
 //
-//  Created by yimkeul on 2023/07/16.
+//  Created by yimkeul on 2023/07/23.
 //
 
 import SwiftUI
 
-struct InfoGroup: View{
-    var body: some View{
-        HStack(alignment: .center, spacing: 4){
-            HStack(alignment: .center, spacing: 4){
-                Image(asset: .bookMark)
-                    .resizable()
-                    .frame(width: 16,height: 20)
-                    .aspectRatio(contentMode: .fit)
-                    .colorMultiply(.primaryDefault)
-                Text("10")
-                    .manropeFont(family: .Bold, size: 13)
-                    .foregroundColor(.primaryDefault)
-            }
-            HStack(alignment: .center,spacing: 4){
-                Image(asset: .message)
-                    .resizable()
-                    .frame(width: 20,height: 20)
-                    .aspectRatio(contentMode: .fit)
-                    .colorMultiply(.secondaryDefault)
-                Text("10")
-                    .manropeFont(family: .Bold, size: 13)
-                    .foregroundColor(.secondaryDefault)
-            }
-        }
-        
-    }
-}
 
-struct InfoGroup2: View{
+struct PostInteractionStats: View{
     var body: some View{
         HStack(alignment: .center, spacing: 7){
             HStack(alignment: .center, spacing: 7){
@@ -74,9 +47,8 @@ struct InfoGroup2: View{
     }
 }
 
-
-struct InfoGroup_Previews: PreviewProvider {
+struct PostInteractionStats_Previews: PreviewProvider {
     static var previews: some View {
-        InfoGroup()
+        PostInteractionStats()
     }
 }

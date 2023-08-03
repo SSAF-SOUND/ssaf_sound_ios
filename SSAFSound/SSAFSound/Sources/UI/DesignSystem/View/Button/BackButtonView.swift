@@ -40,12 +40,14 @@ public struct BackButtonView: View {
                 
                 Text(title)
                     .manropeFont(family: .Bold, size: 16)
+                    
             }
             
             
             Spacer()
             
         }
+        .foregroundColor(.white)
         .padding(.horizontal, 20)
     }
 }

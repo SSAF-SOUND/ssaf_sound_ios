@@ -47,7 +47,7 @@ struct PostContentItem: View {
                     .manropeFont(family: .Bold, size: 13)
                     .foregroundColor(.white)
                     .padding(.bottom,30)
-                InfoGroup2()
+                PostInteractionStats()
                 
                 
                 

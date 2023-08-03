@@ -26,7 +26,7 @@ struct SelectedBoardItem: View {
                             .foregroundColor(.bluegrey)
                     }
                     Spacer()
-                    InfoGroup()
+                    BoardInteractionStats()
                 }
             }.padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
                 .frame(height: 123)

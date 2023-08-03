@@ -15,7 +15,7 @@ struct HotBoardItemView: View {
                     .manropeFont(family: .Bold, size: 12)
                     .foregroundColor(.purplePoint)
                 Spacer()
-                InfoGroup()
+                BoardInteractionStats()
             }
             Text("제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치")
                 .manropeFont(family: .Bold, size: 14)
