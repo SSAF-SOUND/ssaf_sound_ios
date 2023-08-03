@@ -22,13 +22,6 @@
 		7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */; };
 		7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */; };
 		7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A542A7BD63F00F9DE59 /* BoardService.swift */; };
-		6CB2F8652A62AC24003B9DE5 /* SignUpCampusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8642A62AC23003B9DE5 /* SignUpCampusView.swift */; };
-		6CB2F8672A62B3B2003B9DE5 /* CustomDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8662A62B3B2003B9DE5 /* CustomDropDown.swift */; };
-		6CB2F86A2A62BC2A003B9DE5 /* CampusMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8692A62BC2A003B9DE5 /* CampusMenuOption.swift */; };
-		6CB2F86C2A62BD51003B9DE5 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F86B2A62BD51003B9DE5 /* DropdownMenu.swift */; };
-		6CB2F86E2A62C5FE003B9DE5 /* DropdownMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F86D2A62C5FE003B9DE5 /* DropdownMenuList.swift */; };
-		6CB2F8702A62C67F003B9DE5 /* DropdownMenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F86F2A62C67F003B9DE5 /* DropdownMenuListRow.swift */; };
-		6CB2F8722A62D1CC003B9DE5 /* SemesterMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2F8712A62D1CC003B9DE5 /* SemesterMenuOption.swift */; };
 		7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */; };
 		7FB36BFE2A6264DF00A3DB20 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */; };
 		7FB36BFF2A6264DF00A3DB20 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */; };
@@ -102,13 +95,6 @@
 		7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		7FA97A542A7BD63F00F9DE59 /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
-		6CB2F8642A62AC23003B9DE5 /* SignUpSsafyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSsafyView.swift; sourceTree = "<group>"; };
-		6CB2F8662A62B3B2003B9DE5 /* CustomDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDown.swift; sourceTree = "<group>"; };
-		6CB2F8692A62BC2A003B9DE5 /* CampusMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMenuOption.swift; sourceTree = "<group>"; };
-		6CB2F86B2A62BD51003B9DE5 /* DropdownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
-		6CB2F86D2A62C5FE003B9DE5 /* DropdownMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuList.swift; sourceTree = "<group>"; };
-		6CB2F86F2A62C67F003B9DE5 /* DropdownMenuListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuListRow.swift; sourceTree = "<group>"; };
-		6CB2F8712A62D1CC003B9DE5 /* SemesterMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterMenuOption.swift; sourceTree = "<group>"; };
 		7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -304,26 +290,6 @@
 				7FA97A542A7BD63F00F9DE59 /* BoardService.swift */,
 			);
 			path = Service;
-		6CB2F8632A6288D4003B9DE5 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				6CB2F8682A62BC0E003B9DE5 /* Dropdown */,
-				6CB2F8642A62AC23003B9DE5 /* SignUpSsafyView.swift */,
-				6CB2F8662A62B3B2003B9DE5 /* CustomDropDown.swift */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
-		6CB2F8682A62BC0E003B9DE5 /* Dropdown */ = {
-			isa = PBXGroup;
-			children = (
-				6CB2F8692A62BC2A003B9DE5 /* CampusMenuOption.swift */,
-				6CB2F86B2A62BD51003B9DE5 /* DropdownMenu.swift */,
-				6CB2F86D2A62C5FE003B9DE5 /* DropdownMenuList.swift */,
-				6CB2F86F2A62C67F003B9DE5 /* DropdownMenuListRow.swift */,
-				6CB2F8712A62D1CC003B9DE5 /* SemesterMenuOption.swift */,
-			);
-			path = Dropdown;
 			sourceTree = "<group>";
 		};
 		7FB36BF52A6264CA00A3DB20 /* Font */ = {
@@ -394,7 +360,6 @@
 				7FDAAE4C2A6963E700713BE4 /* Home */,
 				7F6DE3462A6404A900ADE1E3 /* Recruit */,
 				8683249C2A628474001C4586 /* Board */,
-				6CB2F8632A6288D4003B9DE5 /* SignUp */,
 				7FB87BF72A6036720035AA68 /* MainTab */,
 			);
 			path = View;
@@ -721,19 +686,11 @@
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
 				7FDAAE592A6965BD00713BE4 /* HotBoardView.swift in Sources */,
-				6CB2F8722A62D1CC003B9DE5 /* SemesterMenuOption.swift in Sources */,
-				6CB2F8652A62AC24003B9DE5 /* SignUpSsafyView.swift in Sources */,
-				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
-				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
-				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
-				6CB2F86E2A62C5FE003B9DE5 /* DropdownMenuList.swift in Sources */,
-				7FB87BEC2A602F8B0035AA68 /* APIManger.swift in Sources */,
 				7FB87BFC2A6036E50035AA68 /* TabItemViews.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
 				7FDAAE6A2A69663100713BE4 /* PostTextInputItem.swift in Sources */,
-				6CB2F8702A62C67F003B9DE5 /* DropdownMenuListRow.swift in Sources */,
 				7FB87BF42A6034F60035AA68 /* NetworkCode.swift in Sources */,
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
@@ -741,7 +698,6 @@
 				7FDAAE5A2A6965BD00713BE4 /* SelectedBoardView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
-				6CB2F86C2A62BD51003B9DE5 /* DropdownMenu.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
 				869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */,
 				7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */,
@@ -758,7 +714,6 @@
 				7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */,
 				7F6DE3512A6408D500ADE1E3 /* RecruitView.swift in Sources */,
 				7FDAAE622A69660E00713BE4 /* BoardInteractionStats.swift in Sources */,
-				6CB2F8672A62B3B2003B9DE5 /* CustomDropDown.swift in Sources */,
 				7FB87BF62A6035130035AA68 /* SSAFSoundAPI.swift in Sources */,
 				867557012A6D53FB00C0173E /* PostInteractionStats.swift in Sources */,
 				7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */,
@@ -769,7 +724,6 @@
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,
 				7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */,
-				6CB2F86A2A62BC2A003B9DE5 /* CampusMenuOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,7 +879,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -961,7 +915,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
