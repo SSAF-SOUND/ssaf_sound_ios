@@ -2,28 +2,28 @@
 //  LoginSsafyView.swift
 //  SSAFSound
 //
-//  Created by Subeen on 2023/07/15.
+//  Created by Subeen on 2023/07/25.
 //
 
 import SwiftUI
 
-struct SignUpCampusView: View {
+struct SignUpSemesterView: View {
 //    @State var path: [StackViewType] = []
     
-    @State private var campus: CampusMenuOption? = nil
+    @State private var campus: MenuOption? = nil
     @State private var path = NavigationPath()
     @State var isLinkActive = false
     
     private var title: String = """
-                                SSAFY\n캠퍼스를 선택해주세요
+                                SSAFY\n기수를 선택해주세요
                                 """
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack() {
             ZStack {
                 Color.background.edgesIgnoringSafeArea(.all)
                     
                     VStack {
-                        ProgressView("Loading...", value: 0.6, total: 1)
+                        ProgressView("Loading...", value: 0.4, total: 1)
                                 .progressViewStyle(CustomProgressBar())
                                 
                         Spacer()
@@ -40,11 +40,14 @@ struct SignUpCampusView: View {
                         Spacer()
                             .frame(height: 33)
                         
-                        DropdownMenu(selectedOption: self.$campus, placeholder: "Select your campus", options: CampusMenuOption.allCampus)
-                            .onTapGesture {
-                                path.append("isMajor")
-                                isLinkActive = true
-                            }
+//                        DropdownMenu(selectedOption: self.$campus, placeholder: "Select your semester", options: MenuOption.allSemester)
+//                            .onTapGesture {
+//                                path.append("campus")
+//                                isLinkActive = true
+//                            }
+                        DropdownMenu(selectedOption: self.$campus, nextView: {
+                            isLinkActive.toggle()
+                        }, placeholder: "Select your semester", options: MenuOption.allSemester)
                         
                         Spacer()
 
@@ -52,8 +55,10 @@ struct SignUpCampusView: View {
             }
             
             .navigationDestination(isPresented: $isLinkActive) {
-                SignUpIsMajorView()
+                SignUpCampusView()
+                    .navigationBarHidden(true)
             }
+            
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     Button() {
@@ -72,8 +77,8 @@ struct SignUpCampusView: View {
         }
 }
 
-struct LoginSsafyView_Previews: PreviewProvider {
+struct SignUpSemester_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpCampusView()
+        SignUpSemesterView()
     }
 }
