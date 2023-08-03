@@ -13,5 +13,5 @@ public class APIHeaderManger {
     
     
     
-    let ContentType: String = "application/json"
+    let contentType: String = "application/json"
 }

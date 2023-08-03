@@ -17,6 +17,11 @@
 		7F73E6302A668F650042A227 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F73E62F2A668F650042A227 /* ImageAssets.xcassets */; };
 		7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E6322A6693980042A227 /* RecruitStudyType.swift */; };
 		7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E6352A6696420042A227 /* RecuritCustomToggle.swift */; };
+		7FA97A4B2A7BD57100F9DE59 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4A2A7BD57100F9DE59 /* Home.swift */; };
+		7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4D2A7BD5AE00F9DE59 /* APIConstants.swift */; };
+		7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */; };
+		7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */; };
+		7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A542A7BD63F00F9DE59 /* BoardService.swift */; };
 		7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */; };
 		7FB36BFE2A6264DF00A3DB20 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */; };
 		7FB36BFF2A6264DF00A3DB20 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */; };
@@ -29,7 +34,6 @@
 		7FB87BE22A602EA80035AA68 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BE12A602EA80035AA68 /* PopupView */; };
 		7FB87BE52A602EFC0035AA68 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BE42A602EFC0035AA68 /* CombineMoya */; };
 		7FB87BE72A602EFC0035AA68 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7FB87BE62A602EFC0035AA68 /* Moya */; };
-		7FB87BEC2A602F8B0035AA68 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BEB2A602F8B0035AA68 /* APIManger.swift */; };
 		7FB87BEE2A6034780035AA68 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BED2A6034780035AA68 /* Config.swift */; };
 		7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BF02A6034D10035AA68 /* APIHeaderManger.swift */; };
 		7FB87BF42A6034F60035AA68 /* NetworkCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB87BF32A6034F60035AA68 /* NetworkCode.swift */; };
@@ -86,6 +90,11 @@
 		7F73E62F2A668F650042A227 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
 		7F73E6322A6693980042A227 /* RecruitStudyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitStudyType.swift; sourceTree = "<group>"; };
 		7F73E6352A6696420042A227 /* RecuritCustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuritCustomToggle.swift; sourceTree = "<group>"; };
+		7FA97A4A2A7BD57100F9DE59 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7FA97A4D2A7BD5AE00F9DE59 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		7FA97A542A7BD63F00F9DE59 /* BoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService.swift; sourceTree = "<group>"; };
 		7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		7FB36BF72A6264DF00A3DB20 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -95,7 +104,6 @@
 		7FB36BFC2A6264DF00A3DB20 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
 		7FB87BCF2A6027910035AA68 /* SSAFSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSAFSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB87BD12A6027910035AA68 /* SSAFSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundTests.swift; sourceTree = "<group>"; };
-		7FB87BEB2A602F8B0035AA68 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
 		7FB87BED2A6034780035AA68 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		7FB87BF02A6034D10035AA68 /* APIHeaderManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaderManger.swift; sourceTree = "<group>"; };
 		7FB87BF32A6034F60035AA68 /* NetworkCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCode.swift; sourceTree = "<group>"; };
@@ -240,6 +248,50 @@
 			path = Toggle;
 			sourceTree = "<group>";
 		};
+		7FA97A472A7BD52600F9DE59 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7FB87BEA2A602F660035AA68 /* APIManger */,
+				7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7FA97A482A7BD52E00F9DE59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A4A2A7BD57100F9DE59 /* Home.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FA97A492A7BD53900F9DE59 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A4C2A7BD5A000F9DE59 /* Foundation */,
+				7FA97A532A7BD62400F9DE59 /* Service */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7FA97A4C2A7BD5A000F9DE59 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A4D2A7BD5AE00F9DE59 /* APIConstants.swift */,
+				7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */,
+				7FA97A512A7BD60800F9DE59 /* MoyaLoggingPlugin.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		7FA97A532A7BD62400F9DE59 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A542A7BD63F00F9DE59 /* BoardService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		7FB36BF52A6264CA00A3DB20 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +323,7 @@
 			children = (
 				7FB87BCA2A6026C20035AA68 /* Application */,
 				7FB87BD82A6027A40035AA68 /* UI */,
-				7FB87BE82A602F0A0035AA68 /* Network */,
+				7FB87BE82A602F0A0035AA68 /* Domain */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -313,19 +365,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7FB87BE82A602F0A0035AA68 /* Network */ = {
+		7FB87BE82A602F0A0035AA68 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				7FA97A492A7BD53900F9DE59 /* Service */,
+				7FA97A482A7BD52E00F9DE59 /* Model */,
+				7FA97A472A7BD52600F9DE59 /* API */,
 				7F73E6312A6693810042A227 /* Type */,
-				7FB87BEA2A602F660035AA68 /* APIManger */,
-				7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */,
 			);
-			path = Network;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		7FB87BE92A602F5A0035AA68 /* SSAFSoundAPI */ = {
 			isa = PBXGroup;
 			children = (
+				7FB87BED2A6034780035AA68 /* Config.swift */,
 				7FB87BF52A6035130035AA68 /* SSAFSoundAPI.swift */,
 			);
 			path = SSAFSoundAPI;
@@ -336,8 +390,6 @@
 			children = (
 				7FB87BF22A6034E30035AA68 /* NetworkCode */,
 				7FB87BEF2A6034B60035AA68 /* APIHeader */,
-				7FB87BEB2A602F8B0035AA68 /* APIManger.swift */,
-				7FB87BED2A6034780035AA68 /* Config.swift */,
 			);
 			path = APIManger;
 			sourceTree = "<group>";
@@ -629,18 +681,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
 				7FDAAE592A6965BD00713BE4 /* HotBoardView.swift in Sources */,
-				7FB87BEC2A602F8B0035AA68 /* APIManger.swift in Sources */,
 				7FB87BFC2A6036E50035AA68 /* TabItemViews.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
 				7FDAAE6A2A69663100713BE4 /* PostTextInputItem.swift in Sources */,
 				7FB87BF42A6034F60035AA68 /* NetworkCode.swift in Sources */,
+				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
+				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
 				7FDAAE5A2A6965BD00713BE4 /* SelectedBoardView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
@@ -649,6 +703,7 @@
 				7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */,
 				862EAC762A6FB21D00F09396 /* PostWriteView.swift in Sources */,
 				7F6DE34F2A64063A00ADE1E3 /* XmarkButtonView.swift in Sources */,
+				7FA97A4B2A7BD57100F9DE59 /* Home.swift in Sources */,
 				7FDAAE502A69640B00713BE4 /* HomeView.swift in Sources */,
 				7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */,
 				7FDAAE602A69660E00713BE4 /* HotBoardItemView.swift in Sources */,
@@ -665,6 +720,7 @@
 				7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
+				7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */,
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,
 				7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */,
