@@ -8,5 +8,5 @@
 import Foundation
 
 public class Config {
-    static let Release = false
+    static let Release = true
 }
