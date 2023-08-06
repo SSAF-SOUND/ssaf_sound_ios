@@ -1,21 +1,19 @@
 //
-//  SignUpSsafyView.swift
+//  SignUpIsMajorView.swift
 //  SSAFSound
 //
-//  Created by Subeen on 2023/07/16.
+//  Created by Subeen on 2023/07/24.
 //
 
 import SwiftUI
 
-struct SignUpIsSsafyView: View {
-    
-//    @State var path: [StackViewType] = []
+import SwiftUI
+
+struct SignUpIsMajorView: View {
     
     private var title: String = """
-                                안녕하세요\nSSAFY인 이신가요?
+                                컴퓨터공학 관련\n전공자이신가요?
                                 """
-    
-//    @State private var path = NavigationPath()
     @State private var nextView: Bool = false
     
     var body: some View {
@@ -24,8 +22,9 @@ struct SignUpIsSsafyView: View {
                 Color.background.edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    ProgressView("Loading...", value: 0.2, total: 1)
-                        .progressViewStyle(CustomProgressBar())
+                    ProgressView("Loading...", value: 0.8, total: 1)
+                        .progressViewStyle(CustomProgressBar()
+                        )
                     
                     Spacer()
                         .frame(height: 60)
@@ -46,7 +45,6 @@ struct SignUpIsSsafyView: View {
                         
                         Button {
                             nextView.toggle()
-//                            path.append("semester")
                         } label: {
                             Rectangle()
                                 .fill(Color.ssafSoundColor(.primaryDefault))
@@ -55,9 +53,9 @@ struct SignUpIsSsafyView: View {
                                 .overlay(Text("네"))
                                 .foregroundColor(Color.ssafySoundblack)
                         }
-
                         
-                        NavigationLink(destination: SignUpCampusView()) {
+                        
+                        NavigationLink(destination: SignUpNicknameView()) {
                             Button(action: {}) {
                                 Rectangle()
                                     .fill(Color.ssafSoundColor(.whilte))
@@ -73,13 +71,10 @@ struct SignUpIsSsafyView: View {
                     Spacer()
                 }
             }
-
             .navigationDestination(isPresented: $nextView, destination: {
-                SignUpSemesterView()
+                SignUpNicknameView()
                     .navigationBarHidden(true)
             })
-            
-
             
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -95,8 +90,8 @@ struct SignUpIsSsafyView: View {
     }
 }
 
-struct SignUpSsafyView_Previews: PreviewProvider {
+struct SignUpIsMajorView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpIsSsafyView()
+        SignUpIsMajorView()
     }
 }

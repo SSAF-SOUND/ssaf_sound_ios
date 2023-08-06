@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct DropdownMenuListRow: View {
-    let option: CampusMenuOption
+    let option: MenuOption
     
-    let onSelectedAction: (_ option: CampusMenuOption) -> Void
+    let onSelectedAction: (_ option: MenuOption) -> Void
+    
+    var nextView: () -> Void = {}
     
     var body: some View {
         
@@ -22,6 +24,9 @@ struct DropdownMenuListRow: View {
             Button(action: {
                 self.onSelectedAction(option)
                 
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    nextView()
+                }
             }) {
                 Text(option.option)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -42,6 +47,6 @@ struct DropdownMenuListRow: View {
 
 struct DropdownMenuListRow_Previews: PreviewProvider {
     static var previews: some View {
-        DropdownMenuListRow(option: CampusMenuOption.campus, onSelectedAction: { _ in })
+        DropdownMenuListRow(option: MenuOption.campus, onSelectedAction: { _ in })
     }
 }

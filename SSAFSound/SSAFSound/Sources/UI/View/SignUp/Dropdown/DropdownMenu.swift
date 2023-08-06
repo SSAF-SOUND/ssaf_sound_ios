@@ -10,13 +10,14 @@ import SwiftUI
 struct DropdownMenu: View {
     @State private var isOptionsPresented: Bool = false
     
-    @Binding var selectedOption: CampusMenuOption?
+    @Binding var selectedOption: MenuOption?
+    
+    var nextView: () -> Void = {}
     
     let placeholder: String
-    let options: [CampusMenuOption]
+    let options: [MenuOption]
+    
     var body: some View {
-        
-        
         HStack {
             RoundedRectangle(cornerRadius: 8)
             .stroke(.gray, lineWidth: 2)
@@ -63,10 +64,17 @@ struct DropdownMenu: View {
                         .frame(height: 60)
                     
                     // 버튼 눌렀을 때 생기는 리스트
-                    DropdownMenuList(options: self.options) { option in
+//                    DropdownMenuList(options: self.options) { option in
+//                        self.isOptionsPresented = false
+//                        self.selectedOption = option
+//                    }
+                    DropdownMenuList(options: self.options, onSelectedAction: { option in
                         self.isOptionsPresented = false
                         self.selectedOption = option
-                    }
+                    }, nextView: {
+                        nextView()
+                    })
+
                     .padding(.horizontal, 10)
                     
                     
@@ -81,6 +89,6 @@ struct DropdownMenu_Previews: PreviewProvider {
         DropdownMenu(
             selectedOption: .constant(nil),
             placeholder: "Select your campus",
-            options: CampusMenuOption.allCampus)
+            options: MenuOption.allCampus)
     }
 }
