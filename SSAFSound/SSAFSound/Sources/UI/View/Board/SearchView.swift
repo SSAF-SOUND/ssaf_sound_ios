@@ -27,7 +27,7 @@ struct SearchView: View {
             Color.background
                 .edgesIgnoringSafeArea(.all)
             NavigationStack{
-                BackButtonView(title: "\(pre2BoardName) 게시판", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
+                BackButtonView(title: "\(pre2BoardName)", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
                     presentationMode.wrappedValue.dismiss()
                 }, showTitle: true)
                 VStack{

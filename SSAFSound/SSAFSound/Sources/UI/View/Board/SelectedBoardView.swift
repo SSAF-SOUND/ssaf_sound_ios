@@ -22,7 +22,7 @@ struct SelectedBoardView: View {
                 .edgesIgnoringSafeArea(.all)
             NavigationStack{
                 // MARK: NAV BAR
-                BackButtonView(title: "\(boardName) 게시판", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
+                BackButtonView(title: "\(boardName)", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
                     presentationMode.wrappedValue.dismiss()
                 }, showTitle: true)
                 // MARK: CONTENT

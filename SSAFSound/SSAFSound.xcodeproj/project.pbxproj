@@ -76,6 +76,9 @@
 		7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBC8932A6B80D5009B7587 /*  RecruitProjecView.swift */; };
 		7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBC8952A6B80E5009B7587 /* RecruitStudyView.swift */; };
 		862EAC762A6FB21D00F09396 /* PostWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862EAC752A6FB21D00F09396 /* PostWriteView.swift */; };
+		865FAA802A84887000C6681A /* BoardService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FAA7F2A84887000C6681A /* BoardService2.swift */; };
+		865FAA822A8489FA00C6681A /* BoardViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FAA812A8489FA00C6681A /* BoardViewModel2.swift */; };
+		865FAA842A848A4D00C6681A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FAA832A848A4D00C6681A /* Board.swift */; };
 		8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670115B2A6ECA6900336BE6 /* SearchView.swift */; };
 		867557012A6D53FB00C0173E /* PostInteractionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867557002A6D53FB00C0173E /* PostInteractionStats.swift */; };
 		8683249B2A6268B6001C4586 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8683249A2A6268B6001C4586 /* ColorAssets.xcassets */; };
@@ -161,6 +164,9 @@
 		7FFBC8932A6B80D5009B7587 /*  RecruitProjecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecruitProjecView.swift"; sourceTree = "<group>"; };
 		7FFBC8952A6B80E5009B7587 /* RecruitStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitStudyView.swift; sourceTree = "<group>"; };
 		862EAC752A6FB21D00F09396 /* PostWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWriteView.swift; sourceTree = "<group>"; };
+		865FAA7F2A84887000C6681A /* BoardService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardService2.swift; sourceTree = "<group>"; };
+		865FAA812A8489FA00C6681A /* BoardViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel2.swift; sourceTree = "<group>"; };
+		865FAA832A848A4D00C6681A /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		8670115B2A6ECA6900336BE6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		867557002A6D53FB00C0173E /* PostInteractionStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractionStats.swift; sourceTree = "<group>"; };
 		8683249A2A6268B6001C4586 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
@@ -289,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA97A4A2A7BD57100F9DE59 /* Home.swift */,
+				865FAA832A848A4D00C6681A /* Board.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA97A542A7BD63F00F9DE59 /* BoardService.swift */,
+				865FAA7F2A84887000C6681A /* BoardService2.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA97A712A7BDE3A00F9DE59 /* TestViewModel.swift */,
+				865FAA812A8489FA00C6681A /* BoardViewModel2.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -765,6 +774,7 @@
 			files = (
 				7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
+				865FAA842A848A4D00C6681A /* Board.swift in Sources */,
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
 				7FA97A592A7BDA2300F9DE59 /* NicknameAlertView.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
@@ -776,6 +786,7 @@
 				7FA97A672A7BDB3C00F9DE59 /* SignUpProgressBar.swift in Sources */,
 				7FDAAE6A2A69663100713BE4 /* PostTextInputItem.swift in Sources */,
 				7FB87BF42A6034F60035AA68 /* NetworkCode.swift in Sources */,
+				865FAA802A84887000C6681A /* BoardService2.swift in Sources */,
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
 				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
@@ -788,6 +799,7 @@
 				869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */,
 				7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */,
 				7FA97A5E2A7BDAD200F9DE59 /* DropdownMenu.swift in Sources */,
+				865FAA822A8489FA00C6681A /* BoardViewModel2.swift in Sources */,
 				862EAC762A6FB21D00F09396 /* PostWriteView.swift in Sources */,
 				7FA97A692A7BDB5100F9DE59 /* SignUpCampusView.swift in Sources */,
 				7F6DE34F2A64063A00ADE1E3 /* XmarkButtonView.swift in Sources */,

@@ -18,7 +18,7 @@ struct PostView: View {
                 .edgesIgnoringSafeArea(.all)
             NavigationStack{
                 VStack{
-                    BackButtonView(title: "\(preBoardName) 게시판", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
+                    BackButtonView(title: "\(preBoardName)", spacingWidth: UIScreen.screenWidth/3 - 10, backButtonAction: {
                         presentationMode.wrappedValue.dismiss()
                     }, showTitle: true)
                     
