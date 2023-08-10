@@ -90,7 +90,7 @@ struct BoardView: View {
         Button {
             isHotBoard.toggle()
         } label: {
-            Text("HOT 게시글")
+            Text("Hot 게시글")
                 .manropeFont(family: .Bold, size: 16)
                 .foregroundColor(.secondaryPoint)
         }
