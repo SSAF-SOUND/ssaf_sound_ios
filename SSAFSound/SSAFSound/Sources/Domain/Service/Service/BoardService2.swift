@@ -8,6 +8,8 @@
 import Foundation
 import Moya
 
+// MARK: 진짜 BoardService임. BoardService.swift는 임시 test 파일임.
+
 enum BoardService2 {
     //MARK: -   해당 url 을  케이스 로 만든후 구현
     case boards

@@ -30,7 +30,7 @@ struct BoardView: View {
                         ForEach(boardviewModel.boardModel?.data?.boards ?? [], id: \.boardId) { board in
 
                             NavigationLink(
-                                destination: SelectedBoardView(boardName: board.title!)
+                                destination: SelectedBoardView(boardName: board.title!, boardId : board.boardId!)
                                     .navigationBarHidden(true)
                             ) {
                                 BoardItemView(title: board.title! , imageUrl : board.imageUrl ?? "track_fallback_primary" , description : board.description ?? "설명")

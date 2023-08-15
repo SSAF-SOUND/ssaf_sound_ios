@@ -23,10 +23,5 @@ struct Board: Codable {
     let title: String?
     let imageUrl: String?
     let description: String?
-
-    enum CodingKeys: String, CodingKey {
-        case boardId = "boardId"
-        case title, imageUrl, description
-    }
 }
 
