@@ -22,6 +22,12 @@ public enum ImageAsset: String {
     // MARK: - logo
     case logo
     
+    // MARK: - sign in
+    case login_google
+    case login_github
+    case login_kakao
+    case login_apple
+    
     // MARK: - skills
     case android
     case django
