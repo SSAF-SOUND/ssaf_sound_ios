@@ -10,15 +10,15 @@ import SwiftUI
 struct SignUpCampusView: View {
 //    @State var path: [StackViewType] = []
     
-    @State private var campus: CampusMenuOption? = nil
-    @State private var path = NavigationPath()
+    @State private var campus: MenuOption? = nil
+//    @State private var path = NavigationPath()
     @State var isLinkActive = false
     
     private var title: String = """
                                 SSAFY\n캠퍼스를 선택해주세요
                                 """
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack() {
             ZStack {
                 Color.background.edgesIgnoringSafeArea(.all)
                     
@@ -40,11 +40,12 @@ struct SignUpCampusView: View {
                         Spacer()
                             .frame(height: 33)
                         
-                        DropdownMenu(selectedOption: self.$campus, placeholder: "Select your campus", options: CampusMenuOption.allCampus)
-                            .onTapGesture {
-                                path.append("isMajor")
-                                isLinkActive = true
-                            }
+                        
+                        DropdownMenu(selectedOption: self.$campus, nextView: {
+                            isLinkActive.toggle()
+                        }, placeholder: "Select your campus", options: MenuOption.allCampus)
+                        
+                    
                         
                         Spacer()
 
@@ -52,8 +53,10 @@ struct SignUpCampusView: View {
             }
             
             .navigationDestination(isPresented: $isLinkActive) {
-//                SignUpIsMajorView()
+                SignUpIsMajorView()
+                    .navigationBarHidden(true)
             }
+            
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     Button() {

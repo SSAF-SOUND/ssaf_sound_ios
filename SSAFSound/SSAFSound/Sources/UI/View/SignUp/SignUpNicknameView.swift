@@ -25,10 +25,8 @@ struct SignUpNicknameView: View {
                     .progressViewStyle(CustomProgressBar()
                     )
                 
-                
                 Spacer()
                     .frame(height: 60)
-                
                 
                 // SSAFSOUND 한글 B/28
                 Text(title)
@@ -62,12 +60,9 @@ struct SignUpNicknameView: View {
                 .foregroundColor(Color.ssafySoundblack)
                 .cornerRadius(10)
                 
-                
-                
                 Spacer()
                     .frame(height: 417) // 이미지 넣고 수정
                 
-            
                 Button {
                     
 

@@ -10,9 +10,10 @@ import SwiftUI
 struct SignUpSemesterView: View {
 //    @State var path: [StackViewType] = []
     
-//    @State private var campus: MenuOption? = nil
-    @State private var path = NavigationPath()
+    @State private var campus: MenuOption? = nil
+//    @State private var path = NavigationPath()
     @State var isLinkActive = false
+    
     
     private var title: String = """
                                 SSAFY\n기수를 선택해주세요
@@ -40,14 +41,9 @@ struct SignUpSemesterView: View {
                         Spacer()
                             .frame(height: 33)
                         
-//                        DropdownMenu(selectedOption: self.$campus, placeholder: "Select your semester", options: MenuOption.allSemester)
-//                            .onTapGesture {
-//                                path.append("campus")
-//                                isLinkActive = true
-//                            }
-//                        DropdownMenu(selectedOption: self.$campus, nextView: {
-//                            isLinkActive.toggle()
-//                        }, placeholder: "Select your semester", options: MenuOption.allSemester)
+                        DropdownMenu(selectedOption: self.$campus, nextView: {
+                            isLinkActive.toggle()
+                        }, placeholder: "Select your semester", options: MenuOption.allSemester)
                         
                         Spacer()
 
