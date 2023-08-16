@@ -19,7 +19,7 @@ extension BoardService: BaseTargetType {
     var path: String {
         switch self {
         case .recruits:
-            return SSAFSoundAPI.recurits
+            return SSAFSoundAPI.recruits
         }
     }
     
