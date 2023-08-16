@@ -8,89 +8,94 @@
 import SwiftUI
 
 struct BoardView: View {
-    let boardItems: [String] = ["자유", "취업", "테크", "맛집", "질문", "싸피 예비생"]
+//    let boardItems: [String] = ["자유", "취업", "테크", "맛집", "질문", "싸피 예비생"]
+    var boardItems: [String] = []
     @State private var isHotBoard: Bool = false
+    @StateObject var boardviewModel: BoardViewModel2 = BoardViewModel2()
     var body: some View {
-        
-            ZStack {
-                Color.background
-                    .edgesIgnoringSafeArea(.top)
-                NavigationStack{
-                recuritTopHeaderView()
+
+        ZStack {
+            Color.background
+                .edgesIgnoringSafeArea(.top)
+            NavigationStack {
+                boardTopHeaderView()
                 VStack {
                     HStack {
-                        Text("모아보기")
-                            .manropeFont(family: .Bold, size: 15)
-                            .foregroundColor(.white)
                         Spacer()
                         navHotBoard()
                     }
-                    .padding(EdgeInsets(top: 15, leading: 25, bottom: 25, trailing: 25))
-                    
+                        .padding(EdgeInsets(top: 15, leading: 25, bottom: 25, trailing: 25))
+
                     ScrollView(showsIndicators: false) {
-                        ForEach(boardItems, id: \.self) { types in
+                        ForEach(boardviewModel.boardModel?.data?.boards ?? [], id: \.boardId) { board in
+
                             NavigationLink(
-                                destination: SelectedBoardView(boardName: types)
+                                destination: SelectedBoardView(boardName: board.title!, boardId : board.boardId!)
                                     .navigationBarHidden(true)
                             ) {
-                                BoardItemView(boardName: types)
+                                BoardItemView(title: board.title! , imageUrl : board.imageUrl ?? "track_fallback_primary" , description : board.description ?? "설명")
                             }
-                        }.padding(.horizontal,25)
+                        }
+                            .padding(.horizontal, 25)
                         Spacer()
                     }
-                    
                 }
             }
         }
+            .task {
+            boardviewModel.requestBoard()
+        }
     }
+
+
     @ViewBuilder
-    private func recuritTopHeaderView() -> some View {
+    private func boardTopHeaderView() -> some View {
         Spacer()
             .frame(height: 14)
-        
+
         HStack {
             Image(asset: .logo)
                 .resizable()
                 .scaledToFit()
-                .frame(width: UIScreen.screenWidth/4 , height: 22)
-            
+                .frame(width: UIScreen.screenWidth / 4, height: 22)
+
             Spacer()
-            
+
             HStack {
                 Image(systemName: "bell.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
                     .foregroundColor(.whilte)
-                
+
                 Spacer()
                     .frame(width: 20)
-                
+
                 Image(systemName: "ellipsis.message.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
                     .foregroundColor(.whilte)
-                
-                
-                
+
+
+
             }
-            
+
         }
-        .padding(.horizontal, 25)
+            .padding(.horizontal, 25)
     }
-    
+
     @ViewBuilder
     private func navHotBoard() -> some View {
         Button {
             isHotBoard.toggle()
         } label: {
-            Text("HOT")
-                .manropeFont(family: .Bold, size: 15)
+            Text("Hot 게시글")
+                .manropeFont(family: .Bold, size: 16)
                 .foregroundColor(.secondaryPoint)
         }
-        .navigationDestination(isPresented: $isHotBoard) {
-            HotBoardView(boardName: "HOT")
+            .navigationDestination(isPresented: $isHotBoard) {
+            HotBoardView(boardName: "HOT 게시판")
                 .navigationBarHidden(true)
         }
 
