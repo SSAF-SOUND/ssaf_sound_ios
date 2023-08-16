@@ -9,7 +9,7 @@ import Foundation
 
 public enum ImageAsset: String {
     
-    //MARK: -  charactre
+    //MARK: -  character
     case sign_in_character
     case track_embedded
     case track_fallback_primary
@@ -18,7 +18,17 @@ public enum ImageAsset: String {
     case track_mobile
     case track_python
     case track_uncertified
+    
+    // MARK: - logo
     case logo
+    
+    // MARK: - sign in
+    case login_google
+    case login_github
+    case login_kakao
+    case login_apple
+    
+    // MARK: - skills
     case android
     case django
     case figma
@@ -35,6 +45,8 @@ public enum ImageAsset: String {
     case typescript
     case vue
     case xd
+    
+    // MARK: - icon
     case pencil
     case empty
     case bookMark
@@ -45,5 +57,6 @@ public enum ImageAsset: String {
     case thumb
     case defaultImg
     case uploadImg
+    case arrow_narrow_left
 
 }
