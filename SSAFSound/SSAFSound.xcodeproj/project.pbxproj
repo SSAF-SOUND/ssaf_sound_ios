@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CC2A89195E00712DCC /* SignInMainView.swift */; };
+		6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CE2A89378D00712DCC /* SignInButtonView.swift */; };
+		6C1089D32A89437600712DCC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089D22A89437600712DCC /* SignInView.swift */; };
 		6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
 		6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266D2A7E269500462C08 /* MenuOpation.swift */; };
 		6CCF26702A7E26C000462C08 /* SignUpisMajorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */; };
+		6CE1AEF72A7E361800F3406B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1AEF62A7E361800F3406B /* OnboardingView.swift */; };
+		6CEB97002A839E1E00F2E542 /* NameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */; };
+		6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */; };
 		7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DE3482A6404F300ADE1E3 /* BackButtonView.swift */; };
 		7F6DE34D2A6405D300ADE1E3 /* Extesnsion+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DE34C2A6405D300ADE1E3 /* Extesnsion+Size.swift */; };
 		7F6DE34F2A64063A00ADE1E3 /* XmarkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DE34E2A64063A00ADE1E3 /* XmarkButtonView.swift */; };
@@ -97,12 +103,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C1089CC2A89195E00712DCC /* SignInMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainView.swift; sourceTree = "<group>"; };
+		6C1089CE2A89378D00712DCC /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
+		6C1089D22A89437600712DCC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		6C9BAD122A5E3C0800309C20 /* SSAFSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAFSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundApp.swift; sourceTree = "<group>"; };
 		6C9BAD192A5E3C0900309C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6CCF266D2A7E269500462C08 /* MenuOpation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpation.swift; sourceTree = "<group>"; };
 		6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpisMajorView.swift; sourceTree = "<group>"; };
+		6CE1AEF62A7E361800F3406B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardView.swift; sourceTree = "<group>"; };
+		6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCompleteView.swift; sourceTree = "<group>"; };
 		7F6DE3482A6404F300ADE1E3 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		7F6DE34C2A6405D300ADE1E3 /* Extesnsion+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extesnsion+Size.swift"; sourceTree = "<group>"; };
 		7F6DE34E2A64063A00ADE1E3 /* XmarkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButtonView.swift; sourceTree = "<group>"; };
@@ -197,6 +209,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C1089C92A89164B00712DCC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				6C1089CC2A89195E00712DCC /* SignInMainView.swift */,
+				6C1089CE2A89378D00712DCC /* SignInButtonView.swift */,
+				6C1089D22A89437600712DCC /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		6C9BAD092A5E3C0800309C20 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +253,42 @@
 				6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CE1AEEF2A7E34FF00F3406B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6CE1AEF42A7E35A200F3406B /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */,
+				7FA97A6E2A7BDBB400F9DE59 /* SignUpSemesterView.swift */,
+				7FA97A682A7BDB5100F9DE59 /* SignUpCampusView.swift */,
+				6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */,
+				7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		6CE1AEF52A7E35F800F3406B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6CE1AEF62A7E361800F3406B /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6CEB96FE2A839E0700F2E542 /* NameCard */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */,
+			);
+			path = NameCard;
 			sourceTree = "<group>";
 		};
 		7F6DE3462A6404A900ADE1E3 /* Recruit */ = {
@@ -335,14 +393,13 @@
 		7FA97A562A7BD9F300F9DE59 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				6CEB96FE2A839E0700F2E542 /* NameCard */,
+				6CE1AEF42A7E35A200F3406B /* Start */,
+				6CE1AEF52A7E35F800F3406B /* Onboarding */,
+				6CE1AEEF2A7E34FF00F3406B /* Auth */,
 				7FA97A652A7BDB3000F9DE59 /* ProgressBar */,
 				7FA97A572A7BDA1200F9DE59 /* Alert */,
 				7FA97A5A2A7BDA9000F9DE59 /* Dropdown */,
-				7FA97A6A2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift */,
-				7FA97A6E2A7BDBB400F9DE59 /* SignUpSemesterView.swift */,
-				7FA97A682A7BDB5100F9DE59 /* SignUpCampusView.swift */,
-				6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */,
-				7FA97A6C2A7BDBA300F9DE59 /* SignUpNicknameView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -451,6 +508,7 @@
 		7FB87BD92A6027AB0035AA68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C1089C92A89164B00712DCC /* SignIn */,
 				7FA97A562A7BD9F300F9DE59 /* SignUp */,
 				7FDAAE512A69641200713BE4 /* Profile */,
 				7FDAAE4C2A6963E700713BE4 /* Home */,
@@ -783,6 +841,7 @@
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
 				7FDAAE592A6965BD00713BE4 /* HotBoardView.swift in Sources */,
 				7FB87BFC2A6036E50035AA68 /* TabItemViews.swift in Sources */,
+				6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
@@ -795,6 +854,8 @@
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
 				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
 				7FDAAE5A2A6965BD00713BE4 /* SelectedBoardView.swift in Sources */,
+				6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */,
+				6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
 				7FA97A6F2A7BDBB400F9DE59 /* SignUpSemesterView.swift in Sources */,
@@ -812,6 +873,7 @@
 				7FA97A642A7BDB1700F9DE59 /* SemesterMenuOption.swift in Sources */,
 				7FDAAE502A69640B00713BE4 /* HomeView.swift in Sources */,
 				7FF4FADF2A603E99007BF344 /* MainTabViewModel.swift in Sources */,
+				6CE1AEF72A7E361800F3406B /* OnboardingView.swift in Sources */,
 				7FDAAE602A69660E00713BE4 /* HotBoardItemView.swift in Sources */,
 				7F6DE34D2A6405D300ADE1E3 /* Extesnsion+Size.swift in Sources */,
 				7FA97A5C2A7BDABA00F9DE59 /* CampusMenuOption.swift in Sources */,
@@ -828,6 +890,7 @@
 				7FDAAE692A69663100713BE4 /* PostCommentItem.swift in Sources */,
 				7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */,
 				7FA97A722A7BDE3A00F9DE59 /* TestViewModel.swift in Sources */,
+				6CEB97002A839E1E00F2E542 /* NameCardView.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,
 				7FA97A622A7BDAFE00F9DE59 /* DropdownMenuListRow.swift in Sources */,
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
@@ -836,6 +899,7 @@
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,
 				7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */,
+				6C1089D32A89437600712DCC /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
