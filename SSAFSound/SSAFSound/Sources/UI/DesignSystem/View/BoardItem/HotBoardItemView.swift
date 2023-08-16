@@ -15,7 +15,7 @@ struct HotBoardItemView: View {
                     .manropeFont(family: .Bold, size: 12)
                     .foregroundColor(.purplePoint)
                 Spacer()
-                BoardInteractionStats()
+                boardInteractionStatsView(likeCount: 10,commentCount: 10)
             }
             Text("제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치")
                 .manropeFont(family: .Bold, size: 14)
@@ -36,6 +36,33 @@ struct HotBoardItemView: View {
             .overlay(RoundedRectangle(cornerRadius: 8)
                 .stroke(Color(red: 0.53, green: 0.56, blue: 0.66), lineWidth: 1)
             )
+    }
+    @ViewBuilder
+    private func boardInteractionStatsView(likeCount: Int, commentCount: Int
+    ) -> some View {
+        HStack(alignment: .center, spacing: 4){
+            HStack(alignment: .center, spacing: 4){
+                Image(asset: .thumb)
+                    .resizable()
+                    .frame(width: 20,height: 20)
+                    .aspectRatio(contentMode: .fit)
+                    .colorMultiply(.primaryDefault)
+                    .padding(.bottom,3)
+                Text("\(likeCount)")
+                    .manropeFont(family: .Bold, size: 13)
+                    .foregroundColor(.primaryDefault)
+            }
+            HStack(alignment: .center,spacing: 4){
+                Image(asset: .message)
+                    .resizable()
+                    .frame(width: 20,height: 20)
+                    .aspectRatio(contentMode: .fit)
+                    .colorMultiply(.secondaryDefault)
+                Text("\(commentCount)")
+                    .manropeFont(family: .Bold, size: 13)
+                    .foregroundColor(.secondaryDefault)
+            }
+        }
     }
 }
 

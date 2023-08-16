@@ -15,8 +15,6 @@
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
 		6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266D2A7E269500462C08 /* MenuOpation.swift */; };
 		6CCF26702A7E26C000462C08 /* SignUpisMajorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */; };
-		6CE1AEF12A7E350D00F3406B /* AuthTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1AEF02A7E350D00F3406B /* AuthTrack.swift */; };
-		6CE1AEF32A7E351B00F3406B /* AuthQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1AEF22A7E351B00F3406B /* AuthQuiz.swift */; };
 		6CE1AEF72A7E361800F3406B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1AEF62A7E361800F3406B /* OnboardingView.swift */; };
 		6CEB97002A839E1E00F2E542 /* NameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */; };
 		6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */; };
@@ -114,8 +112,6 @@
 		6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6CCF266D2A7E269500462C08 /* MenuOpation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpation.swift; sourceTree = "<group>"; };
 		6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpisMajorView.swift; sourceTree = "<group>"; };
-		6CE1AEF02A7E350D00F3406B /* AuthTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTrack.swift; sourceTree = "<group>"; };
-		6CE1AEF22A7E351B00F3406B /* AuthQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthQuiz.swift; sourceTree = "<group>"; };
 		6CE1AEF62A7E361800F3406B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardView.swift; sourceTree = "<group>"; };
 		6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCompleteView.swift; sourceTree = "<group>"; };
@@ -262,8 +258,6 @@
 		6CE1AEEF2A7E34FF00F3406B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6CE1AEF02A7E350D00F3406B /* AuthTrack.swift */,
-				6CE1AEF22A7E351B00F3406B /* AuthQuiz.swift */,
 				6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */,
 			);
 			path = Auth;
@@ -868,8 +862,6 @@
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
 				6CCF26702A7E26C000462C08 /* SignUpisMajorView.swift in Sources */,
 				869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */,
-				6CE1AEF32A7E351B00F3406B /* AuthQuiz.swift in Sources */,
-				7FDAAE632A69660E00713BE4 /* SelectedBoardItem.swift in Sources */,
 				7FA97A5E2A7BDAD200F9DE59 /* DropdownMenu.swift in Sources */,
 				865FAA822A8489FA00C6681A /* BoardViewModel.swift in Sources */,
 				86CC37702A8B5AF600566451 /* Post.swift in Sources */,
@@ -905,7 +897,6 @@
 				6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */,
 				7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */,
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
-				6CE1AEF12A7E350D00F3406B /* AuthTrack.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,
 				7FFBC8942A6B80D5009B7587 /*  RecruitProjecView.swift in Sources */,
 				6C1089D32A89437600712DCC /* SignInView.swift in Sources */,
