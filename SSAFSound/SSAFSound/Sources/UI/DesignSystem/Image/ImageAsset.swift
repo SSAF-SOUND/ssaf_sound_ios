@@ -58,5 +58,8 @@ public enum ImageAsset: String {
     case defaultImg
     case uploadImg
     case arrow_narrow_left
-
+    case thumb_fill
+    case thumb_fill_2
+    case chat_fill
+    case today_lunch_title
 }
