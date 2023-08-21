@@ -12,7 +12,7 @@ import Moya
 
 public class PostViewModel: ObservableObject {
     public init() {
-        requestPost()
+        requestPost(boardId: 1)
     }
     
     var postCancellable: AnyCancellable?
@@ -22,13 +22,13 @@ public class PostViewModel: ObservableObject {
         self.postModel = list
     }
     
-    func requestPost() {
+    func requestPost(boardId : Int) {
         if let cancellable = postCancellable {
             cancellable.cancel()
         }
         let provider = MoyaProvider<PostService>(plugins: [MoyaLoggingPlugin()])
         
-        postCancellable = provider.requestWithProgressPublisher(.posts(boardId: 1, cursor: -1, size: 10))
+        postCancellable = provider.requestWithProgressPublisher(.posts(boardId: boardId, cursor: -1, size: 10))
             .compactMap { $0.response?.data }
             .receive(on: DispatchQueue.main)
             .decode(type: PostModel.self, decoder: JSONDecoder())

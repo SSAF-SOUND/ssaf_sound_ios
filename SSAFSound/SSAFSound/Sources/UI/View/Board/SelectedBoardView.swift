@@ -30,7 +30,7 @@ struct SelectedBoardView: View {
                     presentationMode.wrappedValue.dismiss()
                 }, showTitle: true)
                 .task {
-                    postViewModel.requestPost()
+                    postViewModel.requestPost(boardId: boardId)
                 }
                 // MARK: CONTENT
                 ZStack(alignment: .bottomTrailing) {
@@ -38,17 +38,6 @@ struct SelectedBoardView: View {
                         // MARK: SEARCH BAR
                         searchBoardTextFieldView()
                         // MARK: SCROLLVIEW
-//                        ScrollView(showsIndicators: false){
-//                            ForEach(0..<10) { i in
-//                                NavigationLink(destination: PostView(preBoardName: boardName)
-//                                    .navigationBarHidden(true)){
-////                                    SelectedBoardItem()
-//                                        selectedBoardItemView()
-//                                }
-//                            }
-//                        }
-//                        .padding(.horizontal,25)
-                        
                         ScrollView(showsIndicators: false){
                             ForEach(postViewModel.postModel?.data?.posts ?? [], id : \.self) {
                                 posts in
