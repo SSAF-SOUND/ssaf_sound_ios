@@ -2,17 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Localizationnativedevelopmentregion</key>
+	<string>Korea</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>Localizationnativedevelopmentregion</key>
-	<string>Korea</string>
-	<key>UIUserInterfaceStyle</key>
-	<string>dark</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Pretendard-Regular.otf</string>
+		<string>Pretendard-Bold.otf</string>
 		<string>Manrope-Bold.ttf</string>
 		<string>Manrope-ExtraBold.ttf</string>
 		<string>Manrope-ExtraLight.ttf</string>
