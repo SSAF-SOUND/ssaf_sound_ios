@@ -31,7 +31,7 @@ struct AuthCompleteView: View {
                 Spacer()
                 
                 Image(asset: .track_fallback_primary)
-                NameCardView(nickname: "James", campus: "서울캠퍼스", semester: "10기", isMajor: false, trackImage: ImageAsset.track_fallback_primary)
+                NameCardView(background: true, nickname: "James", campus: "서울캠퍼스", semester: "10기", isMajor: false, trackImage: ImageAsset.track_fallback_primary)
                 
                 Spacer()
                 

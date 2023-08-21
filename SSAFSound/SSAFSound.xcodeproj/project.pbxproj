@@ -10,6 +10,17 @@
 		6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CC2A89195E00712DCC /* SignInMainView.swift */; };
 		6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CE2A89378D00712DCC /* SignInButtonView.swift */; };
 		6C1089D32A89437600712DCC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089D22A89437600712DCC /* SignInView.swift */; };
+		6C1089D72A89F8FB00712DCC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089D62A89F8FA00712DCC /* WebView.swift */; };
+		6C1089DD2A8CA4BA00712DCC /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DB2A8CA4BA00712DCC /* Pretendard-Bold.otf */; };
+		6C1089DE2A8CA4BA00712DCC /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DB2A8CA4BA00712DCC /* Pretendard-Bold.otf */; };
+		6C1089DF2A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */; };
+		6C1089E02A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */; };
+		6C97C5432A91DF1700E0FD1D /* HotPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C5422A91DF1700E0FD1D /* HotPost.swift */; };
+		6C97C5452A91E02500E0FD1D /* HotPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C5442A91E02500E0FD1D /* HotPostViewModel.swift */; };
+		6C97C5472A91E2DE00E0FD1D /* HotPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C5462A91E2DE00E0FD1D /* HotPostService.swift */; };
+		6C97C54D2A933B6100E0FD1D /* HomeRecruitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C54C2A933B6100E0FD1D /* HomeRecruitItemView.swift */; };
+		6C97C5502A93448100E0FD1D /* HomeHotItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C54F2A93448100E0FD1D /* HomeHotItemView.swift */; };
+		6C97C5522A93476E00E0FD1D /* PretendardFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C5512A93476E00E0FD1D /* PretendardFont.swift */; };
 		6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
@@ -106,6 +117,15 @@
 		6C1089CC2A89195E00712DCC /* SignInMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainView.swift; sourceTree = "<group>"; };
 		6C1089CE2A89378D00712DCC /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
 		6C1089D22A89437600712DCC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		6C1089D62A89F8FA00712DCC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6C1089DB2A8CA4BA00712DCC /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		6C97C5422A91DF1700E0FD1D /* HotPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPost.swift; sourceTree = "<group>"; };
+		6C97C5442A91E02500E0FD1D /* HotPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostViewModel.swift; sourceTree = "<group>"; };
+		6C97C5462A91E2DE00E0FD1D /* HotPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotPostService.swift; sourceTree = "<group>"; };
+		6C97C54C2A933B6100E0FD1D /* HomeRecruitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecruitItemView.swift; sourceTree = "<group>"; };
+		6C97C54F2A93448100E0FD1D /* HomeHotItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHotItemView.swift; sourceTree = "<group>"; };
+		6C97C5512A93476E00E0FD1D /* PretendardFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendardFont.swift; sourceTree = "<group>"; };
 		6C9BAD122A5E3C0800309C20 /* SSAFSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAFSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundApp.swift; sourceTree = "<group>"; };
 		6C9BAD192A5E3C0900309C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,8 +235,18 @@
 				6C1089CC2A89195E00712DCC /* SignInMainView.swift */,
 				6C1089CE2A89378D00712DCC /* SignInButtonView.swift */,
 				6C1089D22A89437600712DCC /* SignInView.swift */,
+				6C1089D62A89F8FA00712DCC /* WebView.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		6C97C54E2A93444800E0FD1D /* HomeItem */ = {
+			isa = PBXGroup;
+			children = (
+				6C97C54C2A933B6100E0FD1D /* HomeRecruitItemView.swift */,
+				6C97C54F2A93448100E0FD1D /* HomeHotItemView.swift */,
+			);
+			path = HomeItem;
 			sourceTree = "<group>";
 		};
 		6C9BAD092A5E3C0800309C20 = {
@@ -357,6 +387,7 @@
 				7FA97A4A2A7BD57100F9DE59 /* Home.swift */,
 				865FAA832A848A4D00C6681A /* Board.swift */,
 				86CC376F2A8B5AF600566451 /* Post.swift */,
+				6C97C5422A91DF1700E0FD1D /* HotPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,6 +417,7 @@
 				7FA97A542A7BD63F00F9DE59 /* BoardService.swift */,
 				865FAA7F2A84887000C6681A /* BoardService2.swift */,
 				86CC37732A8B5DC800566451 /* PostService.swift */,
+				6C97C5462A91E2DE00E0FD1D /* HotPostService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -439,6 +471,7 @@
 				7FA97A712A7BDE3A00F9DE59 /* TestViewModel.swift */,
 				865FAA812A8489FA00C6681A /* BoardViewModel.swift */,
 				86CC37752A8B638300566451 /* PostViewModel.swift */,
+				6C97C5442A91E02500E0FD1D /* HotPostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -446,6 +479,8 @@
 		7FB36BF52A6264CA00A3DB20 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				6C1089DB2A8CA4BA00712DCC /* Pretendard-Bold.otf */,
+				6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */,
 				7FB36BF62A6264DF00A3DB20 /* Manrope-Bold.ttf */,
 				7FB36BFA2A6264DF00A3DB20 /* Manrope-ExtraBold.ttf */,
 				7FB36BF82A6264DF00A3DB20 /* Manrope-ExtraLight.ttf */,
@@ -651,6 +686,7 @@
 			isa = PBXGroup;
 			children = (
 				7FF4FAD92A603CC1007BF344 /* ManropeFont.swift */,
+				6C97C5512A93476E00E0FD1D /* PretendardFont.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -666,6 +702,7 @@
 		7FF4FADB2A603DDE007BF344 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C97C54E2A93444800E0FD1D /* HomeItem */,
 				7F73E6342A6696280042A227 /* Toggle */,
 				7F6DE3472A6404D200ADE1E3 /* Button */,
 				869ACF422A62AD0A00356DFE /* BoardItem */,
@@ -806,8 +843,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB36BFE2A6264DF00A3DB20 /* Manrope-Regular.ttf in Resources */,
+				6C1089DD2A8CA4BA00712DCC /* Pretendard-Bold.otf in Resources */,
 				6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */,
 				7FB36BFD2A6264DF00A3DB20 /* Manrope-Bold.ttf in Resources */,
+				6C1089DF2A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */,
 				6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */,
 				8683249B2A6268B6001C4586 /* ColorAssets.xcassets in Resources */,
 				7FB36C022A6264DF00A3DB20 /* Manrope-Light.ttf in Resources */,
@@ -823,6 +862,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C1089DE2A8CA4BA00712DCC /* Pretendard-Bold.otf in Resources */,
+				6C1089E02A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +884,7 @@
 				7FB87BFC2A6036E50035AA68 /* TabItemViews.swift in Sources */,
 				6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
+				6C97C5472A91E2DE00E0FD1D /* HotPostService.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
 				7FA97A672A7BDB3C00F9DE59 /* SignUpProgressBar.swift in Sources */,
@@ -853,12 +895,14 @@
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
 				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
+				6C97C5452A91E02500E0FD1D /* HotPostViewModel.swift in Sources */,
 				7FDAAE5A2A6965BD00713BE4 /* SelectedBoardView.swift in Sources */,
 				6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */,
 				6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
 				7FA97A6F2A7BDBB400F9DE59 /* SignUpSemesterView.swift in Sources */,
+				6C97C5502A93448100E0FD1D /* HomeHotItemView.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
 				6CCF26702A7E26C000462C08 /* SignUpisMajorView.swift in Sources */,
 				869ACF442A62AD2200356DFE /* BoardItemView.swift in Sources */,
@@ -878,6 +922,7 @@
 				7F6DE34D2A6405D300ADE1E3 /* Extesnsion+Size.swift in Sources */,
 				7FA97A5C2A7BDABA00F9DE59 /* CampusMenuOption.swift in Sources */,
 				7FA97A6B2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift in Sources */,
+				6C97C5432A91DF1700E0FD1D /* HotPost.swift in Sources */,
 				7FDAAE682A69663100713BE4 /* PostContentItem.swift in Sources */,
 				7FDAAE532A69641B00713BE4 /* ProfleView.swift in Sources */,
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
@@ -891,8 +936,11 @@
 				7FA97A6D2A7BDBA300F9DE59 /* SignUpNicknameView.swift in Sources */,
 				7FA97A722A7BDE3A00F9DE59 /* TestViewModel.swift in Sources */,
 				6CEB97002A839E1E00F2E542 /* NameCardView.swift in Sources */,
+				6C97C54D2A933B6100E0FD1D /* HomeRecruitItemView.swift in Sources */,
 				7FDAAE5B2A6965BD00713BE4 /* PostView.swift in Sources */,
 				7FA97A622A7BDAFE00F9DE59 /* DropdownMenuListRow.swift in Sources */,
+				6C97C5522A93476E00E0FD1D /* PretendardFont.swift in Sources */,
+				6C1089D72A89F8FB00712DCC /* WebView.swift in Sources */,
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
 				6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */,
 				7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */,
