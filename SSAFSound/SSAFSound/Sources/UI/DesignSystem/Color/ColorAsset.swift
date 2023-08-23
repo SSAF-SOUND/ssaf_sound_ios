@@ -49,10 +49,10 @@ public enum Colors: String {
     case nonMajorDark
     
     // MARK: - Point
-    case green
-    case orange
-    case purple
-    case purplePoint
+    case pointGreen
+    case pointOrange
+    case pointPurple
+    case pointPurplePoint
     
     case recruit
     case recruitLight
