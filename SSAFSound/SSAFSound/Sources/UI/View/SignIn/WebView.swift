@@ -43,6 +43,7 @@ public struct WebView: UIViewRepresentable {
             configuration.preferences.minimumFontSize = 16
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 webView.load(request)
+                print("webview \(request)")
             }
 
         }

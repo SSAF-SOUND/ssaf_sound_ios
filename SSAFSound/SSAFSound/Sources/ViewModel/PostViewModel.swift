@@ -46,6 +46,8 @@ public class PostViewModel: ObservableObject {
                 if model.code == NetworkCode.sucess.description {
                     self?.toViewModel(model)
                     print("게시판글 통신 성공 \(String(describing: model.data))")
+                } else if model.code == NetworkCode.netWorkError.description {
+                    
                 }
             })
     }

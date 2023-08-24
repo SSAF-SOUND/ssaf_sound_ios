@@ -12,11 +12,8 @@ enum HotPostService {
     case hotPost(cursor: Int, size: Int)
 }
 
-extension HotPostService: TargetType {
+extension HotPostService: BaseTargetType {
     
-    var baseURL: URL {
-        return URL(string: SSAFSoundAPI.baseURL)!
-    }
     
     var path: String {
         switch self {
@@ -43,12 +40,4 @@ extension HotPostService: TargetType {
         }
     }
     
-    var headers: [String : String]? {
-        switch self {
-        case .hotPost:
-            return [
-                :
-            ]
-        }
-    }
 }

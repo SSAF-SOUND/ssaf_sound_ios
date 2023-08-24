@@ -42,15 +42,10 @@ struct SignInView: View {
                     SignInButtonView(image: .login_apple, name: "Apple 로그인")
                 }
                 
-                Spacer()
-                    .frame(height: 29)
-                
-                Text("SKIP")
-                    .foregroundColor(Color.whilte)
-                
-                Spacer()
             }
         }
+        
+    
     }
 }
 

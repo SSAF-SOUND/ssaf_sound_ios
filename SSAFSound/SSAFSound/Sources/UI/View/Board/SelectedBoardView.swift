@@ -50,7 +50,7 @@ struct SelectedBoardView: View {
 //                        .padding(.horizontal,25)
                         
                         ScrollView(showsIndicators: false){
-                            ForEach(postViewModel.postModel?.data?.posts ?? [], id : \.self) {
+                            ForEach(postViewModel.postModel?.data?.posts ?? []) {
                                 posts in
                                 if posts.boardId == boardId {
                                     selectedBoardItemView(
