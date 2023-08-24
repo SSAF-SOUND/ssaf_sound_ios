@@ -17,4 +17,5 @@ public enum SSAFSoundAPI {
     public static let recruits = String("recruits")
     public static let boards = String("boards")
     public static let posts = String("posts")
+    public static let hotposts = String("posts/hot")
 }
