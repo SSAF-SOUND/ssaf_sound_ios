@@ -12,35 +12,60 @@ import SwiftUI
 
 
 public enum Colors: String {
+    // MARK: - BASIC
+    
+    case basicBlack
+    case basicWhite
+
+    // MARK: - Background
+    case background
+    case backgroundLight
+    
+    // MARK: - Font
+    case fontBlack
+    case fontBlueBlack
+    case fontWhite
+    
+    // MARK: - MAIN
+    
+    // MARK: - Primary
     case primaryDark
     case primaryDefault
     case primaryPoint
     case primaryStrong
     case primarySub
+    
+    // MARK: - Secondary
     case secondaryDark
     case secondaryDefault
     case secondaryPoint
     case secondaryStrong
     case secondarySub
+    
+    // MARK: - MajorColor
     case major
+    case majorDark
     case nonMajor
-    case green
-    case orange
-    case purple
-    case purplePoint
+    case nonMajorDark
+    
+    // MARK: - Point
+    case pointGreen
+    case pointOrange
+    case pointPurple
+    case pointPurplePoint
+    
     case recruit
     case recruitLight
     case recruitPoint
-    case background
-    case ssafySoundblack
-    case bluegrey
-    case grey0
-    case grey1
-    case grey2
-    case grey3
-    case grey4
+    
+
+    // MARK: - System
+    case darkgrey
     case grey
     case lightgrey
+
+    // MARK: - 사용 금지 
+    case ssafySoundblack
     case whilte
 
 

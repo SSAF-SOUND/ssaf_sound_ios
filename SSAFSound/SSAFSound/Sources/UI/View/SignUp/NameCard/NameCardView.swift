@@ -10,6 +10,7 @@ import SwiftUI
 struct NameCardView: View {
     //MARK: - PROPERTIES
     
+    var background: Bool
     var nickname: String
     var campus: String
     var semester: String
@@ -21,7 +22,7 @@ struct NameCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(.whilte)
+                .foregroundColor(background ? .whilte : .clear)
             
             VStack(alignment: .leading, spacing: 0) {
                 HStack(spacing: 2) {
@@ -32,7 +33,7 @@ struct NameCardView: View {
                     // 줄바꿈 안 되는 현상 고칠 것
                     Text(nickname)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(.ssafySoundblack)
+                        .foregroundColor(background ? .ssafySoundblack : Color.ssafSoundColor(.whilte))
                         .manropeFont(family: .Bold, size: 40)
                         
                         
@@ -46,7 +47,7 @@ struct NameCardView: View {
                     Text("SSAFY")
                     Text(semester)
                 }
-                .foregroundColor(.ssafySoundblack)
+                .foregroundColor(background ? .ssafySoundblack : Color.ssafSoundColor(.whilte))
                 .fontWeight(.medium)
             }
             .frame(maxWidth: 320)
@@ -59,7 +60,7 @@ struct NameCardView: View {
 
 struct NameCardView_Previews: PreviewProvider {
     static var previews: some View {
-        NameCardView(nickname: "James", campus: "서울캠퍼스", semester: "10기", isMajor: false, trackImage: .track_fallback_primary)
+        NameCardView(background: false, nickname: "James", campus: "서울캠퍼스", semester: "10기", isMajor: false, trackImage: .track_fallback_primary)
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.dark)
     }
