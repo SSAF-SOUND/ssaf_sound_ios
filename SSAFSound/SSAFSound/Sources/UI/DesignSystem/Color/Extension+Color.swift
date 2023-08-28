@@ -18,6 +18,7 @@ public extension Color {
     // MARK: - Background
     static let background = ssafSoundColor(.background)
     static let backgroundLight = ssafSoundColor(.backgroundLight)
+    static let backgroundGray = ssafSoundColor(.backgroundGray)
     
     // MARK: - Font
     static let fontBlack = ssafSoundColor(.fontBlack)

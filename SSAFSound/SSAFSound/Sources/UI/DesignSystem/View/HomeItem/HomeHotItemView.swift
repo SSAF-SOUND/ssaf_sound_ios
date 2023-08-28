@@ -14,7 +14,7 @@ struct HomeHotItemView: View {
     var commentCount: Int
     
     var body: some View {
-        HStack(alignment: .top) {
+        HStack(alignment: .center) {
             Spacer()
                 .frame(width: 24)
             Rectangle()
@@ -24,12 +24,14 @@ struct HomeHotItemView: View {
                 .overlay {
                     Text(board)
                         .font(.pretendardBold12)
+                        .foregroundColor(.ssafySoundblack)
                 }
             
             
             Text(title)
                 .foregroundColor(.whilte)
                 .font(.pretendardRegualar14)
+                .lineLimit(1)
             
             Spacer()
             
@@ -55,6 +57,8 @@ struct HomeHotItemView: View {
 
 struct HomeHotItemView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHotItemView(board: "취업", title: "점메추 해주라", likeCount: 1, commentCount: 1)
+        HomeHotItemView(board: "취업", title: "점메추 해주라!!!!!!!!!!!!!!!!!!!!!!!!dfasdfadsfasdfa", likeCount: 1, commentCount: 1)
+            .previewLayout(.sizeThatFits)
+            .preferredColorScheme(.dark)
     }
 }
