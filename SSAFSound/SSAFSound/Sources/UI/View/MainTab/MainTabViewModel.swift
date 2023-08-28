@@ -13,4 +13,7 @@ class MainTabViewModel: ObservableObject {
     @Published var selctTabindex: Int = .zero
     @Published var selctTabType: MainTabType = .home
     @Published var selectRecirtType: RecruitStudyType = .project
+    
+    // MARK: - 프로필에서 segmented control (포트폴리오, 스터디, 프로젝트)
+    @Published var selectProfileMenyType: ProfileMenuType = .portfolio
 }
