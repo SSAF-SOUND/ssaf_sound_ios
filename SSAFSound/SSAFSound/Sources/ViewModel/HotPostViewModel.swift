@@ -12,10 +12,10 @@ import Moya
 import SwiftUI
 
 class HotPostViewModel: ObservableObject {
-    @Published var hotPostModel: HotPostResponse?
+    @Published var hotPostModel: HotPostModel?
     var hotPostCancellable: AnyCancellable?
     
-    func getHotPostToViewModel(_ list: HotPostResponse) {
+    func getHotPostToViewModel(_ list: HotPostModel) {
         self.hotPostModel = list
     }
     
@@ -28,7 +28,7 @@ class HotPostViewModel: ObservableObject {
         hotPostCancellable = provider.requestPublisher(.hotPost(cursor: -1, size: 10))
             .compactMap { $0.data }
             .receive(on: DispatchQueue.main)
-            .decode(type: HotPostResponse.self, decoder: JSONDecoder())
+            .decode(type: HotPostModel.self, decoder: JSONDecoder())
             .sink(receiveCompletion: { [weak self] result in
                 switch result {
                 case .finished:

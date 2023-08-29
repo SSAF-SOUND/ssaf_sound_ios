@@ -39,7 +39,7 @@ struct SelectedBoardView: View {
                         searchBoardTextFieldView()
                         // MARK: SCROLLVIEW
                         ScrollView(showsIndicators: false){
-                            ForEach(postViewModel.postModel?.data?.posts ?? [], id : \.self) {
+                            ForEach(postViewModel.postModel?.data?.posts ?? []) {
                                 posts in
                                 if posts.boardId == boardId {
                                     selectedBoardItemView(

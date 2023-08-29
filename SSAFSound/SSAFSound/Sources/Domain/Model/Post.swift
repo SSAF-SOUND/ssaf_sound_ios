@@ -16,7 +16,8 @@ struct PostResponse: Codable {
     let posts: [Post]?
 }
 
-struct Post: Codable ,Hashable{
+struct Post: Codable , Identifiable {
+    let id = UUID().uuidString
     let boardId: Int?
     let boardTitle: String?
     let postId: Int?

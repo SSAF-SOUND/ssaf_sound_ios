@@ -14,55 +14,67 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea(.all)
-            ScrollView {
-                VStack {
-                    recuritTopHeaderView()
-                    Spacer()
-                        .frame(height: 38)
-                    serverTimeView()
-                    Spacer()
-                        .frame(height: 31)
-                    lunchMenuView()
-                    
-                    Spacer()
-                        .frame(height: 31)
-                    
-                    
-                    HStack() {
-                        Text("Hot 게시글")
-                            .font(.pretendardBold24)
-                            .padding(.leading, 25)
-                        Spacer()
-                        Text("더보기")
-                            .padding(.trailing, 25)
-                            .font(.pretendardBold16)
-                    }
-                    .foregroundColor(.whilte)
-                    
-                    ForEach(1...5, id: \.self) { _ in
-                        HomeHotItemView(board: hotPostViewModel.hotPostModel?.posts.first?.boardTitle ?? "취업", title: "점메추해주라!!", likeCount: 1, commentCount: 1)
-                    }
-                    
-                    HStack() {
-                        Text("리쿠르팅 게시글")
-                            .font(.pretendardBold24)
-                            .padding(.leading, 25)
-                        Spacer()
-                        Text("더보기")
-                            .padding(.trailing, 25)
-                            .font(.pretendardBold16)
-                    }
-                    .foregroundColor(.whilte)
-                    
-                    
-                } //: VSTACK
+            VStack  {
                 
-                // MARK: - 가로 스크롤 안 됨!
-                recruitPostPreview()
-                    .frame(width: 300)  // 가로 스크롤 안 됨!
-                    
+               MainHeaerView(systemImage: "bell.fill", systemImage2: "ellipsis.message.fill")
                 
-            } //: SCROLLVIEW
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        
+                        Spacer()
+                            .frame(height: 38)
+                        serverTimeView()
+                        Spacer()
+                            .frame(height: 31)
+                        lunchMenuView()
+                        
+                        Spacer()
+                            .frame(height: 31)
+                        
+                        
+                        HStack() {
+                            Text("Hot 게시글")
+                                .font(.pretendardBold24)
+                                .padding(.leading, 25)
+                            Spacer()
+                            Text("더보기")
+                                .padding(.trailing, 25)
+                                .font(.pretendardBold16)
+                        }
+                        .foregroundColor(.whilte)
+                        
+                        ForEach(1...5, id: \.self) { _ in
+                            HomeHotItemView(board: hotPostViewModel.hotPostModel?.data.posts.first?.boardTitle ?? "취업", title: "점메추해주라!!", likeCount: 1, commentCount: 1)
+                        }
+                        
+                        HStack() {
+                            Text("리쿠르팅 게시글")
+                                .font(.pretendardBold24)
+                                .padding(.leading, 25)
+                            Spacer()
+                            Text("더보기")
+                                .padding(.trailing, 25)
+                                .font(.pretendardBold16)
+                        }
+                        .foregroundColor(.whilte)
+                        
+                        
+                    } //: VSTACK
+                    
+                    // MARK: - 가로 스크롤 안 됨!
+                    recruitPostPreview()
+                        .padding(.horizontal, 20)
+                        
+                    Spacer()
+                        .frame(height: UIScreen.screenWidth*0.1)
+                    
+                    
+                    
+                } //: SCROLLVIEW
+                .bounce(false)
+                
+            }
+            
             .task {
                 hotPostViewModel.hotPostResponse()
             }
@@ -186,7 +198,7 @@ private func recuritTopHeaderView() -> some View {
 
 // MARK: - Main 리쿠르팅 게시글
 @ViewBuilder private func recruitPostPreview() -> some View {
-    ScrollView {
+    ScrollView(.horizontal, showsIndicators: false) {
         HStack {
             ForEach(1...5, id: \.self) { _ in
                 HomeRecruitItemView(category: "프로젝트")
