@@ -69,7 +69,7 @@ struct PostCommentItem: View {
                         .manropeFont(family: .Bold, size: 12)
                         .foregroundColor(.primaryPoint)
                 }
-            }
+            }.padding(.bottom,5)
             
             if repliesNum > 0 {
                 repliesCommentItemView()
@@ -87,7 +87,7 @@ struct PostCommentItem: View {
                 .colorMultiply(.primaryDefault)
             //
             ZStack{
-                Color.grey
+                Color.backgroundGray
                 VStack(alignment: .leading,spacing:0){
                     HStack(alignment: .center){
                         // MARK: 닉네임 앞자 아이콘 넣을자리
