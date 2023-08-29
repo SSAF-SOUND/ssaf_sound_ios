@@ -12,11 +12,6 @@ import Moya
 
 public class BoardViewModel2: ObservableObject {
     
-    
-    public init() {
-        requestBoard()
-    }
-    
     var boardCancellable: AnyCancellable?
     @Published var boardModel: BoardModel?
     

@@ -10,14 +10,15 @@ import Foundation
 struct PostModel: Codable {
     let code, message: String?
     let data: PostResponse?
+    let cursor : Int?
 }
 
 struct PostResponse: Codable {
-    let posts: [Post]?
+    let posts: [PostList]?
+    let post : PostDetail?
 }
 
-struct Post: Codable , Identifiable {
-    var id = UUID().uuidString
+struct PostList: Codable  {
     let boardId: Int?
     let boardTitle: String?
     let postId: Int?
@@ -29,5 +30,39 @@ struct Post: Codable , Identifiable {
     let nickname: String?
     let anonymity: Bool?
     let thumbnail: String?
-    let cursor : Int?
+    
+}
+
+struct PostDetail: Codable {
+    // post
+    let boardId : Int?
+    let boardTitle : String?
+    let postId : Int?
+    let title: String?
+    let content: String?
+    let likeCount: Int?
+    let commentCount: Int?
+    let scrapCount: Int?
+    let createdAt: String?
+    let anonymity: Bool?
+    let modified: Bool?
+    let scraped: Bool?
+    let liked: Bool?
+    let mine: Bool?
+    let images: [ImageUrl]?
+    // author
+    let memberId : Int?
+    let nickname: String?
+    let memberRole: String?
+    let isMajor: Bool?
+    let ssafyMember: Bool?
+    // ssafyInfo
+    let semester: Int?
+    let campus: String?
+    let certificationState: String?
+    let majorTrac: String?
+}
+
+struct ImageUrl : Codable {
+    let imageUrl : String?
 }

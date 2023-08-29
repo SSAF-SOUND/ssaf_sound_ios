@@ -30,7 +30,7 @@ struct SelectedBoardView: View {
                     presentationMode.wrappedValue.dismiss()
                 }, showTitle: true)
                 .task {
-                    postViewModel.requestPost(boardId: boardId)
+                    postViewModel.requestPostList(boardId: boardId)
                 }
                 // MARK: CONTENT
                 ZStack(alignment: .bottomTrailing) {
@@ -39,22 +39,29 @@ struct SelectedBoardView: View {
                         searchBoardTextFieldView()
                         // MARK: SCROLLVIEW
                         ScrollView(showsIndicators: false){
-                            ForEach(postViewModel.postModel?.data?.posts ?? []) {
+                            ForEach(postViewModel.postModel?.data?.posts ?? [] , id :\.postId) {
                                 posts in
                                 if posts.boardId == boardId {
-                                    selectedBoardItemView(
-                                        title: posts.title!,
-                                        content: posts.content!,
-                                        likeCount: posts.likeCount!,
-                                        commentCount: posts.commentCount!,
-                                        createdAt: posts.createdAt!,
-                                        nickname : posts.nickname!,
-                                        anonymity: posts.anonymity!,
-                                        thumbnail: posts.thumbnail ?? "",
-                                        cursor : posts.cursor ?? -1
-                                    )
+                                    NavigationLink(
+                                        destination : PostView(preBoardName : posts.boardTitle!, postId : posts.postId!)
+                                            .navigationBarHidden(true)
+                                    ){
+                                        selectedBoardItemView(
+                                            title: posts.title!,
+                                            content: posts.content!,
+                                            likeCount: posts.likeCount!,
+                                            commentCount: posts.commentCount!,
+                                            createdAt: posts.createdAt!,
+                                            nickname : posts.nickname!,
+                                            anonymity: posts.anonymity!,
+                                            thumbnail: posts.thumbnail ?? ""
+//                                            cursor : posts.cursor ?? -1
+                                        )
+                                    }
+                                    
                                 }
                             }
+                            
                         }
                         .padding(.horizontal,25)
                     }
@@ -128,7 +135,7 @@ struct SelectedBoardView: View {
     }
     
     @ViewBuilder
-    private func selectedBoardItemView(title: String, content : String, likeCount: Int, commentCount: Int,createdAt:String, nickname: String, anonymity: Bool, thumbnail : String, cursor: Int) -> some View {
+    private func selectedBoardItemView(title: String, content : String, likeCount: Int, commentCount: Int,createdAt:String, nickname: String, anonymity: Bool, thumbnail : String) -> some View {
         
         VStack(alignment: .leading, spacing: 0){
             Text(title)
