@@ -79,13 +79,13 @@ struct SelectedBoardView: View {
         } label: {
             VStack {
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(.white)
+                    .fill(Color.basicWhite)
                     .frame(height: 42)
                     .overlay {
                         HStack {
                             Text("검색어를 입력해주세요")
                                 .manropeFont(family: .Regular, size: 14)
-                                .foregroundColor(.grey)
+                                .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.77))
                                 .kerning(-0.3)
                             Spacer()
                             
@@ -93,7 +93,7 @@ struct SelectedBoardView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 18, height: 15)
-                                .foregroundColor(.ssafySoundblack)
+                                .foregroundColor(.basicBlack)
                         }
                         .padding(.horizontal, 20)
                     }
@@ -152,11 +152,11 @@ struct SelectedBoardView: View {
                     if anonymity {
                         Text("\(createdAt) | 익명")
                             .manropeFont(family: .Bold, size: 12)
-                            .foregroundColor(.bluegrey)
+                            .foregroundColor(.fontBlueBlack)
                     } else{
                         Text("\(createdAt) | \(nickname)")
                             .manropeFont(family: .Bold, size: 12)
-                            .foregroundColor(.bluegrey)
+                            .foregroundColor(.fontBlueBlack)
                     }
                     
                 }
@@ -166,10 +166,10 @@ struct SelectedBoardView: View {
             }
         }.padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
             .frame(height: 123)
-            .background(Color.ssafySoundblack)
+            .background(Color.fontBlack)
             .cornerRadius(8)
             .overlay(RoundedRectangle(cornerRadius: 8)
-                .stroke(Color(red: 0.53, green: 0.56, blue: 0.66), lineWidth: 1)
+                .stroke(Color.fontBlueBlack, lineWidth: 1)
             )
     }
     

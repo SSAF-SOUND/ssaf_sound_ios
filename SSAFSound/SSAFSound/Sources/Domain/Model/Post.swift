@@ -50,19 +50,25 @@ struct PostDetail: Codable {
     let liked: Bool?
     let mine: Bool?
     let images: [ImageUrl]?
-    // author
+    let author : Author?
+}
+
+struct ImageUrl : Codable {
+    let imageUrl : String?
+}
+
+struct Author : Codable {
     let memberId : Int?
     let nickname: String?
     let memberRole: String?
     let isMajor: Bool?
     let ssafyMember: Bool?
-    // ssafyInfo
+    let ssafyInfo : SsafyInfo?
+}
+
+struct SsafyInfo : Codable {
     let semester: Int?
     let campus: String?
     let certificationState: String?
     let majorTrac: String?
-}
-
-struct ImageUrl : Codable {
-    let imageUrl : String?
 }

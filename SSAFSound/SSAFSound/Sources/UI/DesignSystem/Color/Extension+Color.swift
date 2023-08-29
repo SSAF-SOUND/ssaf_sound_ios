@@ -18,6 +18,7 @@ public extension Color {
     // MARK: - Background
     static let background = ssafSoundColor(.background)
     static let backgroundLight = ssafSoundColor(.backgroundLight)
+    static let backgroundGray = ssafSoundColor(.backgroundGray)
     
     // MARK: - Font
     static let fontBlack = ssafSoundColor(.fontBlack)
@@ -51,7 +52,7 @@ public extension Color {
     // MARK: - Point
     static let pointGreen = ssafSoundColor(.pointGreen)
     static let pointOrange = ssafSoundColor(.pointOrange)
-    static let pointPurple = ssafSoundColor(.primaryDark)
+    static let pointPurple = ssafSoundColor(.pointPurple)
     static let pointPurplePoint = ssafSoundColor(.pointPurplePoint)
     
     static let recruit = ssafSoundColor(.recruit)

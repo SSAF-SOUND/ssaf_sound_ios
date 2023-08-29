@@ -31,7 +31,7 @@ struct PostView: View {
                             if let post = postViewModel.postModel?.data?.post{
                                 postContentItemView(
                                     title : post.title ?? "",
-                                    nickname : post.nickname ?? "",
+                                    nickname : post.author?.nickname ?? "",
                                     createdAt : post.createdAt ?? "",
                                     modified: post.modified ?? false,
                                     content : post.content ?? "",
@@ -41,14 +41,16 @@ struct PostView: View {
                                 )
                             }
                             Spacer().frame(height: 70)
-                            PostCommentItem()
-                            PostCommentItem()
+                            ForEach(0..<2) {
+                                _ in
+                                PostCommentItem()
+                            }.padding(.horizontal,25)
                         }
                         Spacer()
-                        PostTextInputItem()
+                        PostTextInputItem().padding(.horizontal,25)
                         Spacer()
                         
-                    }.padding(.horizontal,25)
+                    }
                 }
             }.task {
                 postViewModel.requestPostDetail(postId: postId)
@@ -59,38 +61,46 @@ struct PostView: View {
     @ViewBuilder
     private func postContentItemView(title : String, nickname : String, createdAt : String, modified : Bool, content : String, likeCount : Int, commentCount : Int, scrapCount : Int) -> some View {
         ZStack{
-            Color.grey
-            VStack(alignment: .leading,spacing: 11){
+            Color.backgroundGray
+            VStack(alignment: .leading, spacing: 11){
                 HStack(alignment: .center){
                     // MARK: 닉네임 앞자 아이콘 넣을자리
                     Spacer().frame(width: 20,height: 20)
                     Text(nickname)
                         .manropeFont(family: .Bold, size: 18)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                     Image("track_fallback_primary")
                         .resizable()
                         .frame(width: 10,height: 15)
                         .padding(.trailing,10)
-                    // MARK: 작성일(편집일) | 시간
-                    Text(createdAt)
-                        .manropeFont(family: .Regular, size: 12)
-                        .foregroundColor(.white)
                     Spacer()
+                    Button {
+                        print("more")
+                    } label: {
+                        Image(asset: .dots)
+                            .resizable()
+                            .frame(width: 16,height: 16)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                }
+                // MARK: 작성일(편집일) | 시간
+                Text(createdAt)
+                    .manropeFont(family: .Regular, size: 12)
+                    .foregroundColor(.basicWhite)
+                HStack{
+                    Text(title)
+                        .manropeFont(family: .Bold, size: 16)
+                        .foregroundColor(.basicWhite)
                     if modified {
                         Text("(수정됨)")
                             .manropeFont(family: .Bold, size: 12)
                             .foregroundColor(.primaryPoint)
                     }
-                    
                 }
-                
-                Text(title)
-                    .manropeFont(family: .Bold, size: 16)
-                    .foregroundColor(.white)
                 
                 Text(content)
                     .manropeFont(family: .Bold, size: 13)
-                    .foregroundColor(.white)
+                    .foregroundColor(.basicWhite)
                     .padding(.bottom,30)
                 //                PostInteractionStats()
                 postInteractionStatsView(likeCount: likeCount, commentCount: commentCount, scrapCount: scrapCount)
@@ -139,6 +149,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(preBoardName:"" , postId : 1)
+            PostView(preBoardName:"" , postId : 1)
     }
 }

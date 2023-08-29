@@ -41,13 +41,13 @@ struct PostWriteView: View {
         VStack{
             TextField("", text: $postWriteTitle, prompt: Text("제목").foregroundColor(.bluegrey))
                 .manropeFont(family: .Bold, size: 16)
-                .foregroundColor(.white)
+                .foregroundColor(.basicWhite)
                 .padding(.leading, 24)
                 .padding(.vertical,10)
                 .overlay(
                     Rectangle()
                         .frame(height: 1)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                     , alignment: .top
                 )
             
@@ -67,7 +67,7 @@ struct PostWriteView: View {
                 .overlay(
                     Rectangle()
                         .frame(height: 1)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                     , alignment: .top
                 )
             Spacer()
@@ -116,7 +116,7 @@ struct PostWriteView: View {
                         Image(systemName: isAnomymous ? "checkmark.square" : "square")
                         Text("익명")
                             .manropeFont(family: .Bold, size: 14)
-                    }.foregroundColor(.white)
+                    }.foregroundColor(.basicWhite)
                 }
                 
             }
@@ -136,7 +136,7 @@ struct PostWriteView: View {
                 viewModel.removeImage(image)
             }) {
                 Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.white)
+                    .foregroundColor(.basicWhite)
                     .font(.title2)
                     .padding(4)
             }
