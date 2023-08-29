@@ -13,6 +13,7 @@ import Moya
 public class PostViewModel: ObservableObject {
     public init() {
         requestPost(boardId: 1)
+        
     }
     
     var postCancellable: AnyCancellable?
