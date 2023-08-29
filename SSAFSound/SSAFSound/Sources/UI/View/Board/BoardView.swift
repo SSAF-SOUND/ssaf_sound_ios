@@ -64,7 +64,7 @@ struct BoardView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.whilte)
+                    .foregroundColor(.basicWhite)
 
                 Spacer()
                     .frame(width: 20)
@@ -73,10 +73,7 @@ struct BoardView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.whilte)
-
-
-
+                    .foregroundColor(.basicWhite)
             }
 
         }

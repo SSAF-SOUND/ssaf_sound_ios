@@ -43,13 +43,13 @@ struct HotBoardView: View {
         } label: {
             VStack {
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(.white)
+                    .fill(Color.basicWhite)
                     .frame(height: 42)
                     .overlay {
                         HStack {
                             Text("검색어를 입력해주세요")
                                 .manropeFont(family: .Regular, size: 14)
-                                .foregroundColor(.grey)
+                                .foregroundColor(Color(red: 0.76, green: 0.76, blue: 0.77))
                                 .kerning(-0.3)
                             Spacer()
                             
@@ -57,7 +57,7 @@ struct HotBoardView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 18, height: 15)
-                                .foregroundColor(.ssafySoundblack)
+                                .foregroundColor(.basicBlack)
                         }
                         .padding(.horizontal, 20)
                     }

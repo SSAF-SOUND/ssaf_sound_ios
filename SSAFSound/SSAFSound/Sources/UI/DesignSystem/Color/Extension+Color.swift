@@ -52,7 +52,7 @@ public extension Color {
     // MARK: - Point
     static let pointGreen = ssafSoundColor(.pointGreen)
     static let pointOrange = ssafSoundColor(.pointOrange)
-    static let pointPurple = ssafSoundColor(.primaryDark)
+    static let pointPurple = ssafSoundColor(.pointPurple)
     static let pointPurplePoint = ssafSoundColor(.pointPurplePoint)
     
     static let recruit = ssafSoundColor(.recruit)

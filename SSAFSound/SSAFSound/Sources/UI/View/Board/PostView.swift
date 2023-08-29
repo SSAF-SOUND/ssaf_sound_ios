@@ -59,14 +59,14 @@ struct PostView: View {
     @ViewBuilder
     private func postContentItemView(title : String, nickname : String, createdAt : String, modified : Bool, content : String, likeCount : Int, commentCount : Int, scrapCount : Int) -> some View {
         ZStack{
-            Color.grey
+            Color.backgroundGray
             VStack(alignment: .leading,spacing: 11){
                 HStack(alignment: .center){
                     // MARK: 닉네임 앞자 아이콘 넣을자리
                     Spacer().frame(width: 20,height: 20)
                     Text(nickname)
                         .manropeFont(family: .Bold, size: 18)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                     Image("track_fallback_primary")
                         .resizable()
                         .frame(width: 10,height: 15)
@@ -74,7 +74,7 @@ struct PostView: View {
                     // MARK: 작성일(편집일) | 시간
                     Text(createdAt)
                         .manropeFont(family: .Regular, size: 12)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                     Spacer()
                     if modified {
                         Text("(수정됨)")
@@ -86,11 +86,11 @@ struct PostView: View {
                 
                 Text(title)
                     .manropeFont(family: .Bold, size: 16)
-                    .foregroundColor(.white)
+                    .foregroundColor(.basicWhite)
                 
                 Text(content)
                     .manropeFont(family: .Bold, size: 13)
-                    .foregroundColor(.white)
+                    .foregroundColor(.basicWhite)
                     .padding(.bottom,30)
                 //                PostInteractionStats()
                 postInteractionStatsView(likeCount: likeCount, commentCount: commentCount, scrapCount: scrapCount)

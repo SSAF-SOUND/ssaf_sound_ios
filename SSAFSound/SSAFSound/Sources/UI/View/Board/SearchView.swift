@@ -35,7 +35,7 @@ struct SearchView: View {
                     if serachBoardText != "" {
                         Text("'"+serachBoardText+"'"+" 검색 결과")
                             .manropeFont(family: .Regular, size: 18)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(.basicWhite)
                         
                     }else{
                         Text("")
@@ -57,6 +57,7 @@ struct SearchView: View {
                         TextField("검색어를 입력해주세요", text: $serachBoardText)
                             .manropeFont(family: .Regular, size: 14)
                             .kerning(-0.3)
+                            
                         
                         Spacer()
                         
@@ -67,7 +68,7 @@ struct SearchView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 18, height: 15)
-                                .foregroundColor(.ssafySoundblack)
+                                .foregroundColor(.basicBlack)
                         }
                     }
                     .padding(.horizontal, 20)
@@ -97,26 +98,26 @@ struct SearchView: View {
                     HStack(alignment: .bottom) {
                         Text("00게시판")
                             .manropeFont(family: .Bold, size: 12)
-                            .foregroundColor(.purplePoint)
+                            .foregroundColor(.pointPurple)
                         Spacer()
                         boardInteractionStatsView(likeCount: 10, commentCount: 10)
                     }
                     Text("제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치")
                         .manropeFont(family: .Bold, size: 14)
                         .lineLimit(1)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                         .padding(.bottom,12)
                     Text("게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용")
                         .manropeFont(family: .Regular, size: 14)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                         .lineLimit(1)
                     Text("n분전 | 게시자")
                         .manropeFont(family: .Bold, size: 14)
-                        .foregroundColor(.white)
+                        .foregroundColor(.basicWhite)
                 }
                     .padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
                     .frame(height: 123)
-                    .background(Color.bluegrey)
+                    .background(Color.fontBlack)
                     .cornerRadius(8)
                     .overlay(RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(red: 0.53, green: 0.56, blue: 0.66), lineWidth: 1)
