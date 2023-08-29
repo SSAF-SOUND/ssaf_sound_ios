@@ -20,6 +20,7 @@ public enum Colors: String {
     // MARK: - Background
     case background
     case backgroundLight
+    case backgroundGray
     
     // MARK: - Font
     case fontBlack
