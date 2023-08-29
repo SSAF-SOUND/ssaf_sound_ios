@@ -28,7 +28,7 @@ struct HotBoardView: View {
                     searchBoardTextFieldView()
                     ScrollView(showsIndicators: false){
                         ForEach(0..<10) { i in
-                            NavigationLink(destination:PostView( preBoardName: boardName).navigationBarHidden(true)){HotBoardItemView()}
+                            NavigationLink(destination:PostView( preBoardName: boardName, postId : 1).navigationBarHidden(true)){HotBoardItemView()}
                         }
                     }.padding(.horizontal,25)
                 }

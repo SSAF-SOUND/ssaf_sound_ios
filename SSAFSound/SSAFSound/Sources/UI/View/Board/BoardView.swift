@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BoardView: View {
-//    let boardItems: [String] = ["자유", "취업", "테크", "맛집", "질문", "싸피 예비생"]
     var boardItems: [String] = []
     @State private var isHotBoard: Bool = false
     @StateObject var boardviewModel: BoardViewModel2 = BoardViewModel2()
@@ -28,7 +27,6 @@ struct BoardView: View {
 
                     ScrollView(showsIndicators: false) {
                         ForEach(boardviewModel.boardModel?.data?.boards ?? [], id: \.boardId) { board in
-
                             NavigationLink(
                                 destination: SelectedBoardView(boardName: board.title!, boardId : board.boardId!)
                                     .navigationBarHidden(true)
