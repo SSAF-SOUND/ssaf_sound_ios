@@ -15,7 +15,6 @@ struct PostView: View {
     
     // MARK: postViewModel 데이터 집합
     @StateObject var postViewModel: PostViewModel = PostViewModel()
-    
     var body: some View {
         ZStack {
             Color.background
@@ -43,7 +42,7 @@ struct PostView: View {
                             Spacer().frame(height: 70)
                             ForEach(0..<2) {
                                 _ in
-                                PostCommentItem()
+                                PostCommentItem(getPostId: postId)
                             }.padding(.horizontal,25)
                         }
                         Spacer()

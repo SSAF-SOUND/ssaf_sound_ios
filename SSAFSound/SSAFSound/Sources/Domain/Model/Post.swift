@@ -70,5 +70,5 @@ struct SsafyInfo : Codable {
     let semester: Int?
     let campus: String?
     let certificationState: String?
-    let majorTrac: String?
+    let majorTrack: String?
 }

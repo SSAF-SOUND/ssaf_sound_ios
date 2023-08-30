@@ -18,6 +18,11 @@ struct PostCommentItem: View {
     @State var declarationComment: String = ""
     @State var declarationReComment: String = ""
     
+    // MARK: commentViewModel 데이터 집합
+    @StateObject var commentViewModel: CommentViewModel = CommentViewModel()
+    let getPostId: Int
+    
+    
     var body: some View {
         VStack(alignment: .leading,spacing:0){
             HStack(alignment: .center){
@@ -74,6 +79,9 @@ struct PostCommentItem: View {
             if repliesNum > 0 {
                 repliesCommentItemView()
             }
+        }
+        .task {
+            commentViewModel.requestCommentList(postId: getPostId)
         }
     }
     
@@ -137,7 +145,6 @@ struct PostCommentItem: View {
             }.cornerRadius(10)
         }
     }
-    
     @ViewBuilder
     private func moreButton() -> some View {
         Button {
@@ -240,6 +247,6 @@ struct PostCommentItem: View {
 
 struct PostCommentItem_Previews: PreviewProvider {
     static var previews: some View {
-        PostCommentItem()
+        PostCommentItem(getPostId: 1)
     }
 }
