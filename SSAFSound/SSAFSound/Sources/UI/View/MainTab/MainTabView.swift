@@ -41,7 +41,7 @@ struct MainTabView: View {
                         }
                         .tag(2)
 
-                    ProfleView()
+                    ProfileView(selectTab: $viewModel.selectProfileMenyType)
                         .tabItem {
                             TabItemViews(image: "person.crop.circle", tabName: MainTabType.profile.description, isSelected: viewModel.selectTabItem == 3)
                         }
