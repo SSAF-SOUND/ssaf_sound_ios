@@ -28,22 +28,10 @@ struct PostView: View {
                     VStack{
                         ScrollView(showsIndicators: false){
                             if let post = postViewModel.postModel?.data?.post{
-                                postContentItemView(
-                                    title : post.title ?? "",
-                                    nickname : post.author?.nickname ?? "",
-                                    createdAt : post.createdAt ?? "",
-                                    modified: post.modified ?? false,
-                                    content : post.content ?? "",
-                                    likeCount : post.likeCount ?? 0,
-                                    commentCount : post.commentCount ?? 0,
-                                    scrapCount : post.scrapCount ?? 0
-                                )
+                                postContentItemView(post: post)
                             }
                             Spacer().frame(height: 70)
-                            ForEach(0..<2) {
-                                _ in
-                                PostCommentItem(getPostId: postId)
-                            }.padding(.horizontal,25)
+                            PostCommentItemGroup(getPostId: postId).padding(.horizontal,25)
                         }
                         Spacer()
                         PostTextInputItem().padding(.horizontal,25)
@@ -58,14 +46,14 @@ struct PostView: View {
         }
     }
     @ViewBuilder
-    private func postContentItemView(title : String, nickname : String, createdAt : String, modified : Bool, content : String, likeCount : Int, commentCount : Int, scrapCount : Int) -> some View {
+    private func postContentItemView(post: PostDetail) -> some View {
         ZStack{
             Color.backgroundGray
             VStack(alignment: .leading, spacing: 11){
                 HStack(alignment: .center){
                     // MARK: 닉네임 앞자 아이콘 넣을자리
                     Spacer().frame(width: 20,height: 20)
-                    Text(nickname)
+                    Text((post.author?.nickname)!)
                         .manropeFont(family: .Bold, size: 18)
                         .foregroundColor(.basicWhite)
                     Image("track_fallback_primary")
@@ -83,26 +71,24 @@ struct PostView: View {
                     }
                 }
                 // MARK: 작성일(편집일) | 시간
-                Text(createdAt)
+                Text(post.createdAt)
                     .manropeFont(family: .Regular, size: 12)
                     .foregroundColor(.basicWhite)
                 HStack{
-                    Text(title)
+                    Text(post.title)
                         .manropeFont(family: .Bold, size: 16)
                         .foregroundColor(.basicWhite)
-                    if modified {
+                    if post.modified {
                         Text("(수정됨)")
                             .manropeFont(family: .Bold, size: 12)
                             .foregroundColor(.primaryPoint)
                     }
                 }
-                
-                Text(content)
+                Text(post.content)
                     .manropeFont(family: .Bold, size: 13)
                     .foregroundColor(.basicWhite)
                     .padding(.bottom,30)
-                //                PostInteractionStats()
-                postInteractionStatsView(likeCount: likeCount, commentCount: commentCount, scrapCount: scrapCount)
+                postInteractionStatsView(likeCount: post.likeCount, commentCount: post.commentCount, scrapCount: post.scrapCount)
                 
             }.padding()
         }.frame(minHeight: 169)

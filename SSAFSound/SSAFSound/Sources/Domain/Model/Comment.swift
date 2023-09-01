@@ -27,10 +27,10 @@ struct Comments: Codable {
     let deletedComment: Bool
     let modified: Bool
     let author: Author?
-    let replis: [Replis]?
+    let replies: [Replies]?
 }
 
-struct Replis: Codable {
+struct Replies: Codable {
     let commentId : Int
     let content: String
     let anonymity: Bool
@@ -41,5 +41,5 @@ struct Replis: Codable {
     let deletedComment: Bool
     let modified: Bool
     let author: Author?
-    let replis: [Replis]?
+    let replies: [Replies]?
 }
