@@ -16,6 +16,7 @@ struct PostView: View {
     // MARK: postViewModel 데이터 집합
     @StateObject var postViewModel: PostViewModel = PostViewModel()
     var body: some View {
+        
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
@@ -30,8 +31,8 @@ struct PostView: View {
                             if let post = postViewModel.postModel?.data?.post{
                                 postContentItemView(post: post)
                             }
-                            Spacer().frame(height: 70)
-                            PostCommentItemGroup(getPostId: postId).padding(.horizontal,25)
+                            Spacer().frame(height: 40)
+                            PostCommentItemGroup(getPostId: postId).padding(.horizontal,8)
                         }
                         Spacer()
                         PostTextInputItem().padding(.horizontal,25)
@@ -134,6 +135,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-            PostView(preBoardName:"" , postId : 1)
+            PostView(preBoardName:"" , postId : 2)
     }
 }

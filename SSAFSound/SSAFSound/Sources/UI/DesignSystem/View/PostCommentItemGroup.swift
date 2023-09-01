@@ -8,67 +8,36 @@
 import SwiftUI
 
 struct PostCommentItemGroup: View {
-    // MARK: API 연결 이후 작업 예정 : 댓글 수정 여부에 따른 상태 표시
-    @State private var isEdit: Bool = true
-    @State private var repliesNum: Int = 1
+
     @State var isMore: Bool = false
     @State var isReMore: Bool = false
     @State var isAlert: Bool = false
     @State var isReAlert: Bool = false
     @State var declarationComment: String = ""
     @State var declarationReComment: String = ""
-    
+
     // MARK: commentViewModel 데이터 집합
     @StateObject var commentViewModel: CommentViewModel = CommentViewModel()
     let getPostId: Int
-    
+
     var body: some View {
-        
+
         VStack(alignment: .leading, spacing: 0) {
             ForEach(commentViewModel.commentModel?.data?.comments ?? [], id: \.commentId)
             { comment in
-                //                PostCommentItem(comments: comment)
-                HStack(alignment: .center) {
-                    // MARK: 닉네임 앞자 아이콘 넣을자리
-                    Spacer().frame(width: 16, height: 16)
-                    Text((comment.author?.nickname)!)
-                        .manropeFont(family: .Bold, size: 14)
-                        .foregroundColor(.white)
-                    Image("track_fallback_primary")
-                        .resizable()
-                        .frame(width: 10, height: 15)
-                        .padding(.trailing, 10)
-                    Spacer()
-                    ButtonGroup()
-                }
-                Text(comment.content)
-                    .manropeFont(family: .Regular, size: 14)
-                    .foregroundColor(.white)
-                    .padding(.bottom, 4)
-                
-                HStack {
-                    // MARK: 작성일(편집일) | 시간
-                    Text(comment.createdAt)
-                        .manropeFont(family: .Regular, size: 12)
-                        .foregroundColor(.white)
-                    if comment.modified {
-                        Text("(수정됨)")
-                            .manropeFont(family: .Bold, size: 12)
-                            .foregroundColor(.primaryPoint)
-                    }
-                }.padding(.bottom, 5)
+                commentItemView(comments: comment).padding(.bottom, 5)
                 ForEach(comment.replies ?? [], id: \.commentId) {
                     replies in
-                    repliesCommentItemView(replies: replies)
+                    repliesCommentItemView(replies: replies).padding(.bottom, 5)
                 }
             }
         }
-        .task {
+            .task {
             commentViewModel.requestCommentList(postId: getPostId)
         }
-        
+
     }
-    
+
     @ViewBuilder
     private func ButtonGroup() -> some View {
         HStack(alignment: .center, spacing: 12) {
@@ -79,9 +48,9 @@ struct PostCommentItemGroup: View {
                     .resizable()
                     .frame(width: 16, height: 16)
                     .aspectRatio(contentMode: .fit)
-                
+
             }.padding(.top, 3)
-            
+
             Button {
                 print("recommand")
             } label: {
@@ -89,21 +58,57 @@ struct PostCommentItemGroup: View {
                     .resizable()
                     .frame(width: 16, height: 16)
                     .aspectRatio(contentMode: .fit)
-                
+
             }
             moreButton()
         }
     }
-    
+
+    @ViewBuilder
+    private func commentItemView(comments: Comments) -> some View {
+
+        VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .center) {
+                // MARK: 닉네임 앞자 아이콘 넣을자리
+                Spacer().frame(width: 16, height: 16)
+                Text((comments.author?.nickname)!)
+                    .manropeFont(family: .Bold, size: 14)
+                    .foregroundColor(.white)
+                Image("track_fallback_primary")
+                    .resizable()
+                    .frame(width: 10, height: 15)
+                    .padding(.trailing, 10)
+                Spacer()
+                ButtonGroup()
+            }
+            Text(comments.content)
+                .manropeFont(family: .Regular, size: 14)
+                .foregroundColor(.white)
+                .padding(.bottom, 4)
+            HStack {
+                // MARK: 작성일(편집일) | 시간
+                Text(comments.createdAt)
+                    .manropeFont(family: .Regular, size: 12)
+                    .foregroundColor(.white)
+                if comments.modified {
+                    Text("(수정됨)")
+                        .manropeFont(family: .Bold, size: 12)
+                        .foregroundColor(.primaryPoint)
+                }
+            }
+        }.padding(EdgeInsets(top: 8, leading: 1, bottom: 8, trailing: 1))
+
+    }
+
     @ViewBuilder
     private func repliesCommentItemView(replies: Replies) -> some View {
-        HStack(alignment: .top, spacing: 6) {
+        HStack(alignment: .top, spacing: 0) {
             Image(asset: .reply)
                 .resizable()
                 .frame(width: 17, height: 17)
+                .padding(.trailing, 6)
                 .aspectRatio(contentMode: .fit)
                 .colorMultiply(.primaryDefault)
-            //
             ZStack {
                 Color.backgroundGray
                 VStack(alignment: .leading, spacing: 0) {
@@ -119,6 +124,7 @@ struct PostCommentItemGroup: View {
                             .padding(.trailing, 10)
                         Spacer()
                         HStack(alignment: .center, spacing: 12) {
+                            Spacer().frame(width: 16, height: 16)
                             Button {
                                 print("recommand")
                             } label: {
@@ -126,7 +132,7 @@ struct PostCommentItemGroup: View {
                                     .resizable()
                                     .frame(width: 16, height: 16)
                                     .aspectRatio(contentMode: .fit)
-                                
+
                             }
                             reMoreButton()
                         }
@@ -134,9 +140,8 @@ struct PostCommentItemGroup: View {
                     Text(replies.content)
                         .manropeFont(family: .Regular, size: 14)
                         .foregroundColor(.white)
-                        .padding(.leading, 10)
                         .padding(.bottom, 4)
-                    
+
                     HStack {
                         // MARK: 작성일(편집일) | 시간
                         Text(replies.createdAt)
@@ -147,11 +152,8 @@ struct PostCommentItemGroup: View {
                                 .manropeFont(family: .Bold, size: 12)
                                 .foregroundColor(.primaryPoint)
                         }
-                    }.padding(.leading, 10)
-                }
-                
-                .padding(8)
-                
+                    }
+                }.padding(EdgeInsets(top: 8, leading: 7, bottom: 8, trailing: 1))
             }.cornerRadius(10)
         }
     }
@@ -164,7 +166,7 @@ struct PostCommentItemGroup: View {
                 .resizable()
                 .frame(width: 16, height: 16)
                 .aspectRatio(contentMode: .fit)
-            
+
         }.confirmationDialog("댓글 메뉴", isPresented: $isMore) {
             Button {
                 print("수정하기")
@@ -178,7 +180,7 @@ struct PostCommentItemGroup: View {
             } label: {
                 Text("삭제하기")
             }
-            
+
             Button {
                 print("신고하기")
                 isMore = false
@@ -195,14 +197,14 @@ struct PostCommentItemGroup: View {
         } message: {
             Text("댓글 메뉴")
         }
-        .alert(Text("해당 댓글을 정말 신고하겠습니까?"), isPresented: $isAlert) {
+            .alert(Text("해당 댓글을 정말 신고하겠습니까?"), isPresented: $isAlert) {
             Button("취소", role: .cancel) { }
             Button("신고", role: .destructive) { }
             TextField("신고사유", text: $declarationComment)
         } message: {
             Text("검수 후 자동으로 삭제됩니다")
         }
-        
+
     }
     @ViewBuilder
     private func reMoreButton() -> some View {
@@ -213,7 +215,7 @@ struct PostCommentItemGroup: View {
                 .resizable()
                 .frame(width: 16, height: 16)
                 .aspectRatio(contentMode: .fit)
-            
+
         }.confirmationDialog("", isPresented: $isReMore) {
             // MARK: 구분 확인용
             Button(role: .destructive) {
@@ -244,21 +246,14 @@ struct PostCommentItemGroup: View {
         } message: {
             Text("댓글 메뉴")
         }
-        .alert(Text("해당 대댓글을 정말 신고하겠습니까?"), isPresented: $isReAlert) {
+            .alert(Text("해당 대댓글을 정말 신고하겠습니까?"), isPresented: $isReAlert) {
             Button("취소", role: .cancel) { }
             Button("신고", role: .destructive) { }
             TextField("신고사유", text: $declarationReComment)
         } message: {
             Text("검수 후 자동으로 삭제됩니다")
         }
-        
-    }
-}
 
-struct PostCommentItem: View {
-    let comments: [Comments]
-    var body: some View {
-        Text("d")
     }
 }
 
