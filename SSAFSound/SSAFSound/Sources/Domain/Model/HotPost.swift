@@ -15,7 +15,7 @@ import Foundation
 // MARK: - Welcome
 struct HotPostModel: Codable {
     let code, message: String?
-    let data: HotPostResponse
+    let data: HotPostResponse?
 }
 
 // MARK: - HostPostResponse
@@ -26,21 +26,14 @@ struct HotPostResponse: Codable {
 
 // MARK: - Post
 struct HotPost: Codable {
-    let boardID: Int
+    let boardId: Int
     let boardTitle: String
-    let postID: Int
+    let postId: Int
     let title, content: String
     let likeCount, commentCount: Int
     let createdAt, nickname: String
     let anonymity: Bool
     let thumbnail: String?
-
-    enum CodingKeys: String, CodingKey {
-        case boardID = "boardId"
-        case boardTitle
-        case postID = "postId"
-        case title, content, likeCount, commentCount, createdAt, nickname, anonymity, thumbnail
-    }
 }
 
 

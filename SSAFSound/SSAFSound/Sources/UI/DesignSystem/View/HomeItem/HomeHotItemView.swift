@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct HomeHotItemView: View {
-    var board: String
-    var title: String
-    var likeCount: Int
-    var commentCount: Int
+    
+    let hotPost: HotPost
     
     var body: some View {
         HStack(alignment: .center) {
@@ -22,13 +20,13 @@ struct HomeHotItemView: View {
                 .cornerRadius(20)
                 .foregroundColor(.whilte)
                 .overlay {
-                    Text(board)
+                    Text(hotPost.boardTitle)
                         .font(.pretendardBold12)
                         .foregroundColor(.ssafySoundblack)
                 }
             
             
-            Text(title)
+            Text(hotPost.title)
                 .foregroundColor(.whilte)
                 .font(.pretendardRegualar14)
                 .lineLimit(1)
@@ -36,7 +34,7 @@ struct HomeHotItemView: View {
             Spacer()
             
             Image(asset: .thumb_fill)
-            Text("\(likeCount)")
+            Text("\(hotPost.likeCount)")
                 .foregroundColor(.whilte)
                 .font(.pretendardRegualar14)
             Spacer()
@@ -44,7 +42,7 @@ struct HomeHotItemView: View {
             
             Image(asset: .chat_fill)
 
-            Text("\(commentCount)")
+            Text("\(hotPost.commentCount)")
                 .foregroundColor(.whilte)
                 .font(.pretendardRegualar14)
             
@@ -55,10 +53,10 @@ struct HomeHotItemView: View {
     }
 }
 
-struct HomeHotItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeHotItemView(board: "취업", title: "점메추 해주라!!!!!!!!!!!!!!!!!!!!!!!!dfasdfadsfasdfa", likeCount: 1, commentCount: 1)
-            .previewLayout(.sizeThatFits)
-            .preferredColorScheme(.dark)
-    }
-}
+//struct HomeHotItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeHotItemView(hotPost: HotPost)
+//            .previewLayout(.sizeThatFits)
+//            .preferredColorScheme(.dark)
+//    }
+//}
