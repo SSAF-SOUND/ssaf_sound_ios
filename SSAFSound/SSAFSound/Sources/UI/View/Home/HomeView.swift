@@ -10,76 +10,98 @@ import SwiftUI
 // MARK: - HOME VIEW
 struct HomeView: View {
     @StateObject var hotPostViewModel = HotPostViewModel()
-    
+    @State private var isHotBoard: Bool = false
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea(.all)
-            VStack  {
-                
-               MainHeaerView(systemImage: "bell.fill", systemImage2: "ellipsis.message.fill")
-                
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 38)
-                        serverTimeView()
-                        Spacer()
-                            .frame(height: 31)
-                        lunchMenuView()
-                        
-                        Spacer()
-                            .frame(height: 31)
-                        
-                        
-                        HStack() {
-                            Text("Hot 게시글")
-                                .font(.pretendardBold24)
-                                .padding(.leading, 25)
+            NavigationStack{
+                VStack  {
+                   MainHeaerView(systemImage: "bell.fill", systemImage2: "ellipsis.message.fill")
+                    ScrollView(showsIndicators: false) {
+                        VStack {
+                            
                             Spacer()
-                            Text("더보기")
-                                .padding(.trailing, 25)
-                                .font(.pretendardBold16)
-                        }
-                        .foregroundColor(.whilte)
-                        
-                        ForEach(1...5, id: \.self) { _ in
-                            HomeHotItemView(board: hotPostViewModel.hotPostModel?.data.posts.first?.boardTitle ?? "취업", title: "점메추해주라!!", likeCount: 1, commentCount: 1)
-                        }
-                        
-                        HStack() {
-                            Text("리쿠르팅 게시글")
-                                .font(.pretendardBold24)
-                                .padding(.leading, 25)
+                                .frame(height: 38)
+                            serverTimeView()
                             Spacer()
-                            Text("더보기")
-                                .padding(.trailing, 25)
-                                .font(.pretendardBold16)
-                        }
-                        .foregroundColor(.whilte)
+                                .frame(height: 31)
+                            lunchMenuView()
+                            
+                            Spacer()
+                                .frame(height: 31)
+                            
+                            
+                            HStack() {
+                                Text("Hot 게시글")
+                                    .font(.pretendardBold24)
+                                    .padding(.leading, 25)
+                                Spacer()
+                                navHotBoard()
+                            }
+                            .foregroundColor(.whilte)
+                            
+    //                        ForEach(1...5, id: \.self) { _ in
+    //                            HomeHotItemView(board: hotPostViewModel.hotPostModel?.data.posts.first?.boardTitle ?? "취업", title: "점메추해주라!!", likeCount: 1, commentCount: 1)
+    //                        }
+                            
+                            // TODO: 데이터 없을때 default 사이즈 정의 해야할듯
+                            ForEach(hotPostViewModel.hotPostModel?.data?.posts ?? [], id:\.boardId) {
+                                hotPost in
+                                NavigationLink(destination:PostView( preBoardName: hotPost.boardTitle, postId : hotPost.postId).navigationBarHidden(true)){
+                                    HomeHotItemView(hotPost: hotPost)
+                                }
+                            }
+                            
+                            HStack() {
+                                Text("리쿠르팅 게시글")
+                                    .font(.pretendardBold24)
+                                    .padding(.leading, 25)
+                                Spacer()
+                                Text("더보기")
+                                    .padding(.trailing, 25)
+                                    .font(.pretendardBold16)
+                            }
+                            .foregroundColor(.whilte)
+                            
+                            
+                        } //: VSTACK
+                        
+                        // MARK: - 가로 스크롤 안 됨!
+                        recruitPostPreview()
+                            .padding(.horizontal, 20)
+                            
+                        Spacer()
+                            .frame(height: UIScreen.screenWidth*0.1)
                         
                         
-                    } //: VSTACK
-                    
-                    // MARK: - 가로 스크롤 안 됨!
-                    recruitPostPreview()
-                        .padding(.horizontal, 20)
                         
-                    Spacer()
-                        .frame(height: UIScreen.screenWidth*0.1)
+                    } //: SCROLLVIEW
+                    .bounce(false)
                     
-                    
-                    
-                } //: SCROLLVIEW
-                .bounce(false)
-                
+                }
             }
             
             .task {
-                hotPostViewModel.hotPostResponse()
+                hotPostViewModel.requestHotPostList()
             }
             
         } //: ZSTACK
+    }
+    @ViewBuilder
+    private func navHotBoard() -> some View {
+        Button {
+            isHotBoard.toggle()
+        } label: {
+            Text("더보기")
+                .padding(.trailing, 25)
+                .font(.pretendardBold16)
+                .foregroundColor(.basicWhite)
+        }
+            .navigationDestination(isPresented: $isHotBoard) {
+            HotBoardView(boardName: "HOT 게시판")
+                .navigationBarHidden(true)
+        }
+
     }
 }
 

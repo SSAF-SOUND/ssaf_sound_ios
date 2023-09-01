@@ -13,6 +13,7 @@ struct HotBoardView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @State private var isSearchView:Bool = false
+    @StateObject var hotPostViewModel = HotPostViewModel()
     
     var body: some View {
         ZStack {
@@ -27,12 +28,17 @@ struct HotBoardView: View {
                 VStack{
                     searchBoardTextFieldView()
                     ScrollView(showsIndicators: false){
-                        ForEach(0..<10) { i in
-                            NavigationLink(destination:PostView( preBoardName: boardName, postId : 1).navigationBarHidden(true)){HotBoardItemView()}
+                        ForEach(hotPostViewModel.hotPostModel?.data?.posts ?? [], id: \.boardId) { hotPost in
+                            NavigationLink(destination:PostView( preBoardName: hotPost.boardTitle, postId : hotPost.postId).navigationBarHidden(true)){
+                                HotBoardItemView(hotPost: hotPost)
+                            }
                         }
+
                     }.padding(.horizontal,25)
                 }
             }
+        }.task{
+            hotPostViewModel.requestHotPostList()
         }
     }
     

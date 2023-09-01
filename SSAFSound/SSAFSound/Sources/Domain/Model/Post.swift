@@ -35,20 +35,20 @@ struct PostList: Codable  {
 
 struct PostDetail: Codable {
     // post
-    let boardId : Int?
-    let boardTitle : String?
-    let postId : Int?
-    let title: String?
-    let content: String?
-    let likeCount: Int?
-    let commentCount: Int?
-    let scrapCount: Int?
-    let createdAt: String?
-    let anonymity: Bool?
-    let modified: Bool?
-    let scraped: Bool?
-    let liked: Bool?
-    let mine: Bool?
+    let boardId : Int
+    let boardTitle : String
+    let postId : Int
+    let title: String
+    let content: String
+    let likeCount: Int
+    let commentCount: Int
+    let scrapCount: Int
+    let createdAt: String
+    let anonymity: Bool
+    let modified: Bool
+    let scraped: Bool
+    let liked: Bool
+    let mine: Bool
     let images: [ImageUrl]?
     let author : Author?
 }
@@ -70,5 +70,5 @@ struct SsafyInfo : Codable {
     let semester: Int?
     let campus: String?
     let certificationState: String?
-    let majorTrac: String?
+    let majorTrack: String?
 }

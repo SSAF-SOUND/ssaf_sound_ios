@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct HotBoardItemView: View {
+    let hotPost: HotPost
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             HStack(alignment: .bottom) {
-                Text("00게시판")
+                Text(hotPost.boardTitle)
                     .manropeFont(family: .Bold, size: 12)
                     .foregroundColor(.pointPurple)
                 Spacer()
-                boardInteractionStatsView(likeCount: 10,commentCount: 10)
+                boardInteractionStatsView(likeCount: hotPost.likeCount, commentCount: hotPost.commentCount)
             }
-            Text("제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치제목 위치")
+            Text(hotPost.title)
                 .manropeFont(family: .Bold, size: 14)
                 .lineLimit(1)
                 .foregroundColor(.basicWhite)
                 .padding(.bottom,12)
-            Text("게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용게시글 내용")
+            Text(hotPost.content)
                 .manropeFont(family: .Regular, size: 14)
                 .foregroundColor(.basicWhite)
                 .lineLimit(1)
-            Text("n분전 | 게시자")
+            Text(hotPost.createdAt)
                 .manropeFont(family: .Bold, size: 14)
                 .foregroundColor(.basicWhite)
         }.padding(EdgeInsets(top: 14, leading: 22, bottom: 14, trailing: 22))
@@ -66,8 +67,8 @@ struct HotBoardItemView: View {
     }
 }
 
-struct HotBoardItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        HotBoardItemView()
-    }
-}
+//struct HotBoardItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HotBoardItemView(hotPost: HotPost)
+//    }
+//}
