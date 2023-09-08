@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TodayLunchView: View {
+    @State var dateSelect: Bool
+    
     var body: some View {
         ZStack {
             Color.background.ignoresSafeArea(.all)
@@ -37,11 +39,28 @@ struct TodayLunchView: View {
         }
     }
     
+    // MARK: - 오늘 | 내일 전환 버튼 
     @ViewBuilder private func chooseDayButton() -> some View {
         VStack {
-            Text("오늘 | 내일")
-                .font(.pretendardBold24)
-            .foregroundColor(.primaryDefault)
+            Button {
+                dateSelect.toggle()
+            } label: {
+                HStack {
+                    Text("오늘")
+                        .font(.pretendardBold24)
+                        .foregroundColor(.primaryDefault)
+                    Text("|")
+                        .font(.pretendardBold24)
+                        .foregroundColor(.primaryDefault)
+                    Text("내일")
+                        .font(.pretendardBold24)
+                        .foregroundColor(.basicWhite)
+                }
+                
+            }
+
+            
+            
             Spacer()
                 .frame(height: 38)
         }
@@ -60,6 +79,6 @@ struct TodayLunchView: View {
 
 struct TodayLunchView_Previews: PreviewProvider {
     static var previews: some View {
-        TodayLunchView()
+        TodayLunchView(dateSelect: true)
     }
 }

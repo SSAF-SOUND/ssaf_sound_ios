@@ -127,7 +127,7 @@ struct ProfileView: View {
         if selectTab == .portfolio {
             MyPorfolioDefaultView()
         } else  {
-            RecruitCardView()
+            RecruitCardView(isMine: true, type: .study)
         }
     }
 }

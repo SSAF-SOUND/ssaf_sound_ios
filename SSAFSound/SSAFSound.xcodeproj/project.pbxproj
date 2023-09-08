@@ -16,6 +16,8 @@
 		6C1089DF2A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */; };
 		6C1089E02A8CA4BA00712DCC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */; };
 		6C14A5132A99E36500BB9D8C /* ProfileMenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14A5122A99E36500BB9D8C /* ProfileMenuType.swift */; };
+		6C462F192AA5A59600A046F8 /* LunchMenuCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C462F182AA5A59600A046F8 /* LunchMenuCardView.swift */; };
+		6C462F1B2AA5C51A00A046F8 /* TodayLunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C462F1A2AA5C51A00A046F8 /* TodayLunchView.swift */; };
 		6C5F4F742A95F21400A0C8E4 /* ProfileMenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F4F732A95F21400A0C8E4 /* ProfileMenuButtonView.swift */; };
 		6C5F4F762A95FC3300A0C8E4 /* PrivateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F4F752A95FC3300A0C8E4 /* PrivateProfileView.swift */; };
 		6C5F4F782A95FCE900A0C8E4 /* MyPorfolioDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F4F772A95FCE900A0C8E4 /* MyPorfolioDefaultView.swift */; };
@@ -131,6 +133,8 @@
 		6C1089DB2A8CA4BA00712DCC /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		6C1089DC2A8CA4BA00712DCC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		6C14A5122A99E36500BB9D8C /* ProfileMenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuType.swift; sourceTree = "<group>"; };
+		6C462F182AA5A59600A046F8 /* LunchMenuCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchMenuCardView.swift; sourceTree = "<group>"; };
+		6C462F1A2AA5C51A00A046F8 /* TodayLunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayLunchView.swift; sourceTree = "<group>"; };
 		6C5F4F732A95F21400A0C8E4 /* ProfileMenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuButtonView.swift; sourceTree = "<group>"; };
 		6C5F4F752A95FC3300A0C8E4 /* PrivateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateProfileView.swift; sourceTree = "<group>"; };
 		6C5F4F772A95FCE900A0C8E4 /* MyPorfolioDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPorfolioDefaultView.swift; sourceTree = "<group>"; };
@@ -259,6 +263,22 @@
 				6C8F05B52A979FED00B7986D /* TestWebView.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		6C462F142AA5A45F00A046F8 /* Lunch */ = {
+			isa = PBXGroup;
+			children = (
+				6C462F1A2AA5C51A00A046F8 /* TodayLunchView.swift */,
+			);
+			path = Lunch;
+			sourceTree = "<group>";
+		};
+		6C462F152AA5A4D900A046F8 /* LunchItem */ = {
+			isa = PBXGroup;
+			children = (
+				6C462F182AA5A59600A046F8 /* LunchMenuCardView.swift */,
+			);
+			path = LunchItem;
 			sourceTree = "<group>";
 		};
 		6C5F4F702A95CF4F00A0C8E4 /* Segmented */ = {
@@ -594,6 +614,7 @@
 		7FB87BD92A6027AB0035AA68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C462F142AA5A45F00A046F8 /* Lunch */,
 				6C1089C92A89164B00712DCC /* SignIn */,
 				7FA97A562A7BD9F300F9DE59 /* SignUp */,
 				7FDAAE512A69641200713BE4 /* Profile */,
@@ -761,6 +782,7 @@
 		7FF4FADB2A603DDE007BF344 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C462F152AA5A4D900A046F8 /* LunchItem */,
 				7FC4DEDA2A9797AD0032CC6F /* ScrollView */,
 				6C5F4F7C2A96024600A0C8E4 /* RecruitItem */,
 				6C5F4F702A95CF4F00A0C8E4 /* Segmented */,
@@ -969,6 +991,7 @@
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				6C5F4F782A95FCE900A0C8E4 /* MyPorfolioDefaultView.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
+				6C462F1B2AA5C51A00A046F8 /* TodayLunchView.swift in Sources */,
 				7FA97A6F2A7BDBB400F9DE59 /* SignUpSemesterView.swift in Sources */,
 				6C97C5502A93448100E0FD1D /* HomeHotItemView.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
@@ -992,6 +1015,7 @@
 				7FDAAE602A69660E00713BE4 /* HotBoardItemView.swift in Sources */,
 				7F6DE34D2A6405D300ADE1E3 /* Extesnsion+Size.swift in Sources */,
 				6C5F4F7E2A96028400A0C8E4 /* RecruitCardView.swift in Sources */,
+				6C462F192AA5A59600A046F8 /* LunchMenuCardView.swift in Sources */,
 				7FA97A5C2A7BDABA00F9DE59 /* CampusMenuOption.swift in Sources */,
 				7FA97A6B2A7BDB8000F9DE59 /* SignUpIsSsafyView.swift in Sources */,
 				6C97C5432A91DF1700E0FD1D /* HotPost.swift in Sources */,
