@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct HomeRecruitItemView: View {
-    var category: String
+//    var category: String
 //    var keyword: String
-//    var recruitTypes: String
+    var recruitTypes: RecruitStudyType
 //    var skills: String
     
     var body: some View {
@@ -30,12 +30,13 @@ struct HomeRecruitItemView: View {
                             .frame(width: 64, height: 22)
                             .foregroundColor(.primaryPoint)
                             .overlay {
-                                Text("프로젝트")
+                                Text(recruitTypes.description)
                                     .font(.pretendardBold12)
                             }
                         
                         Spacer()
                         
+                        // 리쿠르트 타입에 따른 색변경 기능 추가 필요!!
                         Text("D-5")
                             .foregroundColor(.primaryPoint)
                             .font(.pretendardBold16)
@@ -56,7 +57,7 @@ struct HomeRecruitItemView: View {
 
 struct HomeRecruitItemView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeRecruitItemView(category: "프로젝트")
+        HomeRecruitItemView(recruitTypes: .project)
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.dark)
     }
