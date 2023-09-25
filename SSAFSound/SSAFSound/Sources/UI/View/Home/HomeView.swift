@@ -223,7 +223,7 @@ private func recuritTopHeaderView() -> some View {
     ScrollView(.horizontal, showsIndicators: false) {
         HStack {
             ForEach(1...5, id: \.self) { _ in
-                HomeRecruitItemView(category: "프로젝트")
+                HomeRecruitItemView(recruitTypes: .project)
             }
         }
     }
