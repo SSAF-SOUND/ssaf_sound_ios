@@ -5,6 +5,7 @@
 //  Created by yimkeul on 2023/07/25.
 //
 
+
 import SwiftUI
 import PhotosUI
 
@@ -12,11 +13,13 @@ struct PostWriteView: View {
     
     @State var postWriteTitle:String = ""
     @State var postWriteContent:String = ""
-    @State var isAnomymous: Bool = true
+    @State var isAnonymity: Bool = true
     @StateObject private var viewModel = PhotoPickerViewModel()
     @State private var showingAlert = false
     
     @Environment(\.presentationMode) var presentationMode
+    // MARK: postViewModel 데이터 집합
+    @StateObject var postViewModel: PostViewModel = PostViewModel()
     
     var body: some View {
         ZStack {
@@ -108,12 +111,18 @@ struct PostWriteView: View {
                     }
                 }
                 Spacer()
+                Button{
+                    
+                } label :{
+                    Text("post 테스트")
+                }
+                Spacer()
                 Button {
                     print("anonymous toggle")
-                    isAnomymous.toggle()
+                    isAnonymity.toggle()
                 } label: {
                     HStack(alignment: .center, spacing: 5){
-                        Image(systemName: isAnomymous ? "checkmark.square" : "square")
+                        Image(systemName: isAnonymity ? "checkmark.square" : "square")
                         Text("익명")
                             .manropeFont(family: .Bold, size: 14)
                     }.foregroundColor(.basicWhite)
@@ -161,6 +170,7 @@ final class PhotoPickerViewModel: ObservableObject {
                 guard let data, let uiImage = UIImage(data: data) else {
                     throw URLError(.badServerResponse)
                 }
+                
                 selectedImage = uiImage
                 selectedImages.append(selectedImage!)
             } catch {

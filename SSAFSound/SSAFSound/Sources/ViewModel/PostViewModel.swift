@@ -80,4 +80,35 @@ public class PostViewModel: ObservableObject {
             })
     }
     
+    func requestPostCreate(boardId : Int){
+        if let cancellable = postCancellable {
+            cancellable.cancel()
+        }
+        let provider = MoyaProvider<PostService>(plugins: [MoyaLoggingPlugin()])
+        
+        postCancellable = provider.requestWithProgressPublisher(.postCreate(boardId: boardId))
+            .compactMap { $0.response?.data }
+            .receive(on: DispatchQueue.main)
+            .decode(type: PostModel.self, decoder: JSONDecoder())
+            .sink(receiveCompletion: { result in
+                switch result {
+                    //MARK: -  성공 했을때
+                case .finished:
+                    break
+                    //MARK: - 네트워크 통신 에러 관려
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+                
+            }, receiveValue: { [weak self] model in
+                if model.code == NetworkCode.sucess.description {
+                    self?.toViewModel(model)
+                    print("게시판글 작성 성공 \(String(describing: model.data?.posts))")
+                } else if model.code == NetworkCode.netWorkError.description {
+                    
+                }
+            })
+        
+    }
+    
 }

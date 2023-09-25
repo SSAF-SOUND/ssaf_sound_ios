@@ -11,6 +11,7 @@ import Moya
 enum PostService {
     case postList(boardId: Int, cursor : Int, size : Int)
     case postDetail(postId : Int)
+    case postCreate(boardId : Int)
 }
 
 extension PostService: BaseTargetType {
@@ -20,6 +21,8 @@ extension PostService: BaseTargetType {
             return SSAFSoundAPI.posts
         case .postDetail(let postId):
             return "\(SSAFSoundAPI.posts)/\(postId)"
+        case .postCreate:
+            return SSAFSoundAPI.posts
         }
     }
     
@@ -29,6 +32,8 @@ extension PostService: BaseTargetType {
             return .get
         case .postDetail:
             return .get
+        case .postCreate:
+            return .post
         }
     }
     
@@ -43,6 +48,11 @@ extension PostService: BaseTargetType {
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         case .postDetail:
             return .requestPlain
+        case .postCreate(boardId: let boardId):
+            let parameters : [String : Any] = [
+                "boardId" : boardId,
+            ]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         }
     }
     
