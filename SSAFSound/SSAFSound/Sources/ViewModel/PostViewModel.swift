@@ -80,13 +80,13 @@ public class PostViewModel: ObservableObject {
             })
     }
     
-    func requestPostCreate(boardId : Int){
+    func requestPostCreate(boardId: Int, title: String, content: String, anoymity: Bool, images: [[String: String]]){
         if let cancellable = postCancellable {
             cancellable.cancel()
         }
         let provider = MoyaProvider<PostService>(plugins: [MoyaLoggingPlugin()])
         
-        postCancellable = provider.requestWithProgressPublisher(.postCreate(boardId: boardId))
+        postCancellable = provider.requestWithProgressPublisher(.postCreate(boardId: boardId, title: title, content: content, anoymity: anoymity, images: images))
             .compactMap { $0.response?.data }
             .receive(on: DispatchQueue.main)
             .decode(type: PostModel.self, decoder: JSONDecoder())
@@ -103,7 +103,7 @@ public class PostViewModel: ObservableObject {
             }, receiveValue: { [weak self] model in
                 if model.code == NetworkCode.sucess.description {
                     self?.toViewModel(model)
-                    print("게시판글 작성 성공 \(String(describing: model.data?.posts))")
+                    print("게시판글 작성 성공 \(String(describing: model.data?.postId))")
                 } else if model.code == NetworkCode.netWorkError.description {
                     
                 }

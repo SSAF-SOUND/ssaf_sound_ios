@@ -9,13 +9,13 @@ import Foundation
 import Moya
 
 enum PostService {
-    case postList(boardId: Int, cursor : Int, size : Int)
-    case postDetail(postId : Int)
-    case postCreate(boardId : Int)
+    case postList(boardId: Int, cursor: Int, size: Int)
+    case postDetail(postId: Int)
+    case postCreate(boardId: Int, title: String, content: String, anoymity: Bool, images: [[String: String]]?)
 }
 
 extension PostService: BaseTargetType {
-    var path : String {
+    var path: String {
         switch self {
         case .postList:
             return SSAFSoundAPI.posts
@@ -25,7 +25,7 @@ extension PostService: BaseTargetType {
             return SSAFSoundAPI.posts
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .postList:
@@ -36,25 +36,33 @@ extension PostService: BaseTargetType {
             return .post
         }
     }
-    
+
     var task: Moya.Task {
         switch self {
-        case .postList(let boardId, let cursor , let size):
-            let parameters : [String : Any] = [
-                "boardId" : boardId,
-                "cursor" : cursor,
-                "size" : size
+        case .postList(let boardId, let cursor, let size):
+            let parameters: [String: Any] = [
+                "boardId": boardId,
+                "cursor": cursor,
+                "size": size
             ]
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         case .postDetail:
             return .requestPlain
-        case .postCreate(boardId: let boardId):
-            let parameters : [String : Any] = [
-                "boardId" : boardId,
+        case .postCreate(boardId: let boardId, title: let title, content: let content, anoymity: let anonymity, images: let images):
+            var parameters: [String: Any] = [
+                "boardId": boardId,
+                "title": title,
+                "content": content,
+                "anonymity": anonymity,
             ]
+            
+            // images가 값이 있다면 파라미터에 추가
+               if let images = images, !images.isEmpty {
+                   parameters["images"] = images
+               }
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         }
     }
-    
-    
+
+
 }

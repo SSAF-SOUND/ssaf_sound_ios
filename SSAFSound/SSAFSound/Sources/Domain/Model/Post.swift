@@ -14,8 +14,12 @@ struct PostModel: Codable {
 }
 
 struct PostResponse: Codable {
+    // MARK: 게시글 작성 목록 response type
     let posts: [PostList]?
+    // MARK: 게시글 상세보기 response type
     let post : PostDetail?
+    // MARK: 게시글 작성 response type
+    let postId : Int?
 }
 
 struct PostList: Codable  {

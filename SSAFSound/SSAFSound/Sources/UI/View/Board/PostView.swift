@@ -20,34 +20,32 @@ struct PostView: View {
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
-            NavigationStack {
+            VStack {
+                BackButtonView(title: "\(preBoardName)", spacingWidth: UIScreen.screenWidth / 3 - 10, backButtonAction: {
+                    presentationMode.wrappedValue.dismiss()
+                }, showTitle: true)
+
                 VStack {
-                    
-                    BackButtonView(title: "\(preBoardName)", spacingWidth: UIScreen.screenWidth / 3 - 10, backButtonAction: {
-                        presentationMode.wrappedValue.dismiss()
-                    }, showTitle: true)
-
-                    VStack {
-                        ScrollView(showsIndicators: false) {
-                            if let post = postViewModel.postModel?.data?.post {
-                                postContentItemView(post: post)
-                            }
-                            Spacer().frame(height: 40)
-                            PostCommentItemGroup(getPostId: postId).padding(.horizontal, 8)
+                    ScrollView(showsIndicators: false) {
+                        if let post = postViewModel.postModel?.data?.post {
+                            postContentItemView(post: post)
                         }
-                        Spacer()
-                        PostTextInputItem().padding(.horizontal, 25)
-                        Spacer()
-
+                        Spacer().frame(height: 40)
+                        PostCommentItemGroup(getPostId: postId).padding(.horizontal, 8)
                     }
+                    Spacer()
+                    PostTextInputItem().padding(.horizontal, 25)
+                    Spacer()
+
                 }
             }.task {
                 postViewModel.requestPostDetail(postId: postId)
             }
 
+
         }
     }
-    
+
 
     @ViewBuilder
     private func postContentItemView(post: PostDetail) -> some View {

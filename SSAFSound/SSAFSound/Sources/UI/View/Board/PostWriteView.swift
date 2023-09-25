@@ -10,7 +10,7 @@ import SwiftUI
 import PhotosUI
 
 struct PostWriteView: View {
-
+    let boardId: Int
     @State var postWriteTitle: String = ""
     @State var postWriteContent: String = ""
     @State var isAnonymity: Bool = true
@@ -22,13 +22,15 @@ struct PostWriteView: View {
     @StateObject var postViewModel: PostViewModel = PostViewModel()
 
     var body: some View {
-        VStack {
-            customPostNavBar(title: "게시글 쓰기")
-            postWriteTitleView()
-            postWriteContentView()
-            postWriteImageView()
+        ZStack {
+            Color.background.edgesIgnoringSafeArea(.all)
+            VStack {
+                customPostNavBar(title: "게시글 쓰기")
+                postWriteTitleView()
+                postWriteContentView()
+                postWriteImageView()
+            }
         }
-
     }
     @ViewBuilder
     private func customPostNavBar(title: String) -> some View {
@@ -52,6 +54,14 @@ struct PostWriteView: View {
                 Button {
                     Task {
                         print("submit")
+                        let images: [[String: String]] = viewModel.selectedImages.map { image in
+                            return [
+                                "imagePath": String(describing: image),
+                                "imageUrl": String(describing: image)
+                            ]
+                        }
+                        // 게시물 생성 요청
+                        postViewModel.requestPostCreate(boardId: boardId, title: postWriteTitle, content: postWriteContent, anoymity: isAnonymity, images: images)
                         presentationMode.wrappedValue.dismiss()
                     }
                 } label: {
@@ -62,9 +72,8 @@ struct PostWriteView: View {
             } else {
                 Text("완료")
                     .manropeFont(family: .Bold, size: 16)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.pink)
             }
-
         }
             .padding(.horizontal, 20)
 
@@ -143,7 +152,7 @@ struct PostWriteView: View {
                     }
                 }
                 Spacer()
-                
+
                 Button {
                     print("anonymous toggle")
                     isAnonymity.toggle()
@@ -218,6 +227,6 @@ final class PhotoPickerViewModel: ObservableObject {
 
 struct PostWriteView_Previews: PreviewProvider {
     static var previews: some View {
-        PostWriteView()
+        PostWriteView(boardId: 1)
     }
 }
