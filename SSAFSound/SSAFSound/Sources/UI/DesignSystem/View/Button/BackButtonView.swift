@@ -36,15 +36,13 @@ public struct BackButtonView: View {
             
             if showTitle {
                 Spacer()
-                    .frame(width: spacingWidth)
-                
                 Text(title)
                     .manropeFont(family: .Bold, size: 16)
                     
             }
-            
-            
             Spacer()
+            Rectangle().fill(.clear).frame(width: 20, height: 20)
+            
             
         }
         .foregroundColor(.white)
