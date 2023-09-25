@@ -14,4 +14,5 @@ public class APIHeaderManger {
     
     
     let contentType: String = "application/json"
+    let ssafHost: String = "api.ssafsound.com"
 }

@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  RecuritModel.swift
 //  SSAFSound
 //
 //  Created by 서원지 on 2023/08/03.
@@ -28,7 +28,7 @@ struct Recruit: Codable {
     let finishedRecruit: Bool?
     let recruitEnd: String?
     let content: String?
-    let skills: [Skill]?
+    let skills: [Skills]?
     let participants: [Participant]?
 
     enum CodingKeys: String, CodingKey {
@@ -52,7 +52,7 @@ struct Member: Codable {
 }
 
 // MARK: - Skill
-struct Skill: Codable {
+struct Skills: Codable {
     let skillID: Int?
     let name: String?
 

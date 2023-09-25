@@ -9,17 +9,19 @@ import Foundation
 
 
 struct APIConstants{
-    
+    static var viewModel: BoardViewModel = BoardViewModel()
     static let contentType = "Content-Type"
-    static let appPackageName = "App-Package-Name"
-    static let apikey =  "apikey"
+    static let host = "Host"
+    static let Cookie = "Cookie"
     
 }
 
 extension APIConstants {
     static var baseHeader: Dictionary<String, String> {
         [
-          contentType : APIHeaderManger.shared.contentType
+            contentType : APIHeaderManger.shared.contentType,
+            host : APIHeaderManger.shared.ssafHost,
+            Cookie : "accessToken=\(viewModel.authCodeToken)"
         ]
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 public enum SSAFSoundAPI {
 
-    public static let baseURL = Config.Release ? String("https://api.ssafsound.com/") : String("https://api.ssafsound.com/")
+    public static let baseURL = Config.Release ? String("https://dev.ssafsound.com/") : String("https://api.ssafsound.com/")
     
     public static let recruits = String("recruits")
     public static let boards = String("boards")

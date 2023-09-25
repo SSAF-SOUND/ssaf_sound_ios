@@ -11,10 +11,12 @@ import CombineMoya
 import Moya
 
 public class BoardViewModel: ObservableObject {
-    
+    @AppStorage("authCodeToken") var authCodeToken: String = ""
     
     public init() {
         requestRecurit()
+        
+        authCodeToken = UserDefaults.standard.string(forKey: "authCodeToken") ?? ""
     }
     
     var recuritCancellable: AnyCancellable?
