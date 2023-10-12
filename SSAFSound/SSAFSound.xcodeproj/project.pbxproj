@@ -67,6 +67,10 @@
 		7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E6322A6693980042A227 /* RecruitStudyType.swift */; };
 		7F73E6362A6696420042A227 /* RecuritCustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E6352A6696420042A227 /* RecuritCustomToggle.swift */; };
 		7F7994F62AD81A630056975B /* SSAFSoundAPIRecruitInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7994F52AD81A630056975B /* SSAFSoundAPIRecruitInvite.swift */; };
+		7F7994F82AD81C910056975B /* RecruitParticipantSertvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7994F72AD81C910056975B /* RecruitParticipantSertvice.swift */; };
+		7F7994FA2AD8220D0056975B /* SSAFSoundAPIRecruitCommnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7994F92AD8220C0056975B /* SSAFSoundAPIRecruitCommnet.swift */; };
+		7F7994FC2AD8226D0056975B /* RecruitCommnetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7994FB2AD8226D0056975B /* RecruitCommnetService.swift */; };
+		7F7994FF2AD827000056975B /* RecuritViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7994FE2AD827000056975B /* RecuritViewModel.swift */; };
 		7FA97A4B2A7BD57100F9DE59 /* RecuritModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4A2A7BD57100F9DE59 /* RecuritModel.swift */; };
 		7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4D2A7BD5AE00F9DE59 /* APIConstants.swift */; };
 		7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */; };
@@ -207,6 +211,10 @@
 		7F73E6322A6693980042A227 /* RecruitStudyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitStudyType.swift; sourceTree = "<group>"; };
 		7F73E6352A6696420042A227 /* RecuritCustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuritCustomToggle.swift; sourceTree = "<group>"; };
 		7F7994F52AD81A630056975B /* SSAFSoundAPIRecruitInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundAPIRecruitInvite.swift; sourceTree = "<group>"; };
+		7F7994F72AD81C910056975B /* RecruitParticipantSertvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitParticipantSertvice.swift; sourceTree = "<group>"; };
+		7F7994F92AD8220C0056975B /* SSAFSoundAPIRecruitCommnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundAPIRecruitCommnet.swift; sourceTree = "<group>"; };
+		7F7994FB2AD8226D0056975B /* RecruitCommnetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitCommnetService.swift; sourceTree = "<group>"; };
+		7F7994FE2AD827000056975B /* RecuritViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuritViewModel.swift; sourceTree = "<group>"; };
 		7FA97A4A2A7BD57100F9DE59 /* RecuritModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuritModel.swift; sourceTree = "<group>"; };
 		7FA97A4D2A7BD5AE00F9DE59 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7FA97A4F2A7BD5EE00F9DE59 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
@@ -488,6 +496,8 @@
 			isa = PBXGroup;
 			children = (
 				7F3C06982ABF064400283C83 /* RecruitSertvice.swift */,
+				7F7994F72AD81C910056975B /* RecruitParticipantSertvice.swift */,
+				7F7994FB2AD8226D0056975B /* RecruitCommnetService.swift */,
 			);
 			path = Recruit;
 			sourceTree = "<group>";
@@ -505,6 +515,7 @@
 		7F6DE3462A6404A900ADE1E3 /* Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				7F7994FD2AD826ED0056975B /* ViewModel */,
 				7FFBC8922A6B8096009B7587 /* RecruitProjectView */,
 				7FFBC8912A6B8092009B7587 /* RecruitStudyView */,
 				7FDAAD892A66A38100713BE4 /* MainView */,
@@ -555,6 +566,14 @@
 				7F73E6352A6696420042A227 /* RecuritCustomToggle.swift */,
 			);
 			path = Toggle;
+			sourceTree = "<group>";
+		};
+		7F7994FD2AD826ED0056975B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F7994FE2AD827000056975B /* RecuritViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7FA97A472A7BD52600F9DE59 /* API */ = {
@@ -768,6 +787,7 @@
 				7F3C06962ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift */,
 				7F3C069D2ABF293A00283C83 /* SSAFSoundAPIMeta.swift */,
 				7F7994F52AD81A630056975B /* SSAFSoundAPIRecruitInvite.swift */,
+				7F7994F92AD8220C0056975B /* SSAFSoundAPIRecruitCommnet.swift */,
 			);
 			path = SSAFSoundAPI;
 			sourceTree = "<group>";
@@ -1092,6 +1112,7 @@
 				6CEAF1C32AD2BDD3001A8ACC /* MyScrapBoardView.swift in Sources */,
 				7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
+				7F7994F82AD81C910056975B /* RecruitParticipantSertvice.swift in Sources */,
 				6C8F05B62A979FED00B7986D /* TestWebView.swift in Sources */,
 				865FAA842A848A4D00C6681A /* Board.swift in Sources */,
 				6CEAF1C52AD2BDE0001A8ACC /* MyScrapRecruitView.swift in Sources */,
@@ -1114,6 +1135,7 @@
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
 				6CEAF1C12AD2BDC0001A8ACC /* MyScrapView.swift in Sources */,
 				6C5F4F742A95F21400A0C8E4 /* ProfileMenuButtonView.swift in Sources */,
+				7F7994FF2AD827000056975B /* RecuritViewModel.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
 				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
 				7F3C06A12ABF2A1200283C83 /* MetaService.swift in Sources */,
@@ -1135,6 +1157,7 @@
 				6C462F1B2AA5C51A00A046F8 /* TodayLunchView.swift in Sources */,
 				6CCDC2022ABBEFA30020B5E5 /* LunchService.swift in Sources */,
 				7FA97A6F2A7BDBB400F9DE59 /* SignUpSemesterView.swift in Sources */,
+				7F7994FC2AD8226D0056975B /* RecruitCommnetService.swift in Sources */,
 				6C97C5502A93448100E0FD1D /* HomeHotItemView.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
 				867962472A9F6645000A11F9 /* Comment.swift in Sources */,
@@ -1169,6 +1192,7 @@
 				6C97C5432A91DF1700E0FD1D /* HotPost.swift in Sources */,
 				7FDAAE532A69641B00713BE4 /* ProfileView.swift in Sources */,
 				6C08EF9E2ACEAEBE00C57FA9 /* ProfileSettingView.swift in Sources */,
+				7F7994FA2AD8220D0056975B /* SSAFSoundAPIRecruitCommnet.swift in Sources */,
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
 				7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */,
 				7F3C06972ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift in Sources */,

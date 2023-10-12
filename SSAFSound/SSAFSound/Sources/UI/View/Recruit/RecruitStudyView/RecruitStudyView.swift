@@ -19,6 +19,17 @@ struct RecruitStudyView: View {
                 recruitStudtTopHeaderView()
                 
                 Spacer()
+                    .frame(height: 101)
+                
+                if !selectToggle {
+                    noRecuritStudyProject
+                } else {
+                    
+                }
+                
+                
+                Spacer()
+                
                 
             }
         }
@@ -70,6 +81,22 @@ struct RecruitStudyView: View {
                 
             }
             .padding(.horizontal, 20)
+        }
+    }
+    
+    private var noRecuritStudyProject: some View {
+        VStack(spacing: .zero){
+            Image(assetName: "track_fallback_secondary")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 162, height: 162)
+            
+            Spacer()
+                .frame(height: 10)
+            
+            Text("검색된 결과가 없습니다")
+                .font(.manropeRegualar14)
+                .foregroundStyle(Color(hex: "FF5C5C"))
         }
     }
 }
