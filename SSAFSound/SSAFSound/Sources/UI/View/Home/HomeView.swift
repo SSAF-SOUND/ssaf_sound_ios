@@ -13,6 +13,7 @@ struct HomeView: View {
     @State private var isHotBoard: Bool = false
     var body: some View {
         ZStack {
+//            Color.backgroundGray.ignoresSafeArea(.all)
             Color.background.ignoresSafeArea(.all)
             NavigationStack{
                 VStack  {
@@ -25,7 +26,7 @@ struct HomeView: View {
                             serverTimeView()
                             Spacer()
                                 .frame(height: 31)
-                            lunchMenuView()
+                            LunchPreviewView()
                             
                             Spacer()
                                 .frame(height: 31)
