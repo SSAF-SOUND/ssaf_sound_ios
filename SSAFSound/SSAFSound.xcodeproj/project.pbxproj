@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C08EF9E2ACEAEBE00C57FA9 /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C08EF9D2ACEAEBE00C57FA9 /* ProfileSettingView.swift */; };
 		6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CC2A89195E00712DCC /* SignInMainView.swift */; };
 		6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089CE2A89378D00712DCC /* SignInButtonView.swift */; };
 		6C1089D32A89437600712DCC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1089D22A89437600712DCC /* SignInView.swift */; };
@@ -33,9 +34,21 @@
 		6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */; };
 		6C9BAD1A2A5E3C0900309C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD192A5E3C0900309C20 /* Assets.xcassets */; };
 		6C9BAD1D2A5E3C0900309C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */; };
+		6CCDC1F82ABB20460020B5E5 /* PortFolioLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC1F72ABB20460020B5E5 /* PortFolioLinkView.swift */; };
+		6CCDC1FA2ABB23D50020B5E5 /* SkillBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC1F92ABB23D50020B5E5 /* SkillBadgeView.swift */; };
+		6CCDC1FC2ABB27440020B5E5 /* TechStackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC1FB2ABB27440020B5E5 /* TechStackType.swift */; };
+		6CCDC1FE2ABBEF2C0020B5E5 /* LunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC1FD2ABBEF2C0020B5E5 /* LunchViewModel.swift */; };
+		6CCDC2002ABBEF930020B5E5 /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC1FF2ABBEF930020B5E5 /* Lunch.swift */; };
+		6CCDC2022ABBEFA30020B5E5 /* LunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC2012ABBEFA30020B5E5 /* LunchService.swift */; };
+		6CCDC2042ABBF4550020B5E5 /* LunchPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC2032ABBF4550020B5E5 /* LunchPreviewView.swift */; };
+		6CCDC2062ABC89DC0020B5E5 /* LunchIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDC2052ABC89DC0020B5E5 /* LunchIconView.swift */; };
 		6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266D2A7E269500462C08 /* MenuOpation.swift */; };
 		6CCF26702A7E26C000462C08 /* SignUpisMajorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */; };
 		6CE1AEF72A7E361800F3406B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1AEF62A7E361800F3406B /* OnboardingView.swift */; };
+		6CEAF1BE2AD2870D001A8ACC /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEAF1BD2AD2870D001A8ACC /* SettingRowView.swift */; };
+		6CEAF1C12AD2BDC0001A8ACC /* MyScrapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEAF1C02AD2BDC0001A8ACC /* MyScrapView.swift */; };
+		6CEAF1C32AD2BDD3001A8ACC /* MyScrapBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEAF1C22AD2BDD3001A8ACC /* MyScrapBoardView.swift */; };
+		6CEAF1C52AD2BDE0001A8ACC /* MyScrapRecruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEAF1C42AD2BDE0001A8ACC /* MyScrapRecruitView.swift */; };
 		6CEB97002A839E1E00F2E542 /* NameCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */; };
 		6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */; };
 		7F3C06972ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C06962ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift */; };
@@ -134,6 +147,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C08EF9D2ACEAEBE00C57FA9 /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
 		6C1089CC2A89195E00712DCC /* SignInMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainView.swift; sourceTree = "<group>"; };
 		6C1089CE2A89378D00712DCC /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
 		6C1089D22A89437600712DCC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -159,9 +173,21 @@
 		6C9BAD152A5E3C0800309C20 /* SSAFSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundApp.swift; sourceTree = "<group>"; };
 		6C9BAD192A5E3C0900309C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9BAD1C2A5E3C0900309C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CCDC1F72ABB20460020B5E5 /* PortFolioLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortFolioLinkView.swift; sourceTree = "<group>"; };
+		6CCDC1F92ABB23D50020B5E5 /* SkillBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillBadgeView.swift; sourceTree = "<group>"; };
+		6CCDC1FB2ABB27440020B5E5 /* TechStackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechStackType.swift; sourceTree = "<group>"; };
+		6CCDC1FD2ABBEF2C0020B5E5 /* LunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewModel.swift; sourceTree = "<group>"; };
+		6CCDC1FF2ABBEF930020B5E5 /* Lunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch.swift; sourceTree = "<group>"; };
+		6CCDC2012ABBEFA30020B5E5 /* LunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchService.swift; sourceTree = "<group>"; };
+		6CCDC2032ABBF4550020B5E5 /* LunchPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPreviewView.swift; sourceTree = "<group>"; };
+		6CCDC2052ABC89DC0020B5E5 /* LunchIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchIconView.swift; sourceTree = "<group>"; };
 		6CCF266D2A7E269500462C08 /* MenuOpation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOpation.swift; sourceTree = "<group>"; };
 		6CCF266F2A7E26C000462C08 /* SignUpisMajorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpisMajorView.swift; sourceTree = "<group>"; };
 		6CE1AEF62A7E361800F3406B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6CEAF1BD2AD2870D001A8ACC /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		6CEAF1C02AD2BDC0001A8ACC /* MyScrapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrapView.swift; sourceTree = "<group>"; };
+		6CEAF1C22AD2BDD3001A8ACC /* MyScrapBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrapBoardView.swift; sourceTree = "<group>"; };
+		6CEAF1C42AD2BDE0001A8ACC /* MyScrapRecruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrapRecruitView.swift; sourceTree = "<group>"; };
 		6CEB96FF2A839E1E00F2E542 /* NameCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCardView.swift; sourceTree = "<group>"; };
 		6CEB97012A83C3ED00F2E542 /* AuthCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCompleteView.swift; sourceTree = "<group>"; };
 		7F3C06962ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAFSoundAPIRecurits.swift; sourceTree = "<group>"; };
@@ -269,6 +295,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C08EF9C2ACEAE9B00C57FA9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6C08EF9D2ACEAEBE00C57FA9 /* ProfileSettingView.swift */,
+				6CEAF1BD2AD2870D001A8ACC /* SettingRowView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		6C1089C92A89164B00712DCC /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				6C462F1A2AA5C51A00A046F8 /* TodayLunchView.swift */,
+				6CCDC2032ABBF4550020B5E5 /* LunchPreviewView.swift */,
+				6CCDC2052ABC89DC0020B5E5 /* LunchIconView.swift */,
 			);
 			path = Lunch;
 			sourceTree = "<group>";
@@ -366,6 +403,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6CCDC1F62ABB20080020B5E5 /* PortfolioItem */ = {
+			isa = PBXGroup;
+			children = (
+				6CCDC1F72ABB20460020B5E5 /* PortFolioLinkView.swift */,
+				6CCDC1F92ABB23D50020B5E5 /* SkillBadgeView.swift */,
+			);
+			path = PortfolioItem;
+			sourceTree = "<group>";
+		};
 		6CE1AEEF2A7E34FF00F3406B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +438,23 @@
 				6CE1AEF62A7E361800F3406B /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6CEAF1BF2AD2BD76001A8ACC /* Scrap */ = {
+			isa = PBXGroup;
+			children = (
+				6CEAF1C02AD2BDC0001A8ACC /* MyScrapView.swift */,
+				6CEAF1C22AD2BDD3001A8ACC /* MyScrapBoardView.swift */,
+				6CEAF1C42AD2BDE0001A8ACC /* MyScrapRecruitView.swift */,
+			);
+			path = Scrap;
+			sourceTree = "<group>";
+		};
+		6CEAF1C62AD2BEA4001A8ACC /* OtherProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherProfile;
 			sourceTree = "<group>";
 		};
 		6CEB96FE2A839E0700F2E542 /* NameCard */ = {
@@ -479,6 +542,7 @@
 			children = (
 				7F73E6322A6693980042A227 /* RecruitStudyType.swift */,
 				6C14A5122A99E36500BB9D8C /* ProfileMenuType.swift */,
+				6CCDC1FB2ABB27440020B5E5 /* TechStackType.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -509,6 +573,7 @@
 				86CC376F2A8B5AF600566451 /* Post.swift */,
 				6C97C5422A91DF1700E0FD1D /* HotPost.swift */,
 				867962462A9F6645000A11F9 /* Comment.swift */,
+				6CCDC1FF2ABBEF930020B5E5 /* Lunch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -542,6 +607,7 @@
 				86CC37732A8B5DC800566451 /* PostService.swift */,
 				6C97C5462A91E2DE00E0FD1D /* HotPostService.swift */,
 				8679624A2A9F6A4B000A11F9 /* CommentService.swift */,
+				6CCDC2012ABBEFA30020B5E5 /* LunchService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -597,6 +663,7 @@
 				86CC37752A8B638300566451 /* PostViewModel.swift */,
 				6C97C5442A91E02500E0FD1D /* HotPostViewModel.swift */,
 				867962482A9F699A000A11F9 /* CommentViewModel.swift */,
+				6CCDC1FD2ABBEF2C0020B5E5 /* LunchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -793,6 +860,9 @@
 		7FDAAE512A69641200713BE4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6CEAF1C62AD2BEA4001A8ACC /* OtherProfile */,
+				6CEAF1BF2AD2BD76001A8ACC /* Scrap */,
+				6C08EF9C2ACEAE9B00C57FA9 /* Setting */,
 				6C5F4F792A95FCEB00A0C8E4 /* MyProfile */,
 				7FDAAE522A69641B00713BE4 /* ProfileView.swift */,
 				6C5F4F752A95FC3300A0C8E4 /* PrivateProfileView.swift */,
@@ -838,6 +908,7 @@
 		7FF4FADB2A603DDE007BF344 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CCDC1F62ABB20080020B5E5 /* PortfolioItem */,
 				6C462F152AA5A4D900A046F8 /* LunchItem */,
 				7FC4DEDA2A9797AD0032CC6F /* ScrollView */,
 				6C5F4F7C2A96024600A0C8E4 /* RecruitItem */,
@@ -1015,10 +1086,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5F4F7B2A95FF3500A0C8E4 /* PortfolioEditorVIew.swift in Sources */,
+				6CEAF1C32AD2BDD3001A8ACC /* MyScrapBoardView.swift in Sources */,
 				7FA97A552A7BD63F00F9DE59 /* BoardService.swift in Sources */,
 				7FF4FABF2A6037F6007BF344 /* ImageAsset.swift in Sources */,
 				6C8F05B62A979FED00B7986D /* TestWebView.swift in Sources */,
 				865FAA842A848A4D00C6681A /* Board.swift in Sources */,
+				6CEAF1C52AD2BDE0001A8ACC /* MyScrapRecruitView.swift in Sources */,
 				7FF4FAE12A603FDF007BF344 /* TabType.swift in Sources */,
 				7FA97A592A7BDA2300F9DE59 /* NicknameAlertView.swift in Sources */,
 				7FF4FADA2A603CC1007BF344 /* ManropeFont.swift in Sources */,
@@ -1027,6 +1100,7 @@
 				6C1089CD2A89195E00712DCC /* SignInMainView.swift in Sources */,
 				7F73E6332A6693980042A227 /* RecruitStudyType.swift in Sources */,
 				6C97C5472A91E2DE00E0FD1D /* HotPostService.swift in Sources */,
+				6CCDC1FE2ABBEF2C0020B5E5 /* LunchViewModel.swift in Sources */,
 				7FDAAE582A6965BD00713BE4 /* BoardView.swift in Sources */,
 				7FB87BFF2A60375A0035AA68 /* Image+Extension.swift in Sources */,
 				7FA97A672A7BDB3C00F9DE59 /* SignUpProgressBar.swift in Sources */,
@@ -1035,6 +1109,7 @@
 				865FAA802A84887000C6681A /* BoardService2.swift in Sources */,
 				86CC37762A8B638300566451 /* PostViewModel.swift in Sources */,
 				7FA97A502A7BD5EE00F9DE59 /* BaseTargetType.swift in Sources */,
+				6CEAF1C12AD2BDC0001A8ACC /* MyScrapView.swift in Sources */,
 				6C5F4F742A95F21400A0C8E4 /* ProfileMenuButtonView.swift in Sources */,
 				7FB87BEE2A6034780035AA68 /* Config.swift in Sources */,
 				7FA97A522A7BD60800F9DE59 /* MoyaLoggingPlugin.swift in Sources */,
@@ -1046,12 +1121,16 @@
 				7FC4DEDE2A97992D0032CC6F /* MainHeaerView.swift in Sources */,
 				6CEB97022A83C3ED00F2E542 /* AuthCompleteView.swift in Sources */,
 				6C1089CF2A89378D00712DCC /* SignInButtonView.swift in Sources */,
+				6CCDC1FC2ABB27440020B5E5 /* TechStackType.swift in Sources */,
+				6CCDC2042ABBF4550020B5E5 /* LunchPreviewView.swift in Sources */,
+				6CEAF1BE2AD2870D001A8ACC /* SettingRowView.swift in Sources */,
 				6C5F4F762A95FC3300A0C8E4 /* PrivateProfileView.swift in Sources */,
 				7FF4FAC22A6038D3007BF344 /* ColorAsset.swift in Sources */,
 				6C5F4F782A95FCE900A0C8E4 /* MyPorfolioDefaultView.swift in Sources */,
 				7FF4FAC72A603A4E007BF344 /* MainTabView.swift in Sources */,
 				7F3C069E2ABF293A00283C83 /* SSAFSoundAPIMeta.swift in Sources */,
 				6C462F1B2AA5C51A00A046F8 /* TodayLunchView.swift in Sources */,
+				6CCDC2022ABBEFA30020B5E5 /* LunchService.swift in Sources */,
 				7FA97A6F2A7BDBB400F9DE59 /* SignUpSemesterView.swift in Sources */,
 				6C97C5502A93448100E0FD1D /* HomeHotItemView.swift in Sources */,
 				7FF4FAC42A6038F2007BF344 /* Extension+Color.swift in Sources */,
@@ -1062,11 +1141,14 @@
 				865FAA822A8489FA00C6681A /* BoardViewModel.swift in Sources */,
 				86CC37702A8B5AF600566451 /* Post.swift in Sources */,
 				862EAC762A6FB21D00F09396 /* PostWriteView.swift in Sources */,
+				6CCDC2062ABC89DC0020B5E5 /* LunchIconView.swift in Sources */,
+				6CCDC1FA2ABB23D50020B5E5 /* SkillBadgeView.swift in Sources */,
 				7FA97A692A7BDB5100F9DE59 /* SignUpCampusView.swift in Sources */,
 				86CC37742A8B5DC800566451 /* PostService.swift in Sources */,
 				7F6DE34F2A64063A00ADE1E3 /* XmarkButtonView.swift in Sources */,
 				7FA97A4B2A7BD57100F9DE59 /* RecuritModel.swift in Sources */,
 				867962492A9F699A000A11F9 /* CommentViewModel.swift in Sources */,
+				6CCDC2002ABBEF930020B5E5 /* Lunch.swift in Sources */,
 				7FA97A642A7BDB1700F9DE59 /* SemesterMenuOption.swift in Sources */,
 				7FDAAE502A69640B00713BE4 /* HomeView.swift in Sources */,
 				7F3C06992ABF064400283C83 /* RecruitSertvice.swift in Sources */,
@@ -1083,6 +1165,7 @@
 				7F3C06A52ABF2BE200283C83 /* CampusesModel.swift in Sources */,
 				6C97C5432A91DF1700E0FD1D /* HotPost.swift in Sources */,
 				7FDAAE532A69641B00713BE4 /* ProfileView.swift in Sources */,
+				6C08EF9E2ACEAEBE00C57FA9 /* ProfileSettingView.swift in Sources */,
 				6C9BAD162A5E3C0800309C20 /* SSAFSoundApp.swift in Sources */,
 				7F6DE3492A6404F300ADE1E3 /* BackButtonView.swift in Sources */,
 				7F3C06972ABF05CC00283C83 /* SSAFSoundAPIRecurits.swift in Sources */,
@@ -1103,6 +1186,7 @@
 				8670115C2A6ECA6900336BE6 /* SearchView.swift in Sources */,
 				6CCF266E2A7E269500462C08 /* MenuOpation.swift in Sources */,
 				7FA97A4E2A7BD5AE00F9DE59 /* APIConstants.swift in Sources */,
+				6CCDC1F82ABB20460020B5E5 /* PortFolioLinkView.swift in Sources */,
 				7FFBC8962A6B80E5009B7587 /* RecruitStudyView.swift in Sources */,
 				8679624B2A9F6A4B000A11F9 /* CommentService.swift in Sources */,
 				7FB87BF12A6034D10035AA68 /* APIHeaderManger.swift in Sources */,

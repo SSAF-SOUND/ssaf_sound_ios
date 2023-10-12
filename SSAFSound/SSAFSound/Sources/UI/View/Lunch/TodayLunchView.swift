@@ -29,7 +29,7 @@ struct TodayLunchView: View {
         VStack {
             Spacer()
                 .frame(height: 44)
-            Image(asset: .today_lunch_title)
+            Image(asset: .ssafy_lunch)
             Spacer()
                 .frame(height: 7)
             Text("가장 먹고 싶은 점심메뉴는? ")
