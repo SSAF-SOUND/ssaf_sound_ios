@@ -40,7 +40,7 @@ struct RecruitStudyView: View {
         VStack {
             HStack {
                 Toggle("", isOn: $selectToggle)
-                    .toggleStyle(RecuritCustomToggle(activeColor: Color.secondaryDefault, activeCircle: selectToggle, height: 30, width: 100))
+                    .toggleStyle(RecuritCustomToggle(activeColor: Color(hex: "FFA4A4"), activeCircle: selectToggle, height: 30, width: 100))
                 
                 Spacer()
                     .frame(width: 10)

@@ -23,7 +23,7 @@ public struct RecuritCustomToggle: ToggleStyle {
     //MARK: -  컴스텀으로 toggle 만드는 UI
     public func makeBody(configuration: Configuration) -> some View {
         RoundedRectangle(cornerRadius: 30)
-            .stroke(configuration.isOn ? activeColor : Color.gray, style: .init(lineWidth: 2))
+            .stroke(configuration.isOn ? activeColor : Color(red: 0.53, green: 0.56, blue: 0.66), style: .init(lineWidth: 2))
 //                .fill(configuration.isOn ? activeColor : Color.gray4)
             .frame(width: width, height: height)
 //                .background(configuration.isOn ? activeColor : Color.gray)

@@ -21,7 +21,7 @@ extension APIConstants {
         [
             contentType : APIHeaderManger.shared.contentType,
             host : APIHeaderManger.shared.ssafHost,
-            Cookie : "accessToken=\(viewModel.authCodeToken)"
+            Cookie : "accessToken="
         ]
     }
 }
