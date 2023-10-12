@@ -28,6 +28,11 @@ public enum ImageAsset: String {
     case login_kakao
     case login_apple
     
+    // MARK: - lunch
+    case test_lunch
+    case ssafy_lunch
+    case today_lunch
+    
     // MARK: - skills
     case android
     case django
@@ -61,5 +66,5 @@ public enum ImageAsset: String {
     case thumb_fill
     case thumb_fill_2
     case chat_fill
-    case today_lunch_title
+
 }
